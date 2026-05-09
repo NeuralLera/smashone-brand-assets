@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-label="OK">
+  <defs>
+    <linearGradient id="base" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#151515"></stop>
+      <stop offset="1" stop-color="#060606"></stop>
+    </linearGradient>
+    <radialGradient id="warm" cx="0.85" cy="0.15" r="0.75">
+      <stop offset="0" stop-color="#c9a646" stop-opacity="0.10"></stop>
+      <stop offset="0.55" stop-color="#c9a646" stop-opacity="0.02"></stop>
+      <stop offset="1" stop-color="#000000" stop-opacity="0"></stop>
+    </radialGradient>
+    <pattern id="strie" width="2" height="2" patternUnits="userSpaceOnUse">
+      <rect width="1" height="2" fill="#ffffff" fill-opacity="0.012"></rect>
+    </pattern>
+    <linearGradient id="topedge" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.18"></stop>
+      <stop offset="0.08" stop-color="#ffffff" stop-opacity="0"></stop>
+    </linearGradient>
+    <radialGradient id="innerglow" cx="0.78" cy="0.22" r="0.55">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.06"></stop>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"></stop>
+    </radialGradient>
+    <clipPath id="tileclip">
+      <rect x="0" y="0" width="64" height="64" rx="14" ry="14"></rect>
+    </clipPath>
+    <filter id="noise" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="1.6" numOctaves="1" seed="3"></feTurbulence>
+      <feColorMatrix values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.06 0"></feColorMatrix>
+    </filter>
+  </defs>
+
+  <g clip-path="url(#tileclip)">
+    <rect width="64" height="64" fill="#0a0a0a"></rect>
+    <rect width="64" height="64" fill="url(#base)" opacity="0.75"></rect>
+    <rect width="64" height="64" fill="url(#strie)"></rect>
+    <rect width="64" height="64" fill="url(#warm)"></rect>
+    <rect width="64" height="64" fill="url(#innerglow)"></rect>
+    <rect width="64" height="64" fill="#000000" filter="url(#noise)" opacity="0.35" style="mix-blend-mode:overlay"></rect>
+    <rect width="64" height="64" fill="url(#topedge)"></rect>
+  </g>
+
+  <rect x="0.6" y="0.6" width="62.8" height="62.8" rx="13.4" ry="13.4" fill="none" stroke="#c0c0c0" stroke-opacity="0.30" stroke-width="1.2"></rect>
+
+  <g fill="none" stroke="#c0c0c0" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round">
+    
+    <circle cx="32" cy="22" r="6.2"></circle>
+    
+    <path d="M 32 29.6 L 32 40"></path>
+    
+    <path d="M 21 35 C 24.5 31, 28 29.2, 32 29.2 C 36 29.2, 39.5 31, 43 35"></path>
+    
+    <path d="M 32 40 L 24 49"></path>
+    <path d="M 32 40 L 40 49"></path>
+  </g>
+
+  
+  <circle cx="43" cy="35" r="1.6" fill="#c9a646"></circle>
+</svg>

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-label="VK">
+  <defs>
+    <linearGradient id="lbase" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f2f2f2"></stop>
+      <stop offset="1" stop-color="#e4e4e4"></stop>
+    </linearGradient>
+    <pattern id="lgrain" width="3" height="2" patternUnits="userSpaceOnUse">
+      <rect width="3" height="1" fill="#ffffff" fill-opacity="0.35"></rect>
+      <rect y="1" width="3" height="1" fill="#000000" fill-opacity="0.015"></rect>
+    </pattern>
+    <radialGradient id="lwarm" cx="0.85" cy="0.15" r="0.75">
+      <stop offset="0" stop-color="#c9a646" stop-opacity="0.08"></stop>
+      <stop offset="0.55" stop-color="#c9a646" stop-opacity="0.02"></stop>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"></stop>
+    </radialGradient>
+    <linearGradient id="ltopedge" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.85"></stop>
+      <stop offset="0.08" stop-color="#ffffff" stop-opacity="0"></stop>
+    </linearGradient>
+    <radialGradient id="linnerglow" cx="0.78" cy="0.22" r="0.55">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.45"></stop>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"></stop>
+    </radialGradient>
+    <linearGradient id="lbottomshade" x1="0" y1="0.7" x2="0" y2="1">
+      <stop offset="0" stop-color="#000000" stop-opacity="0"></stop>
+      <stop offset="1" stop-color="#000000" stop-opacity="0.06"></stop>
+    </linearGradient>
+    <clipPath id="ltileclip">
+      <rect x="0" y="0" width="64" height="64" rx="14" ry="14"></rect>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#ltileclip)">
+    <rect width="64" height="64" fill="#ececec"></rect>
+    <rect width="64" height="64" fill="url(#lbase)"></rect>
+    <rect width="64" height="64" fill="url(#lgrain)" opacity="0.35"></rect>
+    <rect width="64" height="64" fill="url(#lwarm)"></rect>
+    <rect width="64" height="64" fill="url(#linnerglow)"></rect>
+    <rect width="64" height="64" fill="url(#lbottomshade)"></rect>
+    <rect width="64" height="64" fill="url(#ltopedge)"></rect>
+  </g>
+
+  <rect x="0.6" y="0.6" width="62.8" height="62.8" rx="13.4" ry="13.4" fill="none" stroke="#2a2a2a" stroke-opacity="0.22" stroke-width="1.2"></rect>
+
+  <g transform="translate(2.88 2.30) scale(1.823)" fill="#111111">
+    <path d="M15.42 21.32c-5.5 0-8.64-3.77-8.77-10.05h2.92c.1 4.6 2.13 6.55 3.74 6.96V11.27h2.76v3.98c1.68-.18 3.37-1.95 3.96-3.98h2.76c-.45 2.51-2.23 4.29-3.6 5.08 1.48.69 3.52 2.2 4.37 4.97h-3.02c-.68-2.11-2.36-3.74-4.47-3.96v3.96h.04z"></path>
+  </g>
+
+  <circle cx="48.4" cy="46.8" r="1.6" fill="#c9a646"></circle>
+</svg>

@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="lightbase" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f2f2f2"/>
+      <stop offset="1" stop-color="#d8d8d8"/>
+    </linearGradient>
+    <radialGradient id="lightwarm" cx="0.85" cy="0.15" r="0.75">
+      <stop offset="0" stop-color="#c9a646" stop-opacity="0.09"/>
+      <stop offset="0.55" stop-color="#c9a646" stop-opacity="0.02"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="lightstrie" width="2" height="2" patternUnits="userSpaceOnUse">
+      <rect width="2" height="1" fill="#ffffff" fill-opacity="0.40"/><rect y="1" width="2" height="1" fill="#000000" fill-opacity="0.015"/>
+    </pattern>
+    <linearGradient id="lighttop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.80"/>
+      <stop offset="0.07" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="lightbot" x1="0" y1="0.7" x2="0" y2="1">
+      <stop offset="0" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0.06"/>
+    </linearGradient>
+    <filter id="lightnoise" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="1.6" numOctaves="1" seed="3"/>
+      <feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.05 0"/>
+    </filter>
+    <clipPath id="lightclip">
+      <rect width="64" height="64" rx="14" ry="14"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#lightclip)">
+    <rect width="64" height="64" fill="#ececec"/>
+    <rect width="64" height="64" fill="url(#lightbase)" opacity="1"/>
+    <rect width="64" height="64" fill="url(#lightstrie)" opacity="0.35"/>
+    <rect width="64" height="64" fill="url(#lightwarm)"/>
+    <rect width="64" height="64" fill="url(#lightbot)"/>
+    <rect width="64" height="64" fill="#000000" filter="url(#lightnoise)" opacity="0.5" style="mix-blend-mode:multiply"/>
+    <rect width="64" height="64" fill="url(#lighttop)"/>
+  </g>
+  <rect x="0.6" y="0.6" width="62.8" height="62.8" rx="13.4" ry="13.4" fill="none" stroke="#2a2a2a" stroke-opacity="0.22" stroke-width="1.2"/>
+  <g fill="none" stroke="#111111" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 52 16 L 12 32 L 27 34"/>
+    <path d="M 52 16 L 47 48 L 27 34"/>
+    <path d="M 52 16 L 27 34"/>
+    <path d="M 27 34 L 27 45 L 34 39"/>
+  </g>
+  <circle cx="52" cy="16" r="2.1" fill="#c9a646"/>
+</svg>

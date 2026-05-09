@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-label="VK">
+  <defs>
+    <linearGradient id="base" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#151515"></stop>
+      <stop offset="1" stop-color="#060606"></stop>
+    </linearGradient>
+    <radialGradient id="warm" cx="0.85" cy="0.15" r="0.75">
+      <stop offset="0" stop-color="#c9a646" stop-opacity="0.10"></stop>
+      <stop offset="0.55" stop-color="#c9a646" stop-opacity="0.02"></stop>
+      <stop offset="1" stop-color="#000000" stop-opacity="0"></stop>
+    </radialGradient>
+    <pattern id="strie" width="2" height="2" patternUnits="userSpaceOnUse">
+      <rect width="1" height="2" fill="#ffffff" fill-opacity="0.012"></rect>
+    </pattern>
+    <linearGradient id="topedge" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.18"></stop>
+      <stop offset="0.08" stop-color="#ffffff" stop-opacity="0"></stop>
+    </linearGradient>
+    <radialGradient id="innerglow" cx="0.78" cy="0.22" r="0.55">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.06"></stop>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"></stop>
+    </radialGradient>
+    <clipPath id="tileclip">
+      <rect x="0" y="0" width="64" height="64" rx="14" ry="14"></rect>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#tileclip)">
+    <rect width="64" height="64" fill="#0a0a0a"></rect>
+    <rect width="64" height="64" fill="url(#base)" opacity="0.75"></rect>
+    <rect width="64" height="64" fill="url(#strie)"></rect>
+    <rect width="64" height="64" fill="url(#warm)"></rect>
+    <rect width="64" height="64" fill="url(#innerglow)"></rect>
+    <rect width="64" height="64" fill="url(#topedge)"></rect>
+  </g>
+
+  <rect x="0.6" y="0.6" width="62.8" height="62.8" rx="13.4" ry="13.4" fill="none" stroke="#c0c0c0" stroke-opacity="0.30" stroke-width="1.2"></rect>
+
+  
+  <g transform="translate(2.88 2.30) scale(1.823)" fill="#c0c0c0">
+    <path d="M15.42 21.32c-5.5 0-8.64-3.77-8.77-10.05h2.92c.1 4.6 2.13 6.55 3.74 6.96V11.27h2.76v3.98c1.68-.18 3.37-1.95 3.96-3.98h2.76c-.45 2.51-2.23 4.29-3.6 5.08 1.48.69 3.52 2.2 4.37 4.97h-3.02c-.68-2.11-2.36-3.74-4.47-3.96v3.96h.04z"></path>
+  </g>
+
+  
+  <circle cx="48.4" cy="46.8" r="1.6" fill="#c9a646"></circle>
+</svg>
