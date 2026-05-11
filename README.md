@@ -77,7 +77,6 @@ When creating a new Design System or Prototype project in Claude Design:
 ### Filename conventions
 
 - All platforms: `<platform>-tile-{dark,light}.svg` + PNG raster sizes (64 / 128 / 256 / 512 px) — uniform across all 6 platforms.
-- **Telegram pending:** SVG variants present (canonical Telegram messenger paper-plane logo, refreshed 2026-05-11). PNG sizes pending rasterization.
 
 ## Cut platforms (removed from scope)
 
