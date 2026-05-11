@@ -24,6 +24,9 @@ This repo contains **visual brand identity** only — logos, social platform ico
 - `tokens/`
   - `design-tokens.md` — color, typography, spacing, motion, radius, shadow tokens (dark + light themes)
   - `components.md` — atomic / molecular / organism component specs
+- `examples/`
+  - `homepage-v5-dark-reference.html` — reference design (stylistic ДНК for downstream Prototype generations — layout / typography / brand gold restraint pattern). NOT for copy/messaging (outdated 18-platform refs).
+  - `README.md` — usage guide for reference designs
 
 ### What's NOT here
 
