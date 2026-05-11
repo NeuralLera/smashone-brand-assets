@@ -1,6 +1,6 @@
 # SmashOne Brand Assets
 
-Visual identity assets for **SmashOne** — premium dark-theme SaaS for SMB social media automation.
+Visual identity assets for **SmashOne** — premium SaaS for SMB social media automation. Dual-theme (dark-first + light variant for public marketing surfaces).
 
 > **Brand owner:** NeuralLera (Valery Maltsev)
 > **Domain (US):** smashone.us — operated by SMASHONE CORPORATION (Florida C-Corp)
@@ -13,10 +13,13 @@ This repo contains **visual brand identity** only — logos, social platform ico
 
 ### What's here
 
-- `logos/` — wordmark and tile background patterns
-  - `smashone-tile-dark/` — dark theme tile (canonical bg pattern + favicon variants)
-  - `eu-emblem/` — EU jurisdiction marker
-  - `usa-emblem/` — US jurisdiction marker
+- `logos/` — wordmark and tile background patterns (dual-theme)
+  - `smashone-tile-dark/` — dark theme tile (canonical bg pattern + favicon variants) + `empty-tile-dark.svg`
+  - `smashone-tile-light/` — light theme tile + `empty-tile-light.svg`
+  - `smashone-wordmark-dark/` — PNG raster wordmark for dark backgrounds (5 sizes: 64/128/256/512/1254)
+  - `smashone-wordmark-light/` — PNG raster wordmark for light backgrounds (5 sizes)
+  - `eu-emblem/` — EU jurisdiction marker (dark + light variants)
+  - `usa-emblem/` — US jurisdiction marker (dark + light variants)
 - `social_icons/` — 22 social platform icons (SVG + PNG sizes 64/128/256/512 in dark and light variants)
 - `tokens/` — design system specifications
   - `design-tokens.md` — color, typography, spacing, motion, radius, shadow tokens
@@ -24,14 +27,13 @@ This repo contains **visual brand identity** only — logos, social platform ico
 
 ### What's NOT here
 
-- ❌ Wordmark logo as image — wordmark is rendered as **TEXT** «SmashOne» in Geist Variable font (no image asset)
 - ❌ Marketing copy / pricing values / launch dates / financial details
 - ❌ Page layouts or specific product screens (those live in private product repos)
 - ❌ Cross-entity business context (US Corp ↔ EU Polska legal/financial relationships)
 
 ## Brand identity summary
 
-- **Theme:** dark-first (light theme variants exist for select assets but are deferred for v2 system)
+- **Theme:** dual-theme (dark-first canonical + light variant for public marketing surfaces). Cabinet / admin surfaces remain dark-only. Theme toggle via Lucide Sun/Moon on every public-facing surface, cookie persistence per entity domain.
 - **Surface base:** `#0a0a0a` (near-black — never pure `#000000`)
 - **Brand accent:** gold `#c9a646` — used as conversion anchor at ~10% surface coverage
 - **Typography stack:**
@@ -88,4 +90,4 @@ For commercial licensing inquiries, contact: neurallera@gmail.com
 
 Assets are not strictly semver-versioned — git history is the source of truth for change tracking. Major iterations of the design system will be tagged (e.g., `system-v2`, `system-v3`).
 
-Current canonical system version: **v2** (Dark Theme 2026, established 2026-05-09).
+Current canonical system version: **v2.1** (Dual-Theme 2026, established 2026-05-09 dark / 2026-05-11 light additions).
