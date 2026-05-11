@@ -169,38 +169,37 @@ Internal structure:
 
 ```
 ┌─────────────────────────────────────┐
-│ MOST POPULAR — UNLIMITED PLATFORMS  │  eyebrow gold UPPERCASE
+│ SMASHONE BASE — 6 PLATFORMS         │  eyebrow gold UPPERCASE
 │                                     │
 │ $79 /month                          │  display-2 gold tabular + body-md secondary
-│ $199 one-time. Yours forever.       │  body-sm secondary
-│ Prefer smaller payments?            │  body-sm
-│ $9.95/mo over 24 months.            │  body-sm gold link
+│ Trio (FB + IG + TG) + AI assistant  │  body-sm secondary
+│ + 3 premium addons available        │  body-sm
+│ (WhatsApp / TikTok / GBP)           │  body-sm
 │ ─────────────────────────────────   │  divider
-│ ✓ All 22 platforms                  │  body-md, gold check icons
+│ ✓ All 6 platforms                   │  body-md, gold check icons
 │ ✓ 5 auto-posts/day                  │
-│ ✓ Unlimited quick posts             │
+│ ✓ 5 quick-posts/day                 │
 │ ✓ AI replies — 1,000 DMs/month      │
 │ ✓ Product catalog — 1,000 items     │
 │ ✓ Real-time analytics               │
 │                                     │
-│ [Start my 7-day free trial]         │  primary CTA full-width
-│ No credit card required • Cancel    │  microcopy --text-tertiary
+│ [Start my 14-day free trial]        │  primary CTA full-width
+│ $0 today. Cancel anytime in trial.  │  microcopy --text-tertiary
 └─────────────────────────────────────┘
 ```
 
-### Bento tile (integrations grid)
+### Bento tile (integrations grid — 6 platforms canonical v6.0)
 
 - Background: `--surface-raised`
 - Border: `1px solid var(--border-subtle)`
 - Border-radius: `var(--radius-lg)` (16px)
 - Aspect ratio: 1:1
-- Three sizes:
-  - **Large** 120×120px (major networks: facebook, instagram, tiktok, youtube, x, linkedin, threads, pinterest)
-  - **Medium** 96×96px (messaging: telegram, whatsapp, discord, viber, snapchat)
-  - **Small** 72×72px (regional: kakaotalk, line, reddit + future-deferred)
-- Content: centered platform icon SVG from `social_icons/<name>-tile-dark.svg`
+- Single uniform size: **96×96px** for all 6 platforms (compact iconpost row, NOT carousel)
+  - **Wave 1 base** (in $79 subscription): facebook, instagram, telegram + AI assistant tile
+  - **Wave 2 addons** (separate subscription): whatsapp, tiktok, googlebusiness
+- Content: centered platform icon SVG from `social_icons/<name>-tile-{dark,light}.svg` (theme-aware via `[data-theme]` selector)
 - Hover: lift 3px + border becomes `--brand-gold` + tooltip «Connect in 1 click»
-- «Coming soon» state: `opacity: 0.4`, no hover effect
+- Active connection state: gold ring around tile + green dot indicator top-right
 
 ### Accordion item
 

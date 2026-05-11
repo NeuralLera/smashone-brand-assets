@@ -1,13 +1,17 @@
-# SmashOne Design Tokens — v2 (Dark Theme 2026)
+# SmashOne Design Tokens — v3 (Dark + Light Theme 2026)
 
 > Canonical CSS design tokens for the SmashOne brand. Use these verbatim in any Claude Design project, product code, or marketing artifact.
 >
-> **System version:** v2 (established 2026-05-09)
-> **Theme:** dark only (light variants deferred to future v3)
+> **System version:** v3 (dual-theme established 2026-05-11)
+> **Themes:** Dark + Light (both first-class, user-toggleable via theme switcher)
+> **Dark:** default theme for cabinets / admin / auth surfaces
+> **Light:** default theme for public marketing surfaces (homepage, pricing, automator landing)
 
 ---
 
 ## 1. Surfaces (4-tier elevation)
+
+### Dark theme
 
 ```css
 --surface-base:     #0a0a0a;   /* Layer 0 — body canvas */
@@ -16,11 +20,24 @@
 --surface-overlay:  #1a212a;   /* Layer 3 — modals, popovers, command palettes */
 ```
 
-**Rule:** each tier steps up ~5–8% luminance. NEVER use the same surface color for two adjacent stacked elements. NO pure `#000000` (depth becomes impossible — drop shadows invisible, halation absent).
+### Light theme
+
+```css
+[data-theme="light"] {
+  --surface-base:     #fafafa;   /* Layer 0 — body canvas */
+  --surface-raised:   #f4f4f5;   /* Layer 1 — primary cards, panels, sidebars */
+  --surface-elevated: #ffffff;   /* Layer 2 — nested cards, hover states */
+  --surface-overlay:  #ffffff;   /* Layer 3 — modals, popovers — paired with shadow for depth */
+}
+```
+
+**Rule:** each tier steps up (dark) or down (light) ~5–8% luminance. NEVER use the same surface color for two adjacent stacked elements. NO pure `#000000` (dark) or pure `#ffffff` (light) for base canvas — depth needs near-extremes, not absolutes.
 
 ---
 
-## 2. Text (white via opacity, 6 levels)
+## 2. Text (foreground via opacity, 6 levels)
+
+### Dark theme (white opacity)
 
 ```css
 --text-strong:    rgba(255, 255, 255, 0.96);  /* hero, primary KPIs */
@@ -31,11 +48,26 @@
 --text-disabled:  rgba(255, 255, 255, 0.36);  /* disabled inputs/buttons */
 ```
 
-**Rule:** use one foreground color (white) at varying opacities — NEVER arbitrary grays.
+### Light theme (black opacity)
+
+```css
+[data-theme="light"] {
+  --text-strong:    rgba(0, 0, 0, 0.96);  /* hero, primary KPIs */
+  --text-primary:   rgba(0, 0, 0, 0.88);  /* body, headings */
+  --text-secondary: rgba(0, 0, 0, 0.70);  /* helper text, descriptions */
+  --text-tertiary:  rgba(0, 0, 0, 0.54);  /* captions, eyebrow labels */
+  --text-quiet:     rgba(0, 0, 0, 0.50);  /* filters, chips, chrome */
+  --text-disabled:  rgba(0, 0, 0, 0.36);  /* disabled inputs/buttons */
+}
+```
+
+**Rule:** use one foreground color (white on dark, black on light) at varying opacities — NEVER arbitrary grays.
 
 ---
 
-## 3. Borders (light-catcher, transparent white)
+## 3. Borders
+
+### Dark theme (light-catcher, transparent white)
 
 ```css
 --border-subtle:   rgba(255, 255, 255, 0.08);  /* card outlines, dividers */
@@ -43,15 +75,38 @@
 --border-emphasis: rgba(255, 255, 255, 0.16);  /* card hover states */
 ```
 
+### Light theme (transparent black — note: light theme depth comes primarily from shadows, not borders)
+
+```css
+[data-theme="light"] {
+  --border-subtle:   rgba(0, 0, 0, 0.06);   /* card outlines, dividers */
+  --border-strong:   rgba(0, 0, 0, 0.10);   /* active outlines, focus rings */
+  --border-emphasis: rgba(0, 0, 0, 0.14);   /* card hover states */
+}
+```
+
 ---
 
 ## 4. Brand
 
+### Dark theme
+
 ```css
 --brand-gold:       #c9a646;                       /* primary CTAs, focus, key data viz */
---brand-gold-text:  #d4b46e;                       /* AAA-compliant body text variant */
+--brand-gold-text:  #d4b46e;                       /* AAA-compliant body text variant on dark */
 --brand-gold-glow:  rgba(201, 166, 70, 0.30);      /* hover shadows, ambient glow */
 --brand-gold-tint:  rgba(201, 166, 70, 0.05);      /* subtle background tinting */
+```
+
+### Light theme (dual-token strategy — UI accent vs text contrast)
+
+```css
+[data-theme="light"] {
+  --brand-gold:       #c9a646;                     /* UI accent — CTAs / borders / icons (same as dark) */
+  --brand-gold-text:  #8c6f1e;                     /* AAA text contrast on white (~7:1) — body text variant */
+  --brand-gold-glow:  rgba(201, 166, 70, 0.18);    /* lighter glow for light surface */
+  --brand-gold-tint:  rgba(201, 166, 70, 0.06);    /* subtle background tinting */
+}
 ```
 
 **60-30-10 distribution rule:**
@@ -182,9 +237,9 @@ Rendered as **TEXT**, never as image:
 
 ---
 
-## 9. Shadows (dark-theme tuned)
+## 9. Shadows
 
-Lower opacity but larger blur — shadows on dark backgrounds need atmosphere, not weight.
+### Dark theme (lower opacity, larger blur — atmosphere not weight)
 
 ```css
 --shadow-sm:    0 1px 2px rgba(0, 0, 0, 0.30);
@@ -192,6 +247,18 @@ Lower opacity but larger blur — shadows on dark backgrounds need atmosphere, n
 --shadow-lg:    0 10px 28px rgba(0, 0, 0, 0.36);
 --shadow-xl:    0 16px 40px rgba(0, 0, 0, 0.40);
 --shadow-glow:  0 0 24px var(--brand-gold-glow);   /* gold ambient glow */
+```
+
+### Light theme (depth via shadows, not borders — tighter blur and lower opacity)
+
+```css
+[data-theme="light"] {
+  --shadow-sm:    0 1px 2px rgba(0, 0, 0, 0.04), 0 1px 3px rgba(0, 0, 0, 0.06);
+  --shadow-md:    0 4px 6px rgba(0, 0, 0, 0.05), 0 10px 15px rgba(0, 0, 0, 0.08);
+  --shadow-lg:    0 20px 25px rgba(0, 0, 0, 0.10), 0 10px 10px rgba(0, 0, 0, 0.04);
+  --shadow-xl:    0 25px 50px rgba(0, 0, 0, 0.12);
+  --shadow-glow:  0 0 16px var(--brand-gold-glow);   /* gold ambient glow */
+}
 ```
 
 ---
@@ -239,7 +306,10 @@ Lower opacity but larger blur — shadows on dark backgrounds need atmosphere, n
 
 ## 11. Tile background composition (4-layer hero)
 
-The canonical hero pattern uses 4 stacked background layers:
+The canonical hero pattern uses 4 stacked background layers. Tile asset and blend mode swap per theme:
+
+- **Dark theme:** `logos/smashone-tile-dark/empty-tile-dark.svg` + `mix-blend-mode: soft-light` + `opacity: 0.05`
+- **Light theme:** `logos/smashone-tile-light/empty-tile-light.svg` + `mix-blend-mode: multiply` + `opacity: 0.04`
 
 ```css
 .hero {
@@ -256,6 +326,12 @@ The canonical hero pattern uses 4 stacked background layers:
   opacity: 0.05;                            /* 3-7% optimal range */
   mix-blend-mode: soft-light;               /* Layer 2: tile texture */
   pointer-events: none;
+}
+
+[data-theme="light"] .hero::before {
+  background-image: url('logos/smashone-tile-light/empty-tile-light.svg');
+  mix-blend-mode: multiply;
+  opacity: 0.04;
 }
 
 .hero::after {
@@ -294,9 +370,36 @@ The canonical hero pattern uses 4 stacked background layers:
 
 ---
 
-## 12. Iron rules (non-negotiable)
+## 12. Theme toggle implementation
 
-1. Dark theme only in v2 (no light variant)
+```css
+:root {
+  transition: background-color 220ms cubic-bezier(0.2, 0, 0.38, 0.9),
+              color 220ms cubic-bezier(0.2, 0, 0.38, 0.9);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root { transition: none; }
+}
+```
+
+Toggle button: Lucide Sun (24px) on light theme default → Lucide Moon (24px) on dark theme. Cookie persistence scoped per entity domain (NO cross-entity cookie sharing between smashone.us and smashone.ai). First-visit detection via `prefers-color-scheme` media query.
+
+```javascript
+function toggleTheme() {
+  const root = document.documentElement;
+  const current = root.getAttribute('data-theme') || 'light';
+  const next = current === 'light' ? 'dark' : 'light';
+  root.setAttribute('data-theme', next);
+  document.cookie = `theme=${next}; path=/; max-age=31536000; SameSite=Lax`;
+}
+```
+
+---
+
+## 13. Iron rules (non-negotiable)
+
+1. Dark + Light themes both first-class — user-toggleable. Default theme varies per surface: cabinets/admin/auth = dark; public marketing (homepage/pricing/automator) = light
 2. Sentence case everywhere except eyebrow UPPERCASE
 3. Tabular numbers in pricing/dashboards/tables
 4. `$79` without `.00` unless cents billable
