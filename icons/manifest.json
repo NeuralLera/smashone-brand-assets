@@ -1,0 +1,2959 @@
+{
+  "$schema": "https://smashone.dev/icons/manifest.schema.json",
+  "version": "0.2.0",
+  "generated": "2026-05-18T05:05:54Z",
+  "icon_count": 172,
+  "categories": [
+    "action",
+    "ai",
+    "brand",
+    "crm",
+    "finance",
+    "hero",
+    "nav",
+    "niche",
+    "platform",
+    "reserve",
+    "status",
+    "ui-core"
+  ],
+  "defaults": {
+    "viewBox": "0 0 24 24",
+    "stroke_width": 2,
+    "stroke_linecap": "round",
+    "stroke_linejoin": "round",
+    "fill": "none",
+    "stroke": "currentColor"
+  },
+  "tokens": {
+    "brand_gold_on_dark": "#b08930",
+    "brand_gold_on_light": "#b08930",
+    "brand_gold_aaa_text": "#6d5310"
+  },
+  "icons": [
+    {
+      "name": "add",
+      "category": "action",
+      "description": "Add icon (action)",
+      "tags": [
+        "add"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/action/add.svg",
+      "sprite_id": "icon-action-add",
+      "pascal_name": "Add",
+      "ai_hint": ""
+    },
+    {
+      "name": "archive",
+      "category": "action",
+      "description": "Archive icon (action)",
+      "tags": [
+        "archive"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/action/archive.svg",
+      "sprite_id": "icon-action-archive",
+      "pascal_name": "Archive",
+      "ai_hint": ""
+    },
+    {
+      "name": "attachment",
+      "category": "action",
+      "description": "Attachment icon (action)",
+      "tags": [
+        "attachment"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/action/attachment.svg",
+      "sprite_id": "icon-action-attachment",
+      "pascal_name": "Attachment",
+      "ai_hint": ""
+    },
+    {
+      "name": "collapse",
+      "category": "action",
+      "description": "Collapse icon (action)",
+      "tags": [
+        "collapse"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/action/collapse.svg",
+      "sprite_id": "icon-action-collapse",
+      "pascal_name": "Collapse",
+      "ai_hint": ""
+    },
+    {
+      "name": "copy",
+      "category": "action",
+      "description": "Copy icon (action)",
+      "tags": [
+        "copy"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/action/copy.svg",
+      "sprite_id": "icon-action-copy",
+      "pascal_name": "Copy",
+      "ai_hint": ""
+    },
+    {
+      "name": "delete",
+      "category": "action",
+      "description": "Delete icon (action)",
+      "tags": [
+        "delete"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/action/delete.svg",
+      "sprite_id": "icon-action-delete",
+      "pascal_name": "Delete",
+      "ai_hint": ""
+    },
+    {
+      "name": "download",
+      "category": "action",
+      "description": "Download icon (action)",
+      "tags": [
+        "download"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/action/download.svg",
+      "sprite_id": "icon-action-download",
+      "pascal_name": "Download",
+      "ai_hint": ""
+    },
+    {
+      "name": "edit",
+      "category": "action",
+      "description": "Edit icon (action)",
+      "tags": [
+        "edit"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/action/edit.svg",
+      "sprite_id": "icon-action-edit",
+      "pascal_name": "Edit",
+      "ai_hint": ""
+    },
+    {
+      "name": "expand",
+      "category": "action",
+      "description": "Expand icon (action)",
+      "tags": [
+        "expand"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/action/expand.svg",
+      "sprite_id": "icon-action-expand",
+      "pascal_name": "Expand",
+      "ai_hint": ""
+    },
+    {
+      "name": "export",
+      "category": "action",
+      "description": "Export icon (action)",
+      "tags": [
+        "export"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/action/export.svg",
+      "sprite_id": "icon-action-export",
+      "pascal_name": "Export",
+      "ai_hint": ""
+    },
+    {
+      "name": "external-link",
+      "category": "action",
+      "description": "External Link icon (action)",
+      "tags": [
+        "external-link"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/action/external-link.svg",
+      "sprite_id": "icon-action-external-link",
+      "pascal_name": "ExternalLink",
+      "ai_hint": ""
+    },
+    {
+      "name": "filter",
+      "category": "action",
+      "description": "Filter icon (action)",
+      "tags": [
+        "filter"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/action/filter.svg",
+      "sprite_id": "icon-action-filter",
+      "pascal_name": "Filter",
+      "ai_hint": ""
+    },
+    {
+      "name": "gallery",
+      "category": "action",
+      "description": "Gallery icon (action)",
+      "tags": [
+        "gallery"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/action/gallery.svg",
+      "sprite_id": "icon-action-gallery",
+      "pascal_name": "Gallery",
+      "ai_hint": ""
+    },
+    {
+      "name": "image",
+      "category": "action",
+      "description": "Image icon (action)",
+      "tags": [
+        "image"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/action/image.svg",
+      "sprite_id": "icon-action-image",
+      "pascal_name": "Image",
+      "ai_hint": ""
+    },
+    {
+      "name": "import",
+      "category": "action",
+      "description": "Import icon (action)",
+      "tags": [
+        "import"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/action/import.svg",
+      "sprite_id": "icon-action-import",
+      "pascal_name": "Import",
+      "ai_hint": ""
+    },
+    {
+      "name": "print",
+      "category": "action",
+      "description": "Print icon (action)",
+      "tags": [
+        "print"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/action/print.svg",
+      "sprite_id": "icon-action-print",
+      "pascal_name": "Print",
+      "ai_hint": ""
+    },
+    {
+      "name": "refresh",
+      "category": "action",
+      "description": "Refresh icon (action)",
+      "tags": [
+        "refresh"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/action/refresh.svg",
+      "sprite_id": "icon-action-refresh",
+      "pascal_name": "Refresh",
+      "ai_hint": ""
+    },
+    {
+      "name": "save",
+      "category": "action",
+      "description": "Save icon (action)",
+      "tags": [
+        "save"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/action/save.svg",
+      "sprite_id": "icon-action-save",
+      "pascal_name": "Save",
+      "ai_hint": ""
+    },
+    {
+      "name": "search",
+      "category": "action",
+      "description": "Search icon (action)",
+      "tags": [
+        "search"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/action/search.svg",
+      "sprite_id": "icon-action-search",
+      "pascal_name": "Search",
+      "ai_hint": ""
+    },
+    {
+      "name": "share-link",
+      "category": "action",
+      "description": "Share Link icon (action)",
+      "tags": [
+        "share-link"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/action/share-link.svg",
+      "sprite_id": "icon-action-share-link",
+      "pascal_name": "ShareLink",
+      "ai_hint": ""
+    },
+    {
+      "name": "sort",
+      "category": "action",
+      "description": "Sort icon (action)",
+      "tags": [
+        "sort"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/action/sort.svg",
+      "sprite_id": "icon-action-sort",
+      "pascal_name": "Sort",
+      "ai_hint": ""
+    },
+    {
+      "name": "upload",
+      "category": "action",
+      "description": "Upload icon (action)",
+      "tags": [
+        "upload"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/action/upload.svg",
+      "sprite_id": "icon-action-upload",
+      "pascal_name": "Upload",
+      "ai_hint": ""
+    },
+    {
+      "name": "bot",
+      "category": "ai",
+      "description": "Bot icon (ai)",
+      "tags": [
+        "bot"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/ai/bot.svg",
+      "sprite_id": "icon-ai-bot",
+      "pascal_name": "Bot",
+      "ai_hint": ""
+    },
+    {
+      "name": "spark-ai",
+      "category": "ai",
+      "description": "Spark Ai icon (ai)",
+      "tags": [
+        "spark-ai"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/ai/spark-ai.svg",
+      "sprite_id": "icon-ai-spark-ai",
+      "pascal_name": "SparkAi",
+      "ai_hint": ""
+    },
+    {
+      "name": "spark",
+      "category": "ai",
+      "description": "Spark icon (ai)",
+      "tags": [
+        "spark"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/ai/spark.svg",
+      "sprite_id": "icon-ai-spark",
+      "pascal_name": "Spark",
+      "ai_hint": ""
+    },
+    {
+      "name": "award",
+      "category": "brand",
+      "description": "Award icon (brand)",
+      "tags": [
+        "award"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": true,
+      "file": "src/icons/brand/award.svg",
+      "sprite_id": "icon-brand-award",
+      "pascal_name": "Award",
+      "ai_hint": ""
+    },
+    {
+      "name": "certificate",
+      "category": "brand",
+      "description": "Certificate icon (brand)",
+      "tags": [
+        "certificate"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": true,
+      "file": "src/icons/brand/certificate.svg",
+      "sprite_id": "icon-brand-certificate",
+      "pascal_name": "Certificate",
+      "ai_hint": ""
+    },
+    {
+      "name": "key-verified",
+      "category": "brand",
+      "description": "Key Verified icon (brand)",
+      "tags": [
+        "key-verified"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": true,
+      "file": "src/icons/brand/key-verified.svg",
+      "sprite_id": "icon-brand-key-verified",
+      "pascal_name": "KeyVerified",
+      "ai_hint": ""
+    },
+    {
+      "name": "lock-verified",
+      "category": "brand",
+      "description": "Lock Verified icon (brand)",
+      "tags": [
+        "lock-verified"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": true,
+      "file": "src/icons/brand/lock-verified.svg",
+      "sprite_id": "icon-brand-lock-verified",
+      "pascal_name": "LockVerified",
+      "ai_hint": ""
+    },
+    {
+      "name": "seal",
+      "category": "brand",
+      "description": "Seal icon (brand)",
+      "tags": [
+        "seal"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": true,
+      "file": "src/icons/brand/seal.svg",
+      "sprite_id": "icon-brand-seal",
+      "pascal_name": "Seal",
+      "ai_hint": ""
+    },
+    {
+      "name": "shield-check",
+      "category": "brand",
+      "description": "Shield Check icon (brand)",
+      "tags": [
+        "shield-check"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": true,
+      "file": "src/icons/brand/shield-check.svg",
+      "sprite_id": "icon-brand-shield-check",
+      "pascal_name": "ShieldCheck",
+      "ai_hint": ""
+    },
+    {
+      "name": "shield",
+      "category": "brand",
+      "description": "Shield icon (brand)",
+      "tags": [
+        "shield"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/brand/shield.svg",
+      "sprite_id": "icon-brand-shield",
+      "pascal_name": "Shield",
+      "ai_hint": ""
+    },
+    {
+      "name": "sparkle",
+      "category": "brand",
+      "description": "Sparkle icon (brand)",
+      "tags": [
+        "sparkle"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": true,
+      "file": "src/icons/brand/sparkle.svg",
+      "sprite_id": "icon-brand-sparkle",
+      "pascal_name": "Sparkle",
+      "ai_hint": ""
+    },
+    {
+      "name": "verified",
+      "category": "brand",
+      "description": "Verified icon (brand)",
+      "tags": [
+        "verified"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": true,
+      "file": "src/icons/brand/verified.svg",
+      "sprite_id": "icon-brand-verified",
+      "pascal_name": "Verified",
+      "ai_hint": ""
+    },
+    {
+      "name": "bookings",
+      "category": "crm",
+      "description": "Bookings icon (crm)",
+      "tags": [
+        "bookings"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/crm/bookings.svg",
+      "sprite_id": "icon-crm-bookings",
+      "pascal_name": "Bookings",
+      "ai_hint": ""
+    },
+    {
+      "name": "chat-bubble",
+      "category": "crm",
+      "description": "Chat Bubble icon (crm)",
+      "tags": [
+        "chat-bubble"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/crm/chat-bubble.svg",
+      "sprite_id": "icon-crm-chat-bubble",
+      "pascal_name": "ChatBubble",
+      "ai_hint": ""
+    },
+    {
+      "name": "customers",
+      "category": "crm",
+      "description": "Customers icon (crm)",
+      "tags": [
+        "customers"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/crm/customers.svg",
+      "sprite_id": "icon-crm-customers",
+      "pascal_name": "Customers",
+      "ai_hint": ""
+    },
+    {
+      "name": "delivery-zones",
+      "category": "crm",
+      "description": "Delivery Zones icon (crm)",
+      "tags": [
+        "delivery-zones"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/crm/delivery-zones.svg",
+      "sprite_id": "icon-crm-delivery-zones",
+      "pascal_name": "DeliveryZones",
+      "ai_hint": ""
+    },
+    {
+      "name": "delivery",
+      "category": "crm",
+      "description": "Delivery icon (crm)",
+      "tags": [
+        "delivery"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/crm/delivery.svg",
+      "sprite_id": "icon-crm-delivery",
+      "pascal_name": "Delivery",
+      "ai_hint": ""
+    },
+    {
+      "name": "home",
+      "category": "crm",
+      "description": "Home icon (crm)",
+      "tags": [
+        "home"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/crm/home.svg",
+      "sprite_id": "icon-crm-home",
+      "pascal_name": "Home",
+      "ai_hint": ""
+    },
+    {
+      "name": "inventory",
+      "category": "crm",
+      "description": "Inventory icon (crm)",
+      "tags": [
+        "inventory"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/crm/inventory.svg",
+      "sprite_id": "icon-crm-inventory",
+      "pascal_name": "Inventory",
+      "ai_hint": ""
+    },
+    {
+      "name": "orders",
+      "category": "crm",
+      "description": "Orders icon (crm)",
+      "tags": [
+        "orders"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/crm/orders.svg",
+      "sprite_id": "icon-crm-orders",
+      "pascal_name": "Orders",
+      "ai_hint": ""
+    },
+    {
+      "name": "pickup",
+      "category": "crm",
+      "description": "Pickup icon (crm)",
+      "tags": [
+        "pickup"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/crm/pickup.svg",
+      "sprite_id": "icon-crm-pickup",
+      "pascal_name": "Pickup",
+      "ai_hint": ""
+    },
+    {
+      "name": "post",
+      "category": "crm",
+      "description": "Post icon (crm)",
+      "tags": [
+        "post"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/crm/post.svg",
+      "sprite_id": "icon-crm-post",
+      "pascal_name": "Post",
+      "ai_hint": ""
+    },
+    {
+      "name": "resources",
+      "category": "crm",
+      "description": "Resources icon (crm)",
+      "tags": [
+        "resources"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/crm/resources.svg",
+      "sprite_id": "icon-crm-resources",
+      "pascal_name": "Resources",
+      "ai_hint": ""
+    },
+    {
+      "name": "settings",
+      "category": "crm",
+      "description": "Settings icon (crm)",
+      "tags": [
+        "settings"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/crm/settings.svg",
+      "sprite_id": "icon-crm-settings",
+      "pascal_name": "Settings",
+      "ai_hint": ""
+    },
+    {
+      "name": "slot-templates",
+      "category": "crm",
+      "description": "Slot Templates icon (crm)",
+      "tags": [
+        "slot-templates"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/crm/slot-templates.svg",
+      "sprite_id": "icon-crm-slot-templates",
+      "pascal_name": "SlotTemplates",
+      "ai_hint": ""
+    },
+    {
+      "name": "tag",
+      "category": "crm",
+      "description": "Tag icon (crm)",
+      "tags": [
+        "tag"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/crm/tag.svg",
+      "sprite_id": "icon-crm-tag",
+      "pascal_name": "Tag",
+      "ai_hint": ""
+    },
+    {
+      "name": "target",
+      "category": "crm",
+      "description": "Target icon (crm)",
+      "tags": [
+        "target"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/crm/target.svg",
+      "sprite_id": "icon-crm-target",
+      "pascal_name": "Target",
+      "ai_hint": ""
+    },
+    {
+      "name": "timeline",
+      "category": "crm",
+      "description": "Timeline icon (crm)",
+      "tags": [
+        "timeline"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/crm/timeline.svg",
+      "sprite_id": "icon-crm-timeline",
+      "pascal_name": "Timeline",
+      "ai_hint": ""
+    },
+    {
+      "name": "chargeback",
+      "category": "finance",
+      "description": "Chargeback icon (finance)",
+      "tags": [
+        "chargeback"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/finance/chargeback.svg",
+      "sprite_id": "icon-finance-chargeback",
+      "pascal_name": "Chargeback",
+      "ai_hint": ""
+    },
+    {
+      "name": "chart-line",
+      "category": "finance",
+      "description": "Chart Line icon (finance)",
+      "tags": [
+        "chart-line"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/finance/chart-line.svg",
+      "sprite_id": "icon-finance-chart-line",
+      "pascal_name": "ChartLine",
+      "ai_hint": ""
+    },
+    {
+      "name": "credit-card",
+      "category": "finance",
+      "description": "Credit Card icon (finance)",
+      "tags": [
+        "credit-card"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/finance/credit-card.svg",
+      "sprite_id": "icon-finance-credit-card",
+      "pascal_name": "CreditCard",
+      "ai_hint": ""
+    },
+    {
+      "name": "dollar",
+      "category": "finance",
+      "description": "Dollar icon (finance)",
+      "tags": [
+        "dollar"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/finance/dollar.svg",
+      "sprite_id": "icon-finance-dollar",
+      "pascal_name": "Dollar",
+      "ai_hint": ""
+    },
+    {
+      "name": "euro",
+      "category": "finance",
+      "description": "Euro icon (finance)",
+      "tags": [
+        "euro"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/finance/euro.svg",
+      "sprite_id": "icon-finance-euro",
+      "pascal_name": "Euro",
+      "ai_hint": ""
+    },
+    {
+      "name": "invoice",
+      "category": "finance",
+      "description": "Invoice icon (finance)",
+      "tags": [
+        "invoice"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/finance/invoice.svg",
+      "sprite_id": "icon-finance-invoice",
+      "pascal_name": "Invoice",
+      "ai_hint": ""
+    },
+    {
+      "name": "payout",
+      "category": "finance",
+      "description": "Payout icon (finance)",
+      "tags": [
+        "payout"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/finance/payout.svg",
+      "sprite_id": "icon-finance-payout",
+      "pascal_name": "Payout",
+      "ai_hint": ""
+    },
+    {
+      "name": "receipt",
+      "category": "finance",
+      "description": "Receipt icon (finance)",
+      "tags": [
+        "receipt"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/finance/receipt.svg",
+      "sprite_id": "icon-finance-receipt",
+      "pascal_name": "Receipt",
+      "ai_hint": ""
+    },
+    {
+      "name": "refund",
+      "category": "finance",
+      "description": "Refund icon (finance)",
+      "tags": [
+        "refund"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/finance/refund.svg",
+      "sprite_id": "icon-finance-refund",
+      "pascal_name": "Refund",
+      "ai_hint": ""
+    },
+    {
+      "name": "subscription",
+      "category": "finance",
+      "description": "Subscription icon (finance)",
+      "tags": [
+        "subscription"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/finance/subscription.svg",
+      "sprite_id": "icon-finance-subscription",
+      "pascal_name": "Subscription",
+      "ai_hint": ""
+    },
+    {
+      "name": "transaction",
+      "category": "finance",
+      "description": "Transaction icon (finance)",
+      "tags": [
+        "transaction"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/finance/transaction.svg",
+      "sprite_id": "icon-finance-transaction",
+      "pascal_name": "Transaction",
+      "ai_hint": ""
+    },
+    {
+      "name": "wallet",
+      "category": "finance",
+      "description": "Wallet icon (finance)",
+      "tags": [
+        "wallet"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/finance/wallet.svg",
+      "sprite_id": "icon-finance-wallet",
+      "pascal_name": "Wallet",
+      "ai_hint": ""
+    },
+    {
+      "name": "audit-log",
+      "category": "nav",
+      "description": "Audit Log icon (nav)",
+      "tags": [
+        "audit-log"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/nav/audit-log.svg",
+      "sprite_id": "icon-nav-audit-log",
+      "pascal_name": "AuditLog",
+      "ai_hint": ""
+    },
+    {
+      "name": "bookings",
+      "category": "nav",
+      "description": "Bookings icon (nav)",
+      "tags": [
+        "bookings"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/nav/bookings.svg",
+      "sprite_id": "icon-nav-bookings",
+      "pascal_name": "Bookings",
+      "ai_hint": ""
+    },
+    {
+      "name": "content",
+      "category": "nav",
+      "description": "Content icon (nav)",
+      "tags": [
+        "content"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/nav/content.svg",
+      "sprite_id": "icon-nav-content",
+      "pascal_name": "Content",
+      "ai_hint": ""
+    },
+    {
+      "name": "customers",
+      "category": "nav",
+      "description": "Customers icon (nav)",
+      "tags": [
+        "customers"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/nav/customers.svg",
+      "sprite_id": "icon-nav-customers",
+      "pascal_name": "Customers",
+      "ai_hint": ""
+    },
+    {
+      "name": "dashboard",
+      "category": "nav",
+      "description": "Dashboard icon (nav)",
+      "tags": [
+        "dashboard"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/nav/dashboard.svg",
+      "sprite_id": "icon-nav-dashboard",
+      "pascal_name": "Dashboard",
+      "ai_hint": ""
+    },
+    {
+      "name": "documents",
+      "category": "nav",
+      "description": "Documents icon (nav)",
+      "tags": [
+        "documents"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/nav/documents.svg",
+      "sprite_id": "icon-nav-documents",
+      "pascal_name": "Documents",
+      "ai_hint": ""
+    },
+    {
+      "name": "feedback",
+      "category": "nav",
+      "description": "Feedback icon (nav)",
+      "tags": [
+        "feedback"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/nav/feedback.svg",
+      "sprite_id": "icon-nav-feedback",
+      "pascal_name": "Feedback",
+      "ai_hint": ""
+    },
+    {
+      "name": "finance",
+      "category": "nav",
+      "description": "Finance icon (nav)",
+      "tags": [
+        "finance"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/nav/finance.svg",
+      "sprite_id": "icon-nav-finance",
+      "pascal_name": "Finance",
+      "ai_hint": ""
+    },
+    {
+      "name": "help",
+      "category": "nav",
+      "description": "Help icon (nav)",
+      "tags": [
+        "help"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/nav/help.svg",
+      "sprite_id": "icon-nav-help",
+      "pascal_name": "Help",
+      "ai_hint": ""
+    },
+    {
+      "name": "home",
+      "category": "nav",
+      "description": "Home icon (nav)",
+      "tags": [
+        "home"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/nav/home.svg",
+      "sprite_id": "icon-nav-home",
+      "pascal_name": "Home",
+      "ai_hint": ""
+    },
+    {
+      "name": "integrations",
+      "category": "nav",
+      "description": "Integrations icon (nav)",
+      "tags": [
+        "integrations"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/nav/integrations.svg",
+      "sprite_id": "icon-nav-integrations",
+      "pascal_name": "Integrations",
+      "ai_hint": ""
+    },
+    {
+      "name": "logout",
+      "category": "nav",
+      "description": "Logout icon (nav)",
+      "tags": [
+        "logout"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/nav/logout.svg",
+      "sprite_id": "icon-nav-logout",
+      "pascal_name": "Logout",
+      "ai_hint": ""
+    },
+    {
+      "name": "messages",
+      "category": "nav",
+      "description": "Messages icon (nav)",
+      "tags": [
+        "messages"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/nav/messages.svg",
+      "sprite_id": "icon-nav-messages",
+      "pascal_name": "Messages",
+      "ai_hint": ""
+    },
+    {
+      "name": "notification-bell",
+      "category": "nav",
+      "description": "Notification Bell icon (nav)",
+      "tags": [
+        "notification-bell"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/nav/notification-bell.svg",
+      "sprite_id": "icon-nav-notification-bell",
+      "pascal_name": "NotificationBell",
+      "ai_hint": ""
+    },
+    {
+      "name": "notifications",
+      "category": "nav",
+      "description": "Notifications icon (nav)",
+      "tags": [
+        "notifications"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/nav/notifications.svg",
+      "sprite_id": "icon-nav-notifications",
+      "pascal_name": "Notifications",
+      "ai_hint": ""
+    },
+    {
+      "name": "orders",
+      "category": "nav",
+      "description": "Orders icon (nav)",
+      "tags": [
+        "orders"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/nav/orders.svg",
+      "sprite_id": "icon-nav-orders",
+      "pascal_name": "Orders",
+      "ai_hint": ""
+    },
+    {
+      "name": "partners",
+      "category": "nav",
+      "description": "Partners icon (nav)",
+      "tags": [
+        "partners"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/nav/partners.svg",
+      "sprite_id": "icon-nav-partners",
+      "pascal_name": "Partners",
+      "ai_hint": ""
+    },
+    {
+      "name": "plan",
+      "category": "nav",
+      "description": "Plan icon (nav)",
+      "tags": [
+        "plan"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/nav/plan.svg",
+      "sprite_id": "icon-nav-plan",
+      "pascal_name": "Plan",
+      "ai_hint": ""
+    },
+    {
+      "name": "products",
+      "category": "nav",
+      "description": "Products icon (nav)",
+      "tags": [
+        "products"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/nav/products.svg",
+      "sprite_id": "icon-nav-products",
+      "pascal_name": "Products",
+      "ai_hint": ""
+    },
+    {
+      "name": "quick-post",
+      "category": "nav",
+      "description": "Quick Post icon (nav)",
+      "tags": [
+        "quick-post"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/nav/quick-post.svg",
+      "sprite_id": "icon-nav-quick-post",
+      "pascal_name": "QuickPost",
+      "ai_hint": ""
+    },
+    {
+      "name": "referral-link",
+      "category": "nav",
+      "description": "Referral Link icon (nav)",
+      "tags": [
+        "referral-link"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/nav/referral-link.svg",
+      "sprite_id": "icon-nav-referral-link",
+      "pascal_name": "ReferralLink",
+      "ai_hint": ""
+    },
+    {
+      "name": "roles",
+      "category": "nav",
+      "description": "Roles icon (nav)",
+      "tags": [
+        "roles"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/nav/roles.svg",
+      "sprite_id": "icon-nav-roles",
+      "pascal_name": "Roles",
+      "ai_hint": ""
+    },
+    {
+      "name": "server",
+      "category": "nav",
+      "description": "Server icon (nav)",
+      "tags": [
+        "server"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/nav/server.svg",
+      "sprite_id": "icon-nav-server",
+      "pascal_name": "Server",
+      "ai_hint": ""
+    },
+    {
+      "name": "settings",
+      "category": "nav",
+      "description": "Settings icon (nav)",
+      "tags": [
+        "settings"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/nav/settings.svg",
+      "sprite_id": "icon-nav-settings",
+      "pascal_name": "Settings",
+      "ai_hint": ""
+    },
+    {
+      "name": "taxes",
+      "category": "nav",
+      "description": "Taxes icon (nav)",
+      "tags": [
+        "taxes"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/nav/taxes.svg",
+      "sprite_id": "icon-nav-taxes",
+      "pascal_name": "Taxes",
+      "ai_hint": ""
+    },
+    {
+      "name": "team",
+      "category": "nav",
+      "description": "Team icon (nav)",
+      "tags": [
+        "team"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/nav/team.svg",
+      "sprite_id": "icon-nav-team",
+      "pascal_name": "Team",
+      "ai_hint": ""
+    },
+    {
+      "name": "bakery",
+      "category": "niche",
+      "description": "Bakery icon (niche)",
+      "tags": [
+        "bakery"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/niche/bakery.svg",
+      "sprite_id": "icon-niche-bakery",
+      "pascal_name": "Bakery",
+      "ai_hint": ""
+    },
+    {
+      "name": "fitness",
+      "category": "niche",
+      "description": "Fitness icon (niche)",
+      "tags": [
+        "fitness"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/niche/fitness.svg",
+      "sprite_id": "icon-niche-fitness",
+      "pascal_name": "Fitness",
+      "ai_hint": ""
+    },
+    {
+      "name": "insurance",
+      "category": "niche",
+      "description": "Insurance icon (niche)",
+      "tags": [
+        "insurance"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/niche/insurance.svg",
+      "sprite_id": "icon-niche-insurance",
+      "pascal_name": "Insurance",
+      "ai_hint": ""
+    },
+    {
+      "name": "restaurant",
+      "category": "niche",
+      "description": "Restaurant icon (niche)",
+      "tags": [
+        "restaurant"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/niche/restaurant.svg",
+      "sprite_id": "icon-niche-restaurant",
+      "pascal_name": "Restaurant",
+      "ai_hint": ""
+    },
+    {
+      "name": "salon",
+      "category": "niche",
+      "description": "Salon icon (niche)",
+      "tags": [
+        "salon"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/niche/salon.svg",
+      "sprite_id": "icon-niche-salon",
+      "pascal_name": "Salon",
+      "ai_hint": ""
+    },
+    {
+      "name": "services",
+      "category": "niche",
+      "description": "Services icon (niche)",
+      "tags": [
+        "services"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/niche/services.svg",
+      "sprite_id": "icon-niche-services",
+      "pascal_name": "Services",
+      "ai_hint": ""
+    },
+    {
+      "name": "travel",
+      "category": "niche",
+      "description": "Travel icon (niche)",
+      "tags": [
+        "travel"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/niche/travel.svg",
+      "sprite_id": "icon-niche-travel",
+      "pascal_name": "Travel",
+      "ai_hint": ""
+    },
+    {
+      "name": "ai-assistant",
+      "category": "platform",
+      "description": "Ai Assistant icon (platform)",
+      "tags": [
+        "ai-assistant"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/platform/ai-assistant.svg",
+      "sprite_id": "icon-platform-ai-assistant",
+      "pascal_name": "AiAssistant",
+      "ai_hint": ""
+    },
+    {
+      "name": "ai-credits",
+      "category": "platform",
+      "description": "Ai Credits icon (platform)",
+      "tags": [
+        "ai-credits"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/platform/ai-credits.svg",
+      "sprite_id": "icon-platform-ai-credits",
+      "pascal_name": "AiCredits",
+      "ai_hint": ""
+    },
+    {
+      "name": "platform-connect",
+      "category": "platform",
+      "description": "Platform Connect icon (platform)",
+      "tags": [
+        "platform-connect"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/platform/platform-connect.svg",
+      "sprite_id": "icon-platform-platform-connect",
+      "pascal_name": "PlatformConnect",
+      "ai_hint": ""
+    },
+    {
+      "name": "platform-disconnect",
+      "category": "platform",
+      "description": "Platform Disconnect icon (platform)",
+      "tags": [
+        "platform-disconnect"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/platform/platform-disconnect.svg",
+      "sprite_id": "icon-platform-platform-disconnect",
+      "pascal_name": "PlatformDisconnect",
+      "ai_hint": ""
+    },
+    {
+      "name": "platform-error",
+      "category": "platform",
+      "description": "Platform Error icon (platform)",
+      "tags": [
+        "platform-error"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/platform/platform-error.svg",
+      "sprite_id": "icon-platform-platform-error",
+      "pascal_name": "PlatformError",
+      "ai_hint": ""
+    },
+    {
+      "name": "platform-loading",
+      "category": "platform",
+      "description": "Platform Loading icon (platform)",
+      "tags": [
+        "platform-loading"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/platform/platform-loading.svg",
+      "sprite_id": "icon-platform-platform-loading",
+      "pascal_name": "PlatformLoading",
+      "ai_hint": ""
+    },
+    {
+      "name": "advisor",
+      "category": "reserve",
+      "description": "Advisor icon (reserve)",
+      "tags": [
+        "advisor"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/reserve/advisor.svg",
+      "sprite_id": "icon-reserve-advisor",
+      "pascal_name": "Advisor",
+      "ai_hint": ""
+    },
+    {
+      "name": "analytics",
+      "category": "reserve",
+      "description": "Analytics icon (reserve)",
+      "tags": [
+        "analytics"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/reserve/analytics.svg",
+      "sprite_id": "icon-reserve-analytics",
+      "pascal_name": "Analytics",
+      "ai_hint": ""
+    },
+    {
+      "name": "automation",
+      "category": "reserve",
+      "description": "Automation icon (reserve)",
+      "tags": [
+        "automation"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/reserve/automation.svg",
+      "sprite_id": "icon-reserve-automation",
+      "pascal_name": "Automation",
+      "ai_hint": ""
+    },
+    {
+      "name": "live",
+      "category": "reserve",
+      "description": "Live icon (reserve)",
+      "tags": [
+        "live"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/reserve/live.svg",
+      "sprite_id": "icon-reserve-live",
+      "pascal_name": "Live",
+      "ai_hint": ""
+    },
+    {
+      "name": "loyalty",
+      "category": "reserve",
+      "description": "Loyalty icon (reserve)",
+      "tags": [
+        "loyalty"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/reserve/loyalty.svg",
+      "sprite_id": "icon-reserve-loyalty",
+      "pascal_name": "Loyalty",
+      "ai_hint": ""
+    },
+    {
+      "name": "now",
+      "category": "reserve",
+      "description": "Now icon (reserve)",
+      "tags": [
+        "now"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/reserve/now.svg",
+      "sprite_id": "icon-reserve-now",
+      "pascal_name": "Now",
+      "ai_hint": ""
+    },
+    {
+      "name": "quarter",
+      "category": "reserve",
+      "description": "Quarter icon (reserve)",
+      "tags": [
+        "quarter"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/reserve/quarter.svg",
+      "sprite_id": "icon-reserve-quarter",
+      "pascal_name": "Quarter",
+      "ai_hint": ""
+    },
+    {
+      "name": "booking-cancelled",
+      "category": "status",
+      "description": "Booking Cancelled icon (status)",
+      "tags": [
+        "booking-cancelled"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/status/booking-cancelled.svg",
+      "sprite_id": "icon-status-booking-cancelled",
+      "pascal_name": "BookingCancelled",
+      "ai_hint": ""
+    },
+    {
+      "name": "booking-confirmed",
+      "category": "status",
+      "description": "Booking Confirmed icon (status)",
+      "tags": [
+        "booking-confirmed"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/status/booking-confirmed.svg",
+      "sprite_id": "icon-status-booking-confirmed",
+      "pascal_name": "BookingConfirmed",
+      "ai_hint": ""
+    },
+    {
+      "name": "booking-pending",
+      "category": "status",
+      "description": "Booking Pending icon (status)",
+      "tags": [
+        "booking-pending"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/status/booking-pending.svg",
+      "sprite_id": "icon-status-booking-pending",
+      "pascal_name": "BookingPending",
+      "ai_hint": ""
+    },
+    {
+      "name": "booking-rescheduled",
+      "category": "status",
+      "description": "Booking Rescheduled icon (status)",
+      "tags": [
+        "booking-rescheduled"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/status/booking-rescheduled.svg",
+      "sprite_id": "icon-status-booking-rescheduled",
+      "pascal_name": "BookingRescheduled",
+      "ai_hint": ""
+    },
+    {
+      "name": "error",
+      "category": "status",
+      "description": "Error icon (status)",
+      "tags": [
+        "error"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/status/error.svg",
+      "sprite_id": "icon-status-error",
+      "pascal_name": "Error",
+      "ai_hint": ""
+    },
+    {
+      "name": "health",
+      "category": "status",
+      "description": "Health icon (status)",
+      "tags": [
+        "health"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/status/health.svg",
+      "sprite_id": "icon-status-health",
+      "pascal_name": "Health",
+      "ai_hint": ""
+    },
+    {
+      "name": "info",
+      "category": "status",
+      "description": "Info icon (status)",
+      "tags": [
+        "info"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/status/info.svg",
+      "sprite_id": "icon-status-info",
+      "pascal_name": "Info",
+      "ai_hint": ""
+    },
+    {
+      "name": "new",
+      "category": "status",
+      "description": "New icon (status)",
+      "tags": [
+        "new"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": true,
+      "file": "src/icons/status/new.svg",
+      "sprite_id": "icon-status-new",
+      "pascal_name": "New",
+      "ai_hint": ""
+    },
+    {
+      "name": "order-accepted",
+      "category": "status",
+      "description": "Order Accepted icon (status)",
+      "tags": [
+        "order-accepted"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/status/order-accepted.svg",
+      "sprite_id": "icon-status-order-accepted",
+      "pascal_name": "OrderAccepted",
+      "ai_hint": ""
+    },
+    {
+      "name": "order-cancelled",
+      "category": "status",
+      "description": "Order Cancelled icon (status)",
+      "tags": [
+        "order-cancelled"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/status/order-cancelled.svg",
+      "sprite_id": "icon-status-order-cancelled",
+      "pascal_name": "OrderCancelled",
+      "ai_hint": ""
+    },
+    {
+      "name": "order-delivery",
+      "category": "status",
+      "description": "Order Delivery icon (status)",
+      "tags": [
+        "order-delivery"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/status/order-delivery.svg",
+      "sprite_id": "icon-status-order-delivery",
+      "pascal_name": "OrderDelivery",
+      "ai_hint": ""
+    },
+    {
+      "name": "order-done",
+      "category": "status",
+      "description": "Order Done icon (status)",
+      "tags": [
+        "order-done"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/status/order-done.svg",
+      "sprite_id": "icon-status-order-done",
+      "pascal_name": "OrderDone",
+      "ai_hint": ""
+    },
+    {
+      "name": "order-in-progress",
+      "category": "status",
+      "description": "Order In Progress icon (status)",
+      "tags": [
+        "order-in-progress"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/status/order-in-progress.svg",
+      "sprite_id": "icon-status-order-in-progress",
+      "pascal_name": "OrderInProgress",
+      "ai_hint": ""
+    },
+    {
+      "name": "order-new",
+      "category": "status",
+      "description": "Order New icon (status)",
+      "tags": [
+        "order-new"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/status/order-new.svg",
+      "sprite_id": "icon-status-order-new",
+      "pascal_name": "OrderNew",
+      "ai_hint": ""
+    },
+    {
+      "name": "status-arrow-rescheduled",
+      "category": "status",
+      "description": "Status Arrow Rescheduled icon (status)",
+      "tags": [
+        "status-arrow-rescheduled"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/status/status-arrow-rescheduled.svg",
+      "sprite_id": "icon-status-status-arrow-rescheduled",
+      "pascal_name": "StatusArrowRescheduled",
+      "ai_hint": ""
+    },
+    {
+      "name": "status-cancelled-x",
+      "category": "status",
+      "description": "Status Cancelled X icon (status)",
+      "tags": [
+        "status-cancelled-x"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/status/status-cancelled-x.svg",
+      "sprite_id": "icon-status-status-cancelled-x",
+      "pascal_name": "StatusCancelledX",
+      "ai_hint": ""
+    },
+    {
+      "name": "status-checkmark-done",
+      "category": "status",
+      "description": "Status Checkmark Done icon (status)",
+      "tags": [
+        "status-checkmark-done"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/status/status-checkmark-done.svg",
+      "sprite_id": "icon-status-status-checkmark-done",
+      "pascal_name": "StatusCheckmarkDone",
+      "ai_hint": ""
+    },
+    {
+      "name": "status-document-accepted",
+      "category": "status",
+      "description": "Status Document Accepted icon (status)",
+      "tags": [
+        "status-document-accepted"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/status/status-document-accepted.svg",
+      "sprite_id": "icon-status-status-document-accepted",
+      "pascal_name": "StatusDocumentAccepted",
+      "ai_hint": ""
+    },
+    {
+      "name": "status-hourglass-pending",
+      "category": "status",
+      "description": "Status Hourglass Pending icon (status)",
+      "tags": [
+        "status-hourglass-pending"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/status/status-hourglass-pending.svg",
+      "sprite_id": "icon-status-status-hourglass-pending",
+      "pascal_name": "StatusHourglassPending",
+      "ai_hint": ""
+    },
+    {
+      "name": "status-inbox-new",
+      "category": "status",
+      "description": "Status Inbox New icon (status)",
+      "tags": [
+        "status-inbox-new"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/status/status-inbox-new.svg",
+      "sprite_id": "icon-status-status-inbox-new",
+      "pascal_name": "StatusInboxNew",
+      "ai_hint": ""
+    },
+    {
+      "name": "status-truck-delivery",
+      "category": "status",
+      "description": "Status Truck Delivery icon (status)",
+      "tags": [
+        "status-truck-delivery"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/status/status-truck-delivery.svg",
+      "sprite_id": "icon-status-status-truck-delivery",
+      "pascal_name": "StatusTruckDelivery",
+      "ai_hint": ""
+    },
+    {
+      "name": "success",
+      "category": "status",
+      "description": "Success icon (status)",
+      "tags": [
+        "success"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/status/success.svg",
+      "sprite_id": "icon-status-success",
+      "pascal_name": "Success",
+      "ai_hint": ""
+    },
+    {
+      "name": "toast-error",
+      "category": "status",
+      "description": "Toast Error icon (status)",
+      "tags": [
+        "toast-error"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/status/toast-error.svg",
+      "sprite_id": "icon-status-toast-error",
+      "pascal_name": "ToastError",
+      "ai_hint": ""
+    },
+    {
+      "name": "toast-feature",
+      "category": "status",
+      "description": "Toast Feature icon (status)",
+      "tags": [
+        "toast-feature"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/status/toast-feature.svg",
+      "sprite_id": "icon-status-toast-feature",
+      "pascal_name": "ToastFeature",
+      "ai_hint": ""
+    },
+    {
+      "name": "toast-info",
+      "category": "status",
+      "description": "Toast Info icon (status)",
+      "tags": [
+        "toast-info"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/status/toast-info.svg",
+      "sprite_id": "icon-status-toast-info",
+      "pascal_name": "ToastInfo",
+      "ai_hint": ""
+    },
+    {
+      "name": "toast-success",
+      "category": "status",
+      "description": "Toast Success icon (status)",
+      "tags": [
+        "toast-success"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/status/toast-success.svg",
+      "sprite_id": "icon-status-toast-success",
+      "pascal_name": "ToastSuccess",
+      "ai_hint": ""
+    },
+    {
+      "name": "toast-warning",
+      "category": "status",
+      "description": "Toast Warning icon (status)",
+      "tags": [
+        "toast-warning"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/status/toast-warning.svg",
+      "sprite_id": "icon-status-toast-warning",
+      "pascal_name": "ToastWarning",
+      "ai_hint": ""
+    },
+    {
+      "name": "user-check",
+      "category": "status",
+      "description": "User Check icon (status)",
+      "tags": [
+        "user-check"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/status/user-check.svg",
+      "sprite_id": "icon-status-user-check",
+      "pascal_name": "UserCheck",
+      "ai_hint": ""
+    },
+    {
+      "name": "warning",
+      "category": "status",
+      "description": "Warning icon (status)",
+      "tags": [
+        "warning"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/status/warning.svg",
+      "sprite_id": "icon-status-warning",
+      "pascal_name": "Warning",
+      "ai_hint": ""
+    },
+    {
+      "name": "bar-chart",
+      "category": "ui-core",
+      "description": "Bar Chart icon (ui-core)",
+      "tags": [
+        "bar-chart"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/ui-core/bar-chart.svg",
+      "sprite_id": "icon-ui-core-bar-chart",
+      "pascal_name": "BarChart",
+      "ai_hint": ""
+    },
+    {
+      "name": "bolt",
+      "category": "ui-core",
+      "description": "Bolt icon (ui-core)",
+      "tags": [
+        "bolt"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/ui-core/bolt.svg",
+      "sprite_id": "icon-ui-core-bolt",
+      "pascal_name": "Bolt",
+      "ai_hint": ""
+    },
+    {
+      "name": "briefcase",
+      "category": "ui-core",
+      "description": "Briefcase icon (ui-core)",
+      "tags": [
+        "briefcase"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/ui-core/briefcase.svg",
+      "sprite_id": "icon-ui-core-briefcase",
+      "pascal_name": "Briefcase",
+      "ai_hint": ""
+    },
+    {
+      "name": "calendar-clock",
+      "category": "ui-core",
+      "description": "Calendar Clock icon (ui-core)",
+      "tags": [
+        "calendar-clock"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/ui-core/calendar-clock.svg",
+      "sprite_id": "icon-ui-core-calendar-clock",
+      "pascal_name": "CalendarClock",
+      "ai_hint": ""
+    },
+    {
+      "name": "calendar",
+      "category": "ui-core",
+      "description": "Calendar icon (ui-core)",
+      "tags": [
+        "calendar"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/ui-core/calendar.svg",
+      "sprite_id": "icon-ui-core-calendar",
+      "pascal_name": "Calendar",
+      "ai_hint": ""
+    },
+    {
+      "name": "clock",
+      "category": "ui-core",
+      "description": "Clock icon (ui-core)",
+      "tags": [
+        "clock"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/ui-core/clock.svg",
+      "sprite_id": "icon-ui-core-clock",
+      "pascal_name": "Clock",
+      "ai_hint": ""
+    },
+    {
+      "name": "credit-card",
+      "category": "ui-core",
+      "description": "Credit Card icon (ui-core)",
+      "tags": [
+        "credit-card"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/ui-core/credit-card.svg",
+      "sprite_id": "icon-ui-core-credit-card",
+      "pascal_name": "CreditCard",
+      "ai_hint": ""
+    },
+    {
+      "name": "download",
+      "category": "ui-core",
+      "description": "Download icon (ui-core)",
+      "tags": [
+        "download"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/ui-core/download.svg",
+      "sprite_id": "icon-ui-core-download",
+      "pascal_name": "Download",
+      "ai_hint": ""
+    },
+    {
+      "name": "external-link",
+      "category": "ui-core",
+      "description": "External Link icon (ui-core)",
+      "tags": [
+        "external-link"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/ui-core/external-link.svg",
+      "sprite_id": "icon-ui-core-external-link",
+      "pascal_name": "ExternalLink",
+      "ai_hint": ""
+    },
+    {
+      "name": "file-text",
+      "category": "ui-core",
+      "description": "File Text icon (ui-core)",
+      "tags": [
+        "file-text"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/ui-core/file-text.svg",
+      "sprite_id": "icon-ui-core-file-text",
+      "pascal_name": "FileText",
+      "ai_hint": ""
+    },
+    {
+      "name": "file",
+      "category": "ui-core",
+      "description": "File icon (ui-core)",
+      "tags": [
+        "file"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/ui-core/file.svg",
+      "sprite_id": "icon-ui-core-file",
+      "pascal_name": "File",
+      "ai_hint": ""
+    },
+    {
+      "name": "flask",
+      "category": "ui-core",
+      "description": "Flask icon (ui-core)",
+      "tags": [
+        "flask"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/ui-core/flask.svg",
+      "sprite_id": "icon-ui-core-flask",
+      "pascal_name": "Flask",
+      "ai_hint": ""
+    },
+    {
+      "name": "help-circle",
+      "category": "ui-core",
+      "description": "Help Circle icon (ui-core)",
+      "tags": [
+        "help-circle"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/ui-core/help-circle.svg",
+      "sprite_id": "icon-ui-core-help-circle",
+      "pascal_name": "HelpCircle",
+      "ai_hint": ""
+    },
+    {
+      "name": "home",
+      "category": "ui-core",
+      "description": "Home icon (ui-core)",
+      "tags": [
+        "home"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/ui-core/home.svg",
+      "sprite_id": "icon-ui-core-home",
+      "pascal_name": "Home",
+      "ai_hint": ""
+    },
+    {
+      "name": "id-card",
+      "category": "ui-core",
+      "description": "Id Card icon (ui-core)",
+      "tags": [
+        "id-card"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/ui-core/id-card.svg",
+      "sprite_id": "icon-ui-core-id-card",
+      "pascal_name": "IdCard",
+      "ai_hint": ""
+    },
+    {
+      "name": "info",
+      "category": "ui-core",
+      "description": "Info icon (ui-core)",
+      "tags": [
+        "info"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/ui-core/info.svg",
+      "sprite_id": "icon-ui-core-info",
+      "pascal_name": "Info",
+      "ai_hint": ""
+    },
+    {
+      "name": "keyboard",
+      "category": "ui-core",
+      "description": "Keyboard icon (ui-core)",
+      "tags": [
+        "keyboard"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/ui-core/keyboard.svg",
+      "sprite_id": "icon-ui-core-keyboard",
+      "pascal_name": "Keyboard",
+      "ai_hint": ""
+    },
+    {
+      "name": "layers",
+      "category": "ui-core",
+      "description": "Layers icon (ui-core)",
+      "tags": [
+        "layers"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/ui-core/layers.svg",
+      "sprite_id": "icon-ui-core-layers",
+      "pascal_name": "Layers",
+      "ai_hint": ""
+    },
+    {
+      "name": "life-buoy",
+      "category": "ui-core",
+      "description": "Life Buoy icon (ui-core)",
+      "tags": [
+        "life-buoy"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/ui-core/life-buoy.svg",
+      "sprite_id": "icon-ui-core-life-buoy",
+      "pascal_name": "LifeBuoy",
+      "ai_hint": ""
+    },
+    {
+      "name": "lock",
+      "category": "ui-core",
+      "description": "Lock icon (ui-core)",
+      "tags": [
+        "lock"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/ui-core/lock.svg",
+      "sprite_id": "icon-ui-core-lock",
+      "pascal_name": "Lock",
+      "ai_hint": ""
+    },
+    {
+      "name": "megaphone",
+      "category": "ui-core",
+      "description": "Megaphone icon (ui-core)",
+      "tags": [
+        "megaphone"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/ui-core/megaphone.svg",
+      "sprite_id": "icon-ui-core-megaphone",
+      "pascal_name": "Megaphone",
+      "ai_hint": ""
+    },
+    {
+      "name": "message-circle",
+      "category": "ui-core",
+      "description": "Message Circle icon (ui-core)",
+      "tags": [
+        "message-circle"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/ui-core/message-circle.svg",
+      "sprite_id": "icon-ui-core-message-circle",
+      "pascal_name": "MessageCircle",
+      "ai_hint": ""
+    },
+    {
+      "name": "mouse-pointer",
+      "category": "ui-core",
+      "description": "Mouse Pointer icon (ui-core)",
+      "tags": [
+        "mouse-pointer"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/ui-core/mouse-pointer.svg",
+      "sprite_id": "icon-ui-core-mouse-pointer",
+      "pascal_name": "MousePointer",
+      "ai_hint": ""
+    },
+    {
+      "name": "percent",
+      "category": "ui-core",
+      "description": "Percent icon (ui-core)",
+      "tags": [
+        "percent"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/ui-core/percent.svg",
+      "sprite_id": "icon-ui-core-percent",
+      "pascal_name": "Percent",
+      "ai_hint": ""
+    },
+    {
+      "name": "plug",
+      "category": "ui-core",
+      "description": "Plug icon (ui-core)",
+      "tags": [
+        "plug"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/ui-core/plug.svg",
+      "sprite_id": "icon-ui-core-plug",
+      "pascal_name": "Plug",
+      "ai_hint": ""
+    },
+    {
+      "name": "plus",
+      "category": "ui-core",
+      "description": "Plus icon (ui-core)",
+      "tags": [
+        "plus"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/ui-core/plus.svg",
+      "sprite_id": "icon-ui-core-plus",
+      "pascal_name": "Plus",
+      "ai_hint": ""
+    },
+    {
+      "name": "rocket",
+      "category": "ui-core",
+      "description": "Rocket icon (ui-core)",
+      "tags": [
+        "rocket"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/ui-core/rocket.svg",
+      "sprite_id": "icon-ui-core-rocket",
+      "pascal_name": "Rocket",
+      "ai_hint": ""
+    },
+    {
+      "name": "scroll",
+      "category": "ui-core",
+      "description": "Scroll icon (ui-core)",
+      "tags": [
+        "scroll"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/ui-core/scroll.svg",
+      "sprite_id": "icon-ui-core-scroll",
+      "pascal_name": "Scroll",
+      "ai_hint": ""
+    },
+    {
+      "name": "search",
+      "category": "ui-core",
+      "description": "Search icon (ui-core)",
+      "tags": [
+        "search"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/ui-core/search.svg",
+      "sprite_id": "icon-ui-core-search",
+      "pascal_name": "Search",
+      "ai_hint": ""
+    },
+    {
+      "name": "settings",
+      "category": "ui-core",
+      "description": "Settings icon (ui-core)",
+      "tags": [
+        "settings"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/ui-core/settings.svg",
+      "sprite_id": "icon-ui-core-settings",
+      "pascal_name": "Settings",
+      "ai_hint": ""
+    },
+    {
+      "name": "speed",
+      "category": "ui-core",
+      "description": "Speed icon (ui-core)",
+      "tags": [
+        "speed"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/ui-core/speed.svg",
+      "sprite_id": "icon-ui-core-speed",
+      "pascal_name": "Speed",
+      "ai_hint": ""
+    },
+    {
+      "name": "user",
+      "category": "ui-core",
+      "description": "User icon (ui-core)",
+      "tags": [
+        "user"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/ui-core/user.svg",
+      "sprite_id": "icon-ui-core-user",
+      "pascal_name": "User",
+      "ai_hint": ""
+    },
+    {
+      "name": "users",
+      "category": "ui-core",
+      "description": "Users icon (ui-core)",
+      "tags": [
+        "users"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/ui-core/users.svg",
+      "sprite_id": "icon-ui-core-users",
+      "pascal_name": "Users",
+      "ai_hint": ""
+    },
+    {
+      "name": "warning",
+      "category": "ui-core",
+      "description": "Warning icon (ui-core)",
+      "tags": [
+        "warning"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/ui-core/warning.svg",
+      "sprite_id": "icon-ui-core-warning",
+      "pascal_name": "Warning",
+      "ai_hint": ""
+    },
+    {
+      "name": "x",
+      "category": "ui-core",
+      "description": "X icon (ui-core)",
+      "tags": [
+        "x"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/ui-core/x.svg",
+      "sprite_id": "icon-ui-core-x",
+      "pascal_name": "X",
+      "ai_hint": ""
+    }
+  ]
+}

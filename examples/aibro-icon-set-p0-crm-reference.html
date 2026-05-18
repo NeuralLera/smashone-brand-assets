@@ -1,0 +1,604 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<title>СММ АЙБРО — icon set P0 CRM</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&family=Golos+Text:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --bg-base: #fafaf6;
+    --bg-elevated: #ffffff;
+    --bg-subtle: #f4f6f5;
+    --fg-1: #0f172a;
+    --fg-2: #475569;
+    --fg-3: #94a3b8;
+    --border-1: rgba(15, 23, 42, 0.08);
+    --border-2: rgba(15, 23, 42, 0.12);
+    --brand-500: #10b981;
+    --brand-600: #059669;
+    --brand-700: #047857;
+    --emerald-hover: #34d399;
+    --tile: rgba(16, 185, 129, 0.05);
+
+    --font-display: "Onest", system-ui, sans-serif;
+    --font-body: "Golos Text", system-ui, sans-serif;
+    --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  }
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+
+  body {
+    background-color: var(--bg-base);
+    background-image:
+      radial-gradient(circle at 20% 20%, var(--tile) 1px, transparent 1.5px),
+      radial-gradient(circle at 70% 70%, var(--tile) 1px, transparent 1.5px);
+    background-size: 32px 32px, 32px 32px;
+    background-position: 0 0, 16px 16px;
+    color: var(--fg-1);
+    font-family: var(--font-body);
+    font-size: 15px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 56px 32px 96px;
+  }
+
+  /* — Header ————————————————————————— */
+  header { margin-bottom: 40px; }
+
+  .eyebrow {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--brand-700);
+    margin: 0 0 10px;
+  }
+  h1 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: -0.02em;
+    color: var(--fg-1);
+    margin: 0 0 8px;
+  }
+  .lede {
+    max-width: 640px;
+    color: var(--fg-2);
+    margin: 0;
+  }
+
+  .meta {
+    margin-top: 22px;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    height: 26px;
+    padding: 0 10px;
+    border-radius: 999px;
+    background: var(--bg-elevated);
+    border: 1px solid var(--border-1);
+    font-family: var(--font-display);
+    font-weight: 500;
+    font-size: 12px;
+    color: var(--fg-2);
+  }
+  .chip.brand {
+    color: var(--brand-700);
+    border-color: rgba(16, 185, 129, 0.25);
+    background: rgba(16, 185, 129, 0.07);
+  }
+  .chip code {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--fg-1);
+  }
+
+  /* — Section toolbar ————————————————— */
+  .toolbar {
+    margin: 36px 0 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+  }
+  .toolbar h2 {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: -0.01em;
+    margin: 0;
+    color: var(--fg-1);
+  }
+  .toolbar h2 .count {
+    color: var(--fg-3);
+    font-weight: 500;
+    margin-left: 6px;
+  }
+  .toolbar .controls {
+    display: flex;
+    gap: 6px;
+    background: var(--bg-elevated);
+    border: 1px solid var(--border-1);
+    border-radius: 999px;
+    padding: 4px;
+    box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+  }
+  .toolbar button {
+    appearance: none;
+    border: 0;
+    background: transparent;
+    color: var(--fg-2);
+    font-family: var(--font-display);
+    font-weight: 500;
+    font-size: 13px;
+    padding: 6px 14px;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: background-color 140ms cubic-bezier(0.4, 0, 0.2, 1),
+                color 140ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .toolbar button:hover { color: var(--fg-1); }
+  .toolbar button[aria-pressed="true"] {
+    background: var(--brand-500);
+    color: #fff;
+  }
+  .toolbar button:focus-visible {
+    outline: 2px solid var(--brand-500);
+    outline-offset: 2px;
+  }
+
+  /* — Grid ————————————————————————— */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+    gap: 14px;
+  }
+
+  .card {
+    position: relative;
+    background: var(--bg-elevated);
+    border: 1px solid var(--border-1);
+    border-radius: 12px;
+    padding: 22px 16px 14px;
+    text-align: center;
+    cursor: pointer;
+    transition: border-color 160ms cubic-bezier(0.4, 0, 0.2, 1),
+                box-shadow 160ms cubic-bezier(0.4, 0, 0.2, 1),
+                color 160ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: var(--fg-1);
+    isolation: isolate;
+  }
+  .card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: radial-gradient(circle at 50% 38%, rgba(52, 211, 153, 0.12), transparent 60%);
+    opacity: 0;
+    transition: opacity 160ms cubic-bezier(0.4, 0, 0.2, 1);
+    pointer-events: none;
+    z-index: -1;
+  }
+  .card:hover,
+  .card:focus-visible {
+    color: var(--brand-600);
+    border-color: rgba(52, 211, 153, 0.55);
+    box-shadow:
+      0 1px 2px rgba(15, 23, 42, 0.04),
+      0 6px 16px rgba(16, 185, 129, 0.10);
+    outline: none;
+  }
+  .card:hover::after,
+  .card:focus-visible::after { opacity: 1; }
+
+  .card.active {
+    color: var(--brand-600);
+    border-color: var(--brand-500);
+    box-shadow:
+      0 0 0 3px rgba(16, 185, 129, 0.12),
+      0 6px 16px rgba(16, 185, 129, 0.14);
+  }
+
+  .glyph {
+    width: 48px;
+    height: 48px;
+    margin: 0 auto 14px;
+    display: grid;
+    place-items: center;
+  }
+  .glyph svg {
+    width: 32px;
+    height: 32px;
+    display: block;
+    transition: transform 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .card.size-lg .glyph svg { width: 40px; height: 40px; }
+  .card.size-sm .glyph svg { width: 24px; height: 24px; }
+
+  .name {
+    font-family: var(--font-mono);
+    font-size: 11.5px;
+    color: var(--fg-2);
+    margin: 0 0 2px;
+    letter-spacing: -0.01em;
+    transition: color 160ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .card:hover .name,
+  .card:focus-visible .name,
+  .card.active .name { color: var(--brand-700); }
+
+  .label {
+    font-family: var(--font-display);
+    font-weight: 500;
+    font-size: 12px;
+    color: var(--fg-3);
+    margin: 0;
+  }
+
+  /* — Download dock ————————————————— */
+  .dock {
+    margin-top: 36px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+    padding: 14px 16px;
+    background: var(--bg-elevated);
+    border: 1px solid var(--border-1);
+    border-radius: 12px;
+    box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+  }
+  .dock-label {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 13px;
+    color: var(--fg-1);
+    margin-right: 6px;
+  }
+  .dock a {
+    font-family: var(--font-mono);
+    font-size: 11.5px;
+    color: var(--fg-2);
+    text-decoration: none;
+    padding: 6px 10px;
+    border: 1px solid var(--border-1);
+    border-radius: 999px;
+    background: var(--bg-base);
+    transition: color 140ms cubic-bezier(0.4, 0, 0.2, 1),
+                border-color 140ms cubic-bezier(0.4, 0, 0.2, 1),
+                background-color 140ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .dock a:hover {
+    color: var(--brand-700);
+    border-color: rgba(16, 185, 129, 0.4);
+    background: rgba(16, 185, 129, 0.06);
+  }
+  .dock a:focus-visible {
+    outline: 2px solid var(--brand-500);
+    outline-offset: 2px;
+  }
+
+  /* — Detail dialog ————————————————— */
+  dialog.detail {
+    border: 0;
+    padding: 0;
+    background: transparent;
+    max-width: none;
+    margin: auto;
+  }
+  dialog.detail::backdrop {
+    background: rgba(15, 23, 42, 0.40);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+  .detail-card {
+    width: min(720px, 92vw);
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 16px;
+    box-shadow: 0 24px 60px rgba(15, 23, 42, 0.18);
+    padding: 28px;
+    display: grid;
+    grid-template-columns: minmax(0, 260px) 1fr;
+    gap: 28px;
+  }
+  .detail-stage {
+    aspect-ratio: 1;
+    background: var(--bg-base);
+    border: 1px solid var(--border-1);
+    border-radius: 12px;
+    display: grid;
+    place-items: center;
+    color: var(--fg-1);
+    position: relative;
+    overflow: hidden;
+  }
+  .detail-stage::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(15, 23, 42, 0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(15, 23, 42, 0.04) 1px, transparent 1px);
+    background-size: 16px 16px;
+    background-position: -1px -1px;
+  }
+  .detail-stage svg {
+    width: 144px;
+    height: 144px;
+    position: relative;
+  }
+  .detail-stage.emerald { color: var(--brand-600); }
+
+  .detail-body h3 {
+    font-family: var(--font-mono);
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--fg-1);
+    margin: 4px 0 4px;
+  }
+  .detail-body .ru {
+    font-family: var(--font-display);
+    font-weight: 500;
+    font-size: 13px;
+    color: var(--fg-2);
+    margin: 0 0 18px;
+  }
+  .detail-sizes {
+    display: flex;
+    align-items: flex-end;
+    gap: 18px;
+    padding: 14px 0 16px;
+    border-top: 1px solid var(--border-1);
+    border-bottom: 1px solid var(--border-1);
+    color: var(--fg-1);
+  }
+  .detail-sizes figure {
+    margin: 0;
+    text-align: center;
+  }
+  .detail-sizes figcaption {
+    font-family: var(--font-mono);
+    font-size: 10.5px;
+    color: var(--fg-3);
+    margin-top: 6px;
+  }
+  .detail-sizes .s-16 { width: 16px; height: 16px; }
+  .detail-sizes .s-20 { width: 20px; height: 20px; }
+  .detail-sizes .s-24 { width: 24px; height: 24px; }
+  .detail-sizes .s-32 { width: 32px; height: 32px; }
+  .detail-sizes .s-48 { width: 48px; height: 48px; }
+
+  .detail-actions {
+    margin-top: 18px;
+    display: flex;
+    gap: 8px;
+  }
+  .detail-actions a, .detail-actions button {
+    appearance: none;
+    border: 0;
+    cursor: pointer;
+    font-family: var(--font-display);
+    font-weight: 500;
+    font-size: 13px;
+    padding: 9px 14px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 140ms cubic-bezier(0.4, 0, 0.2, 1),
+                color 140ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .detail-actions .primary {
+    background: var(--brand-500);
+    color: #fff;
+  }
+  .detail-actions .primary:hover { background: var(--brand-600); }
+  .detail-actions .ghost {
+    background: transparent;
+    color: var(--fg-2);
+    border: 1px solid var(--border-1);
+  }
+  .detail-actions .ghost:hover {
+    color: var(--fg-1);
+    background: var(--bg-subtle);
+  }
+  .detail-actions :focus-visible {
+    outline: 2px solid var(--brand-500);
+    outline-offset: 2px;
+  }
+
+  @media (max-width: 640px) {
+    .detail-card { grid-template-columns: 1fr; }
+    h1 { font-size: 28px; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { transition-duration: 0.001ms !important; animation-duration: 0.001ms !important; }
+  }
+</style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <p class="eyebrow">Icon set · P0 CRM</p>
+      <h1>11 иконок для приёма заказов и мини‑CRM</h1>
+      <p class="lede">Расширение базового набора <code style="font-family:var(--font-mono);color:var(--fg-1)">ui-core</code>. Один stroke‑язык: 24×24, толщина 2, скруглённые концы, <code style="font-family:var(--font-mono);color:var(--fg-1)">currentColor</code> для наследования. Заливки — только индикаторы.</p>
+
+      <div class="meta">
+        <span class="chip">viewBox <code>0 0 24 24</code></span>
+        <span class="chip">stroke‑width <code>2</code></span>
+        <span class="chip">round caps · round joins</span>
+        <span class="chip brand">currentColor</span>
+      </div>
+    </header>
+
+    <div class="toolbar">
+      <h2>Иконки <span class="count">· 11</span></h2>
+      <div class="controls" role="group" aria-label="Размер превью">
+        <button type="button" data-size="sm" aria-pressed="false">24</button>
+        <button type="button" data-size="md" aria-pressed="true">32</button>
+        <button type="button" data-size="lg" aria-pressed="false">40</button>
+      </div>
+    </div>
+
+    <div class="grid" id="grid"></div>
+
+    <div class="dock" aria-label="Скачать SVG">
+      <span class="dock-label">Скачать:</span>
+      <a href="icons/inventory.svg" download>inventory.svg</a>
+      <a href="icons/tag.svg" download>tag.svg</a>
+      <a href="icons/timeline.svg" download>timeline.svg</a>
+      <a href="icons/attachment.svg" download>attachment.svg</a>
+      <a href="icons/image.svg" download>image.svg</a>
+      <a href="icons/gallery.svg" download>gallery.svg</a>
+      <a href="icons/calendar.svg" download>calendar.svg</a>
+      <a href="icons/post.svg" download>post.svg</a>
+      <a href="icons/spark-ai.svg" download>spark-ai.svg</a>
+      <a href="icons/notification-bell.svg" download>notification-bell.svg</a>
+      <a href="icons/chat-bubble.svg" download>chat-bubble.svg</a>
+    </div>
+  </div>
+
+  <dialog class="detail" id="detail" aria-labelledby="detail-name">
+    <div class="detail-card">
+      <div class="detail-stage emerald" id="stage"></div>
+      <div class="detail-body">
+        <p class="eyebrow" style="margin-bottom:8px">Иконка</p>
+        <h3 id="detail-name">name.svg</h3>
+        <p class="ru" id="detail-ru">Описание</p>
+
+        <div class="detail-sizes" aria-label="Шкала размеров">
+          <figure><div class="size-host s-16"></div><figcaption>16</figcaption></figure>
+          <figure><div class="size-host s-20"></div><figcaption>20</figcaption></figure>
+          <figure><div class="size-host s-24"></div><figcaption>24</figcaption></figure>
+          <figure><div class="size-host s-32"></div><figcaption>32</figcaption></figure>
+          <figure><div class="size-host s-48"></div><figcaption>48</figcaption></figure>
+        </div>
+
+        <div class="detail-actions">
+          <a class="primary" id="detail-download" href="#" download>Скачать SVG</a>
+          <button type="button" class="ghost" id="detail-copy">Скопировать разметку</button>
+          <button type="button" class="ghost" id="detail-close">Закрыть</button>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <script>
+    const ICONS = [
+      { file: "inventory.svg",         ru: "Склад · остатки товара" },
+      { file: "tag.svg",                ru: "Теги клиента · категории" },
+      { file: "timeline.svg",           ru: "История событий · активность" },
+      { file: "attachment.svg",         ru: "Вложение к сообщению" },
+      { file: "image.svg",              ru: "Одно изображение" },
+      { file: "gallery.svg",            ru: "Альбом · несколько фото" },
+      { file: "calendar.svg",           ru: "Контент‑план · календарь" },
+      { file: "post.svg",               ru: "Черновик поста · карточка" },
+      { file: "spark-ai.svg",           ru: "ИИ‑генерация · искра" },
+      { file: "notification-bell.svg",  ru: "Уведомления" },
+      { file: "chat-bubble.svg",        ru: "Сообщение с клиентом" },
+    ];
+
+    // SVG markup inlined so detail dialog can fetch without CORS issues
+    // when opened from file://. Built once via fetch on load.
+    const cache = {};
+
+    async function loadAll() {
+      await Promise.all(ICONS.map(async (i) => {
+        const r = await fetch(`icons/${i.file}`);
+        cache[i.file] = await r.text();
+      }));
+      renderGrid();
+    }
+
+    const grid = document.getElementById("grid");
+
+    function renderGrid() {
+      grid.innerHTML = "";
+      ICONS.forEach((i, idx) => {
+        const card = document.createElement("button");
+        card.type = "button";
+        card.className = "card";
+        card.dataset.file = i.file;
+        card.innerHTML = `
+          <div class="glyph">${cache[i.file]}</div>
+          <p class="name">${i.file}</p>
+          <p class="label">${i.ru}</p>
+        `;
+        card.addEventListener("click", () => openDetail(i));
+        grid.appendChild(card);
+      });
+    }
+
+    // Size toggle
+    document.querySelectorAll(".controls button").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        document.querySelectorAll(".controls button").forEach((b) => b.setAttribute("aria-pressed", "false"));
+        btn.setAttribute("aria-pressed", "true");
+        document.querySelectorAll(".card").forEach((c) => {
+          c.classList.remove("size-sm", "size-lg");
+          if (btn.dataset.size === "sm") c.classList.add("size-sm");
+          if (btn.dataset.size === "lg") c.classList.add("size-lg");
+        });
+      });
+    });
+
+    // Detail dialog
+    const dialog = document.getElementById("detail");
+    const stage = document.getElementById("stage");
+    const nameEl = document.getElementById("detail-name");
+    const ruEl = document.getElementById("detail-ru");
+    const dlEl = document.getElementById("detail-download");
+    const copyBtn = document.getElementById("detail-copy");
+    const closeBtn = document.getElementById("detail-close");
+
+    let currentMarkup = "";
+
+    function openDetail(i) {
+      currentMarkup = cache[i.file];
+      stage.innerHTML = currentMarkup;
+      // duplicate into size hosts
+      document.querySelectorAll(".size-host").forEach((h) => h.innerHTML = currentMarkup);
+      nameEl.textContent = i.file;
+      ruEl.textContent = i.ru;
+      dlEl.href = `icons/${i.file}`;
+      dlEl.setAttribute("download", i.file);
+      if (typeof dialog.showModal === "function") dialog.showModal();
+      else dialog.setAttribute("open", "");
+    }
+
+    closeBtn.addEventListener("click", () => dialog.close());
+    dialog.addEventListener("click", (e) => {
+      if (e.target === dialog) dialog.close();
+    });
+
+    copyBtn.addEventListener("click", async () => {
+      try {
+        await navigator.clipboard.writeText(currentMarkup);
+        const prev = copyBtn.textContent;
+        copyBtn.textContent = "Скопировано";
+        setTimeout(() => copyBtn.textContent = prev, 1400);
+      } catch {
+        copyBtn.textContent = "Не удалось";
+      }
+    });
+
+    loadAll();
+  </script>
+</body>
+</html>
