@@ -1,13 +1,16 @@
 {
   "$schema": "https://smashone.dev/icons/manifest.schema.json",
   "version": "0.2.0",
-  "generated": "2026-05-18T05:05:54Z",
-  "icon_count": 172,
+  "generated": "2026-05-18T08:42:40Z",
+  "icon_count": 206,
   "categories": [
     "action",
     "ai",
+    "analytics",
+    "audience",
     "brand",
     "crm",
+    "engagement",
     "finance",
     "hero",
     "nav",
@@ -406,6 +409,40 @@
       "ai_hint": ""
     },
     {
+      "name": "ai-magic-wand",
+      "category": "ai",
+      "description": "Ai Magic Wand icon (ai)",
+      "tags": [
+        "ai-magic-wand"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/ai/ai-magic-wand.svg",
+      "sprite_id": "icon-ai-ai-magic-wand",
+      "pascal_name": "AiMagicWand",
+      "ai_hint": ""
+    },
+    {
+      "name": "ai-suggestion",
+      "category": "ai",
+      "description": "Ai Suggestion icon (ai)",
+      "tags": [
+        "ai-suggestion"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/ai/ai-suggestion.svg",
+      "sprite_id": "icon-ai-ai-suggestion",
+      "pascal_name": "AiSuggestion",
+      "ai_hint": ""
+    },
+    {
       "name": "bot",
       "category": "ai",
       "description": "Bot icon (ai)",
@@ -420,6 +457,74 @@
       "file": "src/icons/ai/bot.svg",
       "sprite_id": "icon-ai-bot",
       "pascal_name": "Bot",
+      "ai_hint": ""
+    },
+    {
+      "name": "iteration",
+      "category": "ai",
+      "description": "Iteration icon (ai)",
+      "tags": [
+        "iteration"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/ai/iteration.svg",
+      "sprite_id": "icon-ai-iteration",
+      "pascal_name": "Iteration",
+      "ai_hint": ""
+    },
+    {
+      "name": "prompt-input",
+      "category": "ai",
+      "description": "Prompt Input icon (ai)",
+      "tags": [
+        "prompt-input"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/ai/prompt-input.svg",
+      "sprite_id": "icon-ai-prompt-input",
+      "pascal_name": "PromptInput",
+      "ai_hint": ""
+    },
+    {
+      "name": "regenerate",
+      "category": "ai",
+      "description": "Regenerate icon (ai)",
+      "tags": [
+        "regenerate"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/ai/regenerate.svg",
+      "sprite_id": "icon-ai-regenerate",
+      "pascal_name": "Regenerate",
+      "ai_hint": ""
+    },
+    {
+      "name": "response-quality",
+      "category": "ai",
+      "description": "Response Quality icon (ai)",
+      "tags": [
+        "response-quality"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/ai/response-quality.svg",
+      "sprite_id": "icon-ai-response-quality",
+      "pascal_name": "ResponseQuality",
       "ai_hint": ""
     },
     {
@@ -454,6 +559,278 @@
       "file": "src/icons/ai/spark.svg",
       "sprite_id": "icon-ai-spark",
       "pascal_name": "Spark",
+      "ai_hint": ""
+    },
+    {
+      "name": "clicks",
+      "category": "analytics",
+      "description": "Clicks icon (analytics)",
+      "tags": [
+        "clicks"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/analytics/clicks.svg",
+      "sprite_id": "icon-analytics-clicks",
+      "pascal_name": "Clicks",
+      "ai_hint": ""
+    },
+    {
+      "name": "conversions",
+      "category": "analytics",
+      "description": "Conversions icon (analytics)",
+      "tags": [
+        "conversions"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/analytics/conversions.svg",
+      "sprite_id": "icon-analytics-conversions",
+      "pascal_name": "Conversions",
+      "ai_hint": ""
+    },
+    {
+      "name": "cta-click",
+      "category": "analytics",
+      "description": "Cta Click icon (analytics)",
+      "tags": [
+        "cta-click"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/analytics/cta-click.svg",
+      "sprite_id": "icon-analytics-cta-click",
+      "pascal_name": "CtaClick",
+      "ai_hint": ""
+    },
+    {
+      "name": "engagement",
+      "category": "analytics",
+      "description": "Engagement icon (analytics)",
+      "tags": [
+        "engagement"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/analytics/engagement.svg",
+      "sprite_id": "icon-analytics-engagement",
+      "pascal_name": "Engagement",
+      "ai_hint": ""
+    },
+    {
+      "name": "hashtag-trending",
+      "category": "analytics",
+      "description": "Hashtag Trending icon (analytics)",
+      "tags": [
+        "hashtag-trending"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/analytics/hashtag-trending.svg",
+      "sprite_id": "icon-analytics-hashtag-trending",
+      "pascal_name": "HashtagTrending",
+      "ai_hint": ""
+    },
+    {
+      "name": "impressions",
+      "category": "analytics",
+      "description": "Impressions icon (analytics)",
+      "tags": [
+        "impressions"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/analytics/impressions.svg",
+      "sprite_id": "icon-analytics-impressions",
+      "pascal_name": "Impressions",
+      "ai_hint": ""
+    },
+    {
+      "name": "likes",
+      "category": "analytics",
+      "description": "Likes icon (analytics)",
+      "tags": [
+        "likes"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/analytics/likes.svg",
+      "sprite_id": "icon-analytics-likes",
+      "pascal_name": "Likes",
+      "ai_hint": ""
+    },
+    {
+      "name": "mentions",
+      "category": "analytics",
+      "description": "Mentions icon (analytics)",
+      "tags": [
+        "mentions"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/analytics/mentions.svg",
+      "sprite_id": "icon-analytics-mentions",
+      "pascal_name": "Mentions",
+      "ai_hint": ""
+    },
+    {
+      "name": "reach",
+      "category": "analytics",
+      "description": "Reach icon (analytics)",
+      "tags": [
+        "reach"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/analytics/reach.svg",
+      "sprite_id": "icon-analytics-reach",
+      "pascal_name": "Reach",
+      "ai_hint": ""
+    },
+    {
+      "name": "saves",
+      "category": "analytics",
+      "description": "Saves icon (analytics)",
+      "tags": [
+        "saves"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/analytics/saves.svg",
+      "sprite_id": "icon-analytics-saves",
+      "pascal_name": "Saves",
+      "ai_hint": ""
+    },
+    {
+      "name": "shares",
+      "category": "analytics",
+      "description": "Shares icon (analytics)",
+      "tags": [
+        "shares"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/analytics/shares.svg",
+      "sprite_id": "icon-analytics-shares",
+      "pascal_name": "Shares",
+      "ai_hint": ""
+    },
+    {
+      "name": "views",
+      "category": "analytics",
+      "description": "Views icon (analytics)",
+      "tags": [
+        "views"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/analytics/views.svg",
+      "sprite_id": "icon-analytics-views",
+      "pascal_name": "Views",
+      "ai_hint": ""
+    },
+    {
+      "name": "new-follower",
+      "category": "audience",
+      "description": "New Follower icon (audience)",
+      "tags": [
+        "new-follower"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/audience/new-follower.svg",
+      "sprite_id": "icon-audience-new-follower",
+      "pascal_name": "NewFollower",
+      "ai_hint": ""
+    },
+    {
+      "name": "trending-down-account",
+      "category": "audience",
+      "description": "Trending Down Account icon (audience)",
+      "tags": [
+        "trending-down-account"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/audience/trending-down-account.svg",
+      "sprite_id": "icon-audience-trending-down-account",
+      "pascal_name": "TrendingDownAccount",
+      "ai_hint": ""
+    },
+    {
+      "name": "trending-up-account",
+      "category": "audience",
+      "description": "Trending Up Account icon (audience)",
+      "tags": [
+        "trending-up-account"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/audience/trending-up-account.svg",
+      "sprite_id": "icon-audience-trending-up-account",
+      "pascal_name": "TrendingUpAccount",
+      "ai_hint": ""
+    },
+    {
+      "name": "unfollowed",
+      "category": "audience",
+      "description": "Unfollowed icon (audience)",
+      "tags": [
+        "unfollowed"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/audience/unfollowed.svg",
+      "sprite_id": "icon-audience-unfollowed",
+      "pascal_name": "Unfollowed",
       "ai_hint": ""
     },
     {
@@ -882,6 +1259,91 @@
       "ai_hint": ""
     },
     {
+      "name": "comment-bubble-filled",
+      "category": "engagement",
+      "description": "Comment Bubble Filled icon (engagement)",
+      "tags": [
+        "comment-bubble-filled"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/engagement/comment-bubble-filled.svg",
+      "sprite_id": "icon-engagement-comment-bubble-filled",
+      "pascal_name": "CommentBubbleFilled",
+      "ai_hint": ""
+    },
+    {
+      "name": "like-heart",
+      "category": "engagement",
+      "description": "Like Heart icon (engagement)",
+      "tags": [
+        "like-heart"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/engagement/like-heart.svg",
+      "sprite_id": "icon-engagement-like-heart",
+      "pascal_name": "LikeHeart",
+      "ai_hint": ""
+    },
+    {
+      "name": "save-bookmark",
+      "category": "engagement",
+      "description": "Save Bookmark icon (engagement)",
+      "tags": [
+        "save-bookmark"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/engagement/save-bookmark.svg",
+      "sprite_id": "icon-engagement-save-bookmark",
+      "pascal_name": "SaveBookmark",
+      "ai_hint": ""
+    },
+    {
+      "name": "share-arrow",
+      "category": "engagement",
+      "description": "Share Arrow icon (engagement)",
+      "tags": [
+        "share-arrow"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/engagement/share-arrow.svg",
+      "sprite_id": "icon-engagement-share-arrow",
+      "pascal_name": "ShareArrow",
+      "ai_hint": ""
+    },
+    {
+      "name": "view-eye",
+      "category": "engagement",
+      "description": "View Eye icon (engagement)",
+      "tags": [
+        "view-eye"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/engagement/view-eye.svg",
+      "sprite_id": "icon-engagement-view-eye",
+      "pascal_name": "ViewEye",
+      "ai_hint": ""
+    },
+    {
       "name": "chargeback",
       "category": "finance",
       "description": "Chargeback icon (finance)",
@@ -899,6 +1361,74 @@
       "ai_hint": ""
     },
     {
+      "name": "chart-area",
+      "category": "finance",
+      "description": "Chart Area icon (finance)",
+      "tags": [
+        "chart-area"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/finance/chart-area.svg",
+      "sprite_id": "icon-finance-chart-area",
+      "pascal_name": "ChartArea",
+      "ai_hint": ""
+    },
+    {
+      "name": "chart-donut",
+      "category": "finance",
+      "description": "Chart Donut icon (finance)",
+      "tags": [
+        "chart-donut"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/finance/chart-donut.svg",
+      "sprite_id": "icon-finance-chart-donut",
+      "pascal_name": "ChartDonut",
+      "ai_hint": ""
+    },
+    {
+      "name": "chart-gauge",
+      "category": "finance",
+      "description": "Chart Gauge icon (finance)",
+      "tags": [
+        "chart-gauge"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/finance/chart-gauge.svg",
+      "sprite_id": "icon-finance-chart-gauge",
+      "pascal_name": "ChartGauge",
+      "ai_hint": ""
+    },
+    {
+      "name": "chart-heatmap",
+      "category": "finance",
+      "description": "Chart Heatmap icon (finance)",
+      "tags": [
+        "chart-heatmap"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/finance/chart-heatmap.svg",
+      "sprite_id": "icon-finance-chart-heatmap",
+      "pascal_name": "ChartHeatmap",
+      "ai_hint": ""
+    },
+    {
       "name": "chart-line",
       "category": "finance",
       "description": "Chart Line icon (finance)",
@@ -913,6 +1443,57 @@
       "file": "src/icons/finance/chart-line.svg",
       "sprite_id": "icon-finance-chart-line",
       "pascal_name": "ChartLine",
+      "ai_hint": ""
+    },
+    {
+      "name": "chart-pie",
+      "category": "finance",
+      "description": "Chart Pie icon (finance)",
+      "tags": [
+        "chart-pie"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/finance/chart-pie.svg",
+      "sprite_id": "icon-finance-chart-pie",
+      "pascal_name": "ChartPie",
+      "ai_hint": ""
+    },
+    {
+      "name": "chart-sparkline",
+      "category": "finance",
+      "description": "Chart Sparkline icon (finance)",
+      "tags": [
+        "chart-sparkline"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/finance/chart-sparkline.svg",
+      "sprite_id": "icon-finance-chart-sparkline",
+      "pascal_name": "ChartSparkline",
+      "ai_hint": ""
+    },
+    {
+      "name": "chart-stacked",
+      "category": "finance",
+      "description": "Chart Stacked icon (finance)",
+      "tags": [
+        "chart-stacked"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/finance/chart-stacked.svg",
+      "sprite_id": "icon-finance-chart-stacked",
+      "pascal_name": "ChartStacked",
       "ai_hint": ""
     },
     {
