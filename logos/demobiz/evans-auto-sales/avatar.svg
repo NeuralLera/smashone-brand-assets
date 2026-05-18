@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Evans Auto Sales">
+  <title>Evans Auto Sales — E badge</title>
+  <defs>
+    
+  </defs>
+
+  
+  <circle cx="100" cy="100" r="96" fill="#1A3A5C"></circle>
+  
+  <circle cx="100" cy="100" r="82" fill="#F4EFE6"></circle>
+  
+  <circle cx="100" cy="100" r="82" fill="none" stroke="#1A3A5C" stroke-width="1.4"></circle>
+
+  
+  <g transform="translate(100 36)" fill="#C8342E">
+    <path d="M0 -11 L3.2 -3.4 L11 -3.4 L4.6 1.3 L7 8.9 L0 4.3 L-7 8.9 L-4.6 1.3 L-11 -3.4 L-3.2 -3.4 Z"></path>
+  </g>
+
+  
+  <text x="100" y="135" class="ea-slab" text-anchor="middle" font-weight="900" font-size="108" fill="#1A3A5C">E</text>
+
+  
+  <defs>
+    <path id="ea-arc" d="M 32 100 A 68 68 0 0 0 168 100" fill="none"></path>
+  </defs>
+  <text class="ea-cond" font-weight="700" font-size="10" fill="#1A3A5C">
+    <textPath href="#ea-arc" startOffset="50%" text-anchor="middle">EST · 1978 · YORK SC</textPath>
+  </text>
+
+  
+  <rect x="38" y="148" width="36" height="3" fill="#C8342E"></rect>
+  <rect x="126" y="148" width="36" height="3" fill="#C8342E"></rect>
+</svg>

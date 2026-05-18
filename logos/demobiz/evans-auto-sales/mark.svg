@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Evans Auto Sales mark">
+  <title>Evans Auto Sales — Shield with EAS monogram</title>
+
+  <g fill="#1A3A5C">
+    
+    <path d="M30 28&#xA;             L170 28&#xA;             L170 110&#xA;             Q170 152 100 184&#xA;             Q30 152 30 110&#xA;             Z"></path>
+  </g>
+
+  
+  <g>
+    <path d="M40 38&#xA;             L160 38&#xA;             L160 108&#xA;             Q160 145 100 173&#xA;             Q40 145 40 108&#xA;             Z" fill="#F4EFE6"></path>
+  </g>
+
+  
+  <rect x="40" y="38" width="120" height="14" fill="#C8342E"></rect>
+
+  
+  <g fill="#1A3A5C" font-family="&#39;Roboto Slab&#39;,&#39;Rockwell&#39;,&#39;Georgia&#39;,serif">
+    <text x="100" y="118" text-anchor="middle" font-weight="900" font-size="62" font-family="&#39;Roboto Slab&#39;,&#39;Rockwell&#39;,&#39;Georgia&#39;,serif">EAS</text>
+  </g>
+
+  
+  <g>
+    <line x1="56" y1="138" x2="144" y2="138" stroke="#1A3A5C" stroke-width="1.4"></line>
+    <text x="100" y="156" text-anchor="middle" font-family="&#39;Oswald&#39;,&#39;Impact&#39;,&#39;Arial Narrow&#39;,sans-serif" font-weight="700" font-size="14" letter-spacing="0.32em" fill="#1A3A5C">1978</text>
+  </g>
+
+  
+  <defs>
+    
+  </defs>
+</svg>

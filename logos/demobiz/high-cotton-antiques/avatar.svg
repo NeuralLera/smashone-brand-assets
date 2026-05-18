@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="High Cotton Antiques">
+  <title>High Cotton Antiques — HC monogram</title>
+  <defs>
+    
+  </defs>
+
+  
+  <circle cx="100" cy="100" r="96" fill="#F5EDDC"></circle>
+
+  
+  <circle cx="100" cy="100" r="93.5" fill="none" stroke="#7A1F1F" stroke-width="3.2"></circle>
+  
+  <circle cx="100" cy="100" r="86" fill="none" stroke="#7A1F1F" stroke-width="0.7"></circle>
+
+  
+  <g fill="#7A1F1F">
+    <text x="62" y="135" text-anchor="middle" class="hc-serif" font-weight="900" font-size="128" font-style="italic">H</text>
+    <text x="132" y="135" text-anchor="middle" class="hc-serif" font-weight="900" font-size="128" font-style="italic">C</text>
+  </g>
+
+  
+  <g fill="#7A1F1F">
+    <circle cx="100" cy="32" r="2.4"></circle>
+    <circle cx="100" cy="168" r="2.4"></circle>
+    
+    <path d="M92 32 q-4 -2 -6 -6 q4 0 6 4 z"></path>
+    <path d="M108 32 q4 -2 6 -6 q-4 0 -6 4 z"></path>
+  </g>
+
+  
+  <defs>
+    <path id="hc-bottom-arc" d="M 32 100 A 68 68 0 0 0 168 100" fill="none"></path>
+  </defs>
+  <text class="hc-sub" font-weight="600" font-size="9.5" fill="#7A1F1F">
+    <textPath href="#hc-bottom-arc" startOffset="50%" text-anchor="middle">EST · 1985 · YORK · SC</textPath>
+  </text>
+</svg>
