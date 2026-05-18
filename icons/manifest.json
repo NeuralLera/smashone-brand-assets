@@ -1,8 +1,8 @@
 {
   "$schema": "https://smashone.dev/icons/manifest.schema.json",
   "version": "0.2.0",
-  "generated": "2026-05-18T08:42:40Z",
-  "icon_count": 206,
+  "generated": "2026-05-18T09:26:23Z",
+  "icon_count": 212,
   "categories": [
     "action",
     "ai",
@@ -15,6 +15,7 @@
     "hero",
     "nav",
     "niche",
+    "pain",
     "platform",
     "reserve",
     "status",
@@ -2211,6 +2212,23 @@
       "ai_hint": ""
     },
     {
+      "name": "shop",
+      "category": "niche",
+      "description": "Shop icon (niche)",
+      "tags": [
+        "shop"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/niche/shop.svg",
+      "sprite_id": "icon-niche-shop",
+      "pascal_name": "Shop",
+      "ai_hint": ""
+    },
+    {
       "name": "travel",
       "category": "niche",
       "description": "Travel icon (niche)",
@@ -2225,6 +2243,91 @@
       "file": "src/icons/niche/travel.svg",
       "sprite_id": "icon-niche-travel",
       "pascal_name": "Travel",
+      "ai_hint": ""
+    },
+    {
+      "name": "tutor",
+      "category": "niche",
+      "description": "Tutor icon (niche)",
+      "tags": [
+        "tutor"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/niche/tutor.svg",
+      "sprite_id": "icon-niche-tutor",
+      "pascal_name": "Tutor",
+      "ai_hint": ""
+    },
+    {
+      "name": "agency-cost",
+      "category": "pain",
+      "description": "Agency Cost icon (pain)",
+      "tags": [
+        "agency-cost"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/pain/agency-cost.svg",
+      "sprite_id": "icon-pain-agency-cost",
+      "pascal_name": "AgencyCost",
+      "ai_hint": ""
+    },
+    {
+      "name": "burnout",
+      "category": "pain",
+      "description": "Burnout icon (pain)",
+      "tags": [
+        "burnout"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/pain/burnout.svg",
+      "sprite_id": "icon-pain-burnout",
+      "pascal_name": "Burnout",
+      "ai_hint": ""
+    },
+    {
+      "name": "diy-chaos",
+      "category": "pain",
+      "description": "Diy Chaos icon (pain)",
+      "tags": [
+        "diy-chaos"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/pain/diy-chaos.svg",
+      "sprite_id": "icon-pain-diy-chaos",
+      "pascal_name": "DiyChaos",
+      "ai_hint": ""
+    },
+    {
+      "name": "lost-customers",
+      "category": "pain",
+      "description": "Lost Customers icon (pain)",
+      "tags": [
+        "lost-customers"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/pain/lost-customers.svg",
+      "sprite_id": "icon-pain-lost-customers",
+      "pascal_name": "LostCustomers",
       "ai_hint": ""
     },
     {
