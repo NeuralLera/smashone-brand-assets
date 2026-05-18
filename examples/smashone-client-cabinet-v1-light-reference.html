@@ -1,0 +1,1341 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SmashOne Cabinet — Dashboard concept</title>
+<link rel="stylesheet" href="assets/colors_and_type.css">
+<style>
+  /* ============================================================================
+     Concept stage — light canvas around artboards
+     ============================================================================ */
+  html, body { background: #efece6; }
+  body {
+    padding: 56px 48px 96px;
+    color: var(--text-primary);
+    font-feature-settings: "cv11" 1, "ss01" 1;
+  }
+  .stage { max-width: 1640px; margin: 0 auto; display: flex; flex-direction: column; gap: 64px; }
+
+  /* Stage header */
+  .stage__hd { display: grid; grid-template-columns: 1.4fr 1fr; gap: 48px; align-items: end; padding-bottom: 8px; }
+  .stage__eyebrow { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--brand-gold-text); }
+  .stage__title { font-family: var(--font-display); font-size: 40px; font-weight: 620; letter-spacing: -0.024em; color: var(--text-strong); margin: 10px 0 0; line-height: 1.1; }
+  .stage__sub  { font-family: var(--font-body); font-size: 15px; line-height: 24px; color: var(--text-secondary); max-width: 56ch; margin: 14px 0 0; }
+  .stage__meta { font-family: var(--font-mono); font-size: 12px; line-height: 20px; color: var(--text-tertiary); }
+  .stage__meta strong { color: var(--text-secondary); font-weight: 500; }
+
+  /* Artboard frame */
+  .artboard {
+    background: var(--surface-base);
+    border-radius: 20px;
+    box-shadow:
+      0 1px 0 rgba(0,0,0,0.04),
+      0 30px 60px -20px rgba(35, 27, 8, 0.18),
+      0 8px 24px -8px rgba(35, 27, 8, 0.10);
+    overflow: hidden;
+    position: relative;
+  }
+  .artboard__caption {
+    position: absolute; top: -34px; left: 4px;
+    display: flex; align-items: center; gap: 10px;
+    font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--text-tertiary);
+  }
+  .artboard__caption b { font-weight: 600; color: var(--text-secondary); letter-spacing: 0.06em; }
+  .artboard__caption .dot { width: 5px; height: 5px; border-radius: 50%; background: var(--brand-gold); }
+
+  /* ============================================================================
+     DESKTOP CABINET (1440 design width)
+     ============================================================================ */
+  .cabinet { width: 1440px; display: grid; grid-template-columns: 240px 1fr; min-height: 1100px; }
+
+  /* --- Sidebar -------------------------------------------------------------- */
+  .side { background: #fafafa; border-right: 1px solid var(--border-subtle); padding: 18px 14px 18px; display: flex; flex-direction: column; gap: 12px; position: relative; }
+  .side__brand { display: flex; align-items: center; gap: 10px; padding: 4px 6px 6px; }
+  .brandmark {
+    width: 32px; height: 32px; border-radius: 9px;
+    background: linear-gradient(180deg, #fff7e0, #f1e3b5);
+    border: 1px solid rgba(176,137,48,0.30);
+    display: grid; place-items: center;
+    color: var(--brand-gold-text);
+    font-family: var(--font-display); font-weight: 700; font-size: 14px; letter-spacing: -0.02em;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.7), 0 1px 1px rgba(0,0,0,0.05);
+  }
+  .brandmark svg { width: 16px; height: 16px; }
+  .brandtype { font-family: var(--font-display); font-weight: 700; font-size: 17px; letter-spacing: -0.022em; color: #0a0a0a; }
+
+  /* Workspace switcher */
+  .ws {
+    display: flex; align-items: center; gap: 10px;
+    background: #ffffff; border: 1px solid var(--border-subtle); border-radius: 12px;
+    padding: 10px; cursor: pointer;
+    transition: border-color var(--dur-hover) var(--ease-ui);
+  }
+  .ws__av {
+    width: 36px; height: 36px; border-radius: 10px; flex: none;
+    background:
+      radial-gradient(circle at 30% 25%, #fff 0%, transparent 40%),
+      linear-gradient(160deg, #f1e7d2 0%, #e8d8b8 100%);
+    border: 1px solid rgba(0,0,0,0.05);
+    display: grid; place-items: center;
+    font-family: var(--font-display); font-weight: 700; font-size: 13px; letter-spacing: -0.02em;
+    color: #6b2433;
+    position: relative;
+  }
+  .ws__av::after {
+    content: ""; position: absolute; inset: 3px; border-radius: 8px;
+    border: 1px solid rgba(107,36,51,0.18);
+  }
+  .ws__body { min-width: 0; flex: 1; }
+  .ws__name { font-size: 13px; font-weight: 600; color: #0a0a0a; line-height: 18px; letter-spacing: -0.005em; }
+  .ws__handle { font-family: var(--font-mono); font-size: 11px; color: var(--text-tertiary); line-height: 16px; }
+  .ws__chev { color: var(--text-tertiary); }
+
+  /* Primary nav */
+  .nav { display: flex; flex-direction: column; gap: 1px; margin-top: 4px; }
+  .nav__group { display: flex; flex-direction: column; gap: 1px; }
+  .nav__divider { height: 1px; background: var(--border-subtle); margin: 8px 8px; }
+  .nav__item {
+    position: relative;
+    display: flex; align-items: center; gap: 12px;
+    padding: 0 12px; height: 40px; border-radius: 10px;
+    color: rgba(0,0,0,0.70);
+    font-family: var(--font-body); font-size: 14px; font-weight: 500; letter-spacing: -0.005em;
+    text-decoration: none;
+    transition: background var(--dur-hover) var(--ease-ui), color var(--dur-hover) var(--ease-ui);
+  }
+  .nav__item:hover { background: rgba(0,0,0,0.03); color: #0a0a0a; }
+  .nav__item svg { width: 18px; height: 18px; stroke-width: 1.75; color: rgba(0,0,0,0.55); flex: none; }
+  .nav__item:hover svg { color: rgba(0,0,0,0.78); }
+  .nav__item.is-active {
+    background: #fff8e7;
+    color: #6d5310;
+  }
+  .nav__item.is-active svg { color: var(--brand-gold); }
+  .nav__item.is-active::before {
+    content: ""; position: absolute; left: -14px; top: 8px; bottom: 8px; width: 3px;
+    background: var(--brand-gold); border-radius: 0 3px 3px 0;
+  }
+  .nav__pill {
+    margin-left: auto;
+    font-family: var(--font-mono); font-size: 11px; font-weight: 500;
+    color: rgba(0,0,0,0.55);
+    background: rgba(0,0,0,0.04); border-radius: 9999px;
+    padding: 2px 8px; line-height: 16px;
+    font-variant-numeric: tabular-nums;
+  }
+  .nav__dot { margin-left: auto; width: 6px; height: 6px; border-radius: 50%; background: var(--state-success); box-shadow: 0 0 0 3px rgba(16,185,129,0.15); }
+
+  .side__foot {
+    margin-top: auto; padding-top: 14px; border-top: 1px solid var(--border-subtle);
+    display: flex; align-items: center; gap: 10px;
+  }
+  .side__foot .av-mb {
+    width: 32px; height: 32px; border-radius: 50%;
+    background: #fff8e7; color: #6d5310; border: 1px solid rgba(176,137,48,0.20);
+    display: grid; place-items: center;
+    font-family: var(--font-mono); font-weight: 600; font-size: 11px; letter-spacing: 0.02em;
+  }
+  .side__foot .nm { font-size: 13px; color: #0a0a0a; font-weight: 550; line-height: 16px; }
+  .side__foot .rl { font-size: 11px; color: var(--text-tertiary); line-height: 14px; font-family: var(--font-mono); }
+  .icon-btn {
+    width: 28px; height: 28px; border-radius: 8px;
+    display: grid; place-items: center;
+    color: rgba(0,0,0,0.55);
+    background: transparent; border: 0;
+    cursor: pointer;
+    transition: background var(--dur-hover) var(--ease-ui), color var(--dur-hover) var(--ease-ui);
+  }
+  .icon-btn:hover { background: rgba(0,0,0,0.04); color: rgba(0,0,0,0.85); }
+  .icon-btn svg { width: 16px; height: 16px; stroke-width: 1.75; }
+  .icon-btn--lg { width: 36px; height: 36px; }
+  .icon-btn--lg svg { width: 18px; height: 18px; }
+
+  /* --- Workspace area ------------------------------------------------------- */
+  .work { display: flex; flex-direction: column; min-width: 0; }
+
+  /* Topbar */
+  .topbar {
+    height: 64px; display: grid;
+    grid-template-columns: 1fr minmax(280px, 480px) 1fr;
+    align-items: center; padding: 0 28px; gap: 24px;
+    background: rgba(255,255,255,0.72);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    border-bottom: 1px solid var(--border-subtle);
+    position: sticky; top: 0; z-index: 30;
+  }
+  .crumb { font-size: 13px; color: var(--text-tertiary); display: flex; align-items: center; gap: 6px; }
+  .crumb b { color: #0a0a0a; font-weight: 600; }
+  .crumb svg { width: 14px; height: 14px; color: var(--text-tertiary); }
+  .search {
+    display: flex; align-items: center; gap: 10px;
+    background: #f5f5f5; border: 1px solid transparent; border-radius: 10px;
+    height: 38px; padding: 0 10px 0 12px;
+    transition: background var(--dur-hover) var(--ease-ui), border-color var(--dur-hover) var(--ease-ui);
+  }
+  .search:hover { background: #fafafa; border-color: var(--border-subtle); }
+  .search svg { width: 16px; height: 16px; color: var(--text-tertiary); stroke-width: 1.75; }
+  .search input {
+    flex: 1; border: 0; background: transparent; outline: 0;
+    font-family: var(--font-body); font-size: 14px; color: var(--text-primary);
+  }
+  .search input::placeholder { color: rgba(0,0,0,0.40); }
+  .kbd {
+    display: inline-flex; align-items: center;
+    background: #e8e6e1; color: #6d6d6d;
+    font-family: var(--font-mono); font-size: 10.5px; font-weight: 500;
+    padding: 3px 6px 3px; border-radius: 5px; line-height: 1;
+    border: 1px solid rgba(0,0,0,0.06);
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,0.06);
+  }
+  .top__right { display: flex; align-items: center; justify-content: flex-end; gap: 4px; }
+  .bell { position: relative; }
+  .bell .dot {
+    position: absolute; top: 2px; right: 2px; min-width: 16px; height: 16px; border-radius: 9999px;
+    background: var(--state-error); color: #fff;
+    font-family: var(--font-mono); font-size: 10px; font-weight: 600;
+    display: grid; place-items: center; padding: 0 4px;
+    border: 1.5px solid rgba(255,255,255,0.92);
+  }
+  .me { display: flex; align-items: center; gap: 6px; padding: 4px 8px 4px 4px; border-radius: 9999px; cursor: pointer; transition: background var(--dur-hover) var(--ease-ui); }
+  .me:hover { background: rgba(0,0,0,0.04); }
+  .me .av { width: 28px; height: 28px; border-radius: 50%; background: #fff8e7; color: #6d5310; display: grid; place-items: center; font-family: var(--font-mono); font-weight: 600; font-size: 10px; border: 1px solid rgba(176,137,48,0.20); }
+  .me svg { width: 14px; height: 14px; color: var(--text-tertiary); }
+
+  /* --- Workspace canvas (scrolls under glass topbar) ------------------------ */
+  .canvas { padding: 32px 32px 48px; display: flex; flex-direction: column; gap: 28px; max-width: 1280px; }
+
+  /* Greeting band */
+  .greet { display: grid; grid-template-columns: 1fr auto; align-items: end; gap: 24px; padding-bottom: 24px; border-bottom: 1px solid var(--border-subtle); }
+  .greet h1 { font-family: var(--font-display); font-size: 36px; font-weight: 700; letter-spacing: -0.022em; color: #0a0a0a; margin: 0; line-height: 42px; }
+  .greet__sub { font-family: var(--font-body); font-size: 15px; color: rgba(0,0,0,0.60); margin-top: 8px; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+  .greet__sub .sep { color: rgba(0,0,0,0.25); }
+  .greet__sub b { color: #0a0a0a; font-weight: 600; }
+  .greet__right { display: flex; align-items: center; gap: 12px; }
+  .lastlogin { display: flex; align-items: center; gap: 8px; font-family: var(--font-body); font-size: 13px; color: rgba(0,0,0,0.55); }
+  .lastlogin svg { width: 14px; height: 14px; stroke-width: 1.75; color: rgba(0,0,0,0.40); }
+  .lastlogin .ts { font-family: var(--font-mono); font-variant-numeric: tabular-nums; font-size: 12px; }
+  .sub-chip {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: #fff8e7; border: 1px solid rgba(176,137,48,0.35);
+    color: #6d5310;
+    font-family: var(--font-mono); font-size: 11.5px; font-weight: 500; letter-spacing: 0.01em;
+    padding: 6px 10px; border-radius: 9999px;
+    font-variant-numeric: tabular-nums;
+  }
+  .sub-chip .pulse { width: 6px; height: 6px; border-radius: 50%; background: var(--brand-gold); box-shadow: 0 0 0 3px rgba(176,137,48,0.18); }
+
+  /* KPI grid */
+  .kpi-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  .kpi {
+    background: #ffffff;
+    border: 1px solid rgba(0,0,0,0.04);
+    border-radius: 14px;
+    padding: 22px 22px 20px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.04), 0 8px 24px -10px rgba(0,0,0,0.06);
+    display: flex; flex-direction: column; gap: 14px;
+    min-height: 168px;
+  }
+  .kpi__head { display: flex; align-items: center; gap: 10px; }
+  .kpi__icon { width: 32px; height: 32px; border-radius: 9px; display: grid; place-items: center; flex: none; }
+  .kpi__icon svg { width: 18px; height: 18px; stroke-width: 1.85; }
+  .kpi__icon--gold { background: #fff7e0; color: var(--brand-gold); }
+  .kpi__icon--info { background: #eaf1ff; color: #2563eb; }
+  .kpi__icon--success { background: #e6f4ee; color: #0f9b6c; }
+  .kpi__icon--amber { background: #fff3da; color: #c97a06; }
+  .kpi__icon--violet { background: #f1e8ff; color: #6d28d9; }
+  .kpi__label { font-family: var(--font-body); font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(0,0,0,0.50); }
+  .kpi__big {
+    font-family: var(--font-display); font-weight: 700; font-size: 36px; letter-spacing: -0.022em; line-height: 1.05;
+    color: #0a0a0a;
+    font-variant-numeric: tabular-nums lining-nums;
+    display: flex; align-items: baseline; gap: 12px;
+  }
+  .kpi__big small { font-family: var(--font-mono); font-size: 14px; font-weight: 500; color: rgba(0,0,0,0.40); letter-spacing: 0; }
+  .kpi__big .unit { font-family: var(--font-mono); font-size: 13px; font-weight: 500; color: rgba(0,0,0,0.45); letter-spacing: 0; }
+  .kpi__sub { font-family: var(--font-mono); font-size: 12.5px; color: var(--text-secondary); font-variant-numeric: tabular-nums; }
+  .kpi__foot { font-family: var(--font-body); font-size: 12px; color: rgba(0,0,0,0.50); margin-top: auto; padding-top: 4px; }
+  .kpi__foot a { color: rgba(0,0,0,0.65); text-decoration: none; font-weight: 500; }
+  .kpi__foot a:hover { color: var(--brand-gold-text); }
+  .kpi__foot a.gold { color: var(--brand-gold-text); }
+
+  /* progress bar */
+  .bar { height: 5px; background: #f1efe9; border-radius: 9999px; overflow: hidden; }
+  .bar > i { display: block; height: 100%; border-radius: inherit; background: var(--brand-gold); }
+  .bar--amber > i { background: var(--state-warning); }
+  .bar--neutral > i { background: #d4d2cb; }
+
+  /* social tile row inside KPI 2 */
+  .stile-row { display: flex; align-items: center; gap: 8px; }
+  .stile { width: 28px; height: 28px; border-radius: 8px; overflow: hidden; flex: none; border: 1px solid rgba(0,0,0,0.05); }
+  .stile img { width: 100%; height: 100%; display: block; }
+  .stile.is-off { filter: grayscale(1); opacity: 0.55; }
+
+  /* trend pill */
+  .trend { display: inline-flex; align-items: center; gap: 4px; font-family: var(--font-mono); font-size: 12px; font-weight: 500; font-variant-numeric: tabular-nums; }
+  .trend--up { color: #0f9b6c; }
+  .trend--down { color: #d97706; }
+  .trend svg { width: 10px; height: 10px; }
+
+  /* status chip mini */
+  .chip {
+    display: inline-flex; align-items: center; gap: 5px;
+    background: #e6f4ee; color: #0f7a52;
+    font-family: var(--font-mono); font-size: 10.5px; font-weight: 600; letter-spacing: 0.02em;
+    padding: 3px 8px; border-radius: 9999px;
+  }
+  .chip svg { width: 9px; height: 9px; }
+
+  /* sparkline */
+  .spark { width: 100%; height: 32px; display: block; }
+
+  /* Quick actions row */
+  .qa { display: flex; gap: 12px; align-items: center; padding: 4px 0; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 8px;
+    height: 44px; padding: 0 18px;
+    font-family: var(--font-body); font-size: 14px; font-weight: 550; letter-spacing: -0.005em;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all var(--dur-hover) var(--ease-ui);
+  }
+  .btn svg { width: 16px; height: 16px; stroke-width: 1.85; }
+  .btn--primary { background: var(--brand-gold); color: #fff; border: 1px solid #9a7726; box-shadow: 0 1px 0 rgba(255,255,255,0.18) inset, 0 1px 2px rgba(120,86,16,0.30), 0 0 0 1px rgba(176,137,48,0.0); }
+  .btn--primary:hover { background: #9a7726; transform: translateY(-1px); box-shadow: 0 4px 14px -4px rgba(120,86,16,0.4); }
+  .btn--ghost { background: #ffffff; border: 1px solid rgba(0,0,0,0.10); color: #0a0a0a; }
+  .btn--ghost:hover { background: #fafafa; border-color: rgba(0,0,0,0.18); transform: translateY(-1px); }
+  .btn--ghost svg { color: rgba(0,0,0,0.65); }
+
+  /* Two-col main area */
+  .two-col { display: grid; grid-template-columns: 8fr 4fr; gap: 24px; align-items: start; }
+
+  /* Activity panel */
+  .panel {
+    background: #ffffff;
+    border: 1px solid rgba(0,0,0,0.04);
+    border-radius: 14px;
+    padding: 26px 28px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.04), 0 8px 24px -10px rgba(0,0,0,0.06);
+  }
+  .panel__hd { display: flex; align-items: center; gap: 12px; margin-bottom: 18px; }
+  .panel__t { font-family: var(--font-display); font-size: 18px; font-weight: 600; letter-spacing: -0.008em; color: #0a0a0a; }
+  .panel__hd .right { margin-left: auto; display: flex; align-items: center; gap: 12px; }
+  .filter {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: #fafafa; border: 1px solid var(--border-subtle); border-radius: 9999px;
+    padding: 4px 10px 4px 12px; font-size: 12px; color: rgba(0,0,0,0.65); cursor: pointer;
+  }
+  .filter svg { width: 12px; height: 12px; color: var(--text-tertiary); }
+  .viewall { font-size: 13px; color: var(--text-secondary); text-decoration: none; font-weight: 500; transition: color var(--dur-hover) var(--ease-ui); }
+  .viewall:hover { color: var(--brand-gold-text); }
+
+  .feed { display: flex; flex-direction: column; }
+  .feed__row {
+    display: grid; grid-template-columns: 60px 28px 1fr auto;
+    gap: 14px; align-items: center;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--border-subtle);
+  }
+  .feed__row:last-child { border-bottom: 0; }
+  .feed__time { font-family: var(--font-mono); font-size: 12.5px; color: rgba(0,0,0,0.55); font-variant-numeric: tabular-nums; }
+  .feed__time small { display: block; font-size: 10px; color: var(--text-tertiary); letter-spacing: 0.04em; text-transform: uppercase; }
+  .feed__ico {
+    width: 28px; height: 28px; border-radius: 8px; display: grid; place-items: center; flex: none;
+  }
+  .feed__ico svg { width: 14px; height: 14px; stroke-width: 2; }
+  .feed__ico--g { background: #e6f4ee; color: #0f9b6c; }
+  .feed__ico--gold { background: #fff7e0; color: var(--brand-gold); }
+  .feed__ico--b { background: #eaf1ff; color: #2563eb; }
+  .feed__ico--a { background: #fff3da; color: #c97a06; }
+  .feed__body { font-family: var(--font-body); font-size: 13.5px; line-height: 20px; color: rgba(0,0,0,0.78); letter-spacing: -0.003em; }
+  .feed__body b { color: #0a0a0a; font-weight: 600; }
+  .feed__meta { display: flex; align-items: center; gap: 10px; justify-self: end; }
+  .meta-chip {
+    font-family: var(--font-mono); font-size: 11px; color: rgba(0,0,0,0.55);
+    background: #f5f5f5; padding: 4px 8px; border-radius: 9999px;
+    font-variant-numeric: tabular-nums; white-space: nowrap;
+  }
+  .meta-chip--g { background: #e6f4ee; color: #0f7a52; }
+  .meta-link { font-size: 12.5px; color: var(--text-secondary); text-decoration: none; font-weight: 500; white-space: nowrap; transition: color var(--dur-hover) var(--ease-ui); }
+  .meta-link:hover { color: var(--brand-gold-text); }
+  .meta-link svg { width: 11px; height: 11px; }
+
+  /* Right column widgets */
+  .stack { display: flex; flex-direction: column; gap: 16px; }
+  .wid { background: #ffffff; border: 1px solid rgba(0,0,0,0.04); border-radius: 14px; padding: 22px; box-shadow: 0 1px 2px rgba(0,0,0,0.04), 0 8px 24px -10px rgba(0,0,0,0.06); }
+  .wid__t { font-family: var(--font-display); font-size: 15px; font-weight: 600; color: #0a0a0a; letter-spacing: -0.005em; }
+  .wid__sub { font-family: var(--font-body); font-size: 12px; color: var(--text-tertiary); margin-top: 2px; }
+  .metric-row { display: grid; grid-template-columns: 1fr auto; align-items: baseline; padding: 10px 0; border-bottom: 1px dashed var(--border-subtle); gap: 8px; }
+  .metric-row:last-of-type { border-bottom: 0; }
+  .metric-row .lbl { font-size: 13px; color: rgba(0,0,0,0.65); }
+  .metric-row .val { font-family: var(--font-display); font-weight: 700; font-size: 22px; color: #0a0a0a; letter-spacing: -0.012em; font-variant-numeric: tabular-nums; }
+  .metric-row .dlt { grid-column: 1 / -1; font-family: var(--font-mono); font-size: 11.5px; color: #0f9b6c; font-variant-numeric: tabular-nums; margin-top: -4px; }
+  .metric-row .dlt.is-down { color: #c97a06; }
+
+  .bk { display: flex; flex-direction: column; gap: 10px; }
+  .bk__big { font-family: var(--font-display); font-weight: 700; font-size: 40px; letter-spacing: -0.024em; line-height: 1; color: #0a0a0a; font-variant-numeric: tabular-nums; }
+  .bk__next { font-size: 12.5px; color: rgba(0,0,0,0.55); }
+  .bk__list { display: flex; flex-direction: column; gap: 2px; margin-top: 4px; }
+  .bk__row { display: grid; grid-template-columns: 56px 1fr; gap: 10px; padding: 8px 0; border-top: 1px solid var(--border-subtle); font-size: 12.5px; color: rgba(0,0,0,0.72); align-items: baseline; }
+  .bk__row .when { font-family: var(--font-mono); color: rgba(0,0,0,0.55); font-variant-numeric: tabular-nums; font-size: 11.5px; }
+  .bk__row b { font-weight: 600; color: #0a0a0a; }
+
+  .ih { display: flex; flex-direction: column; gap: 12px; margin-top: 12px; }
+  .ih__row { display: grid; grid-template-columns: 24px 1fr auto; align-items: center; gap: 12px; padding: 10px 0; border-top: 1px solid var(--border-subtle); }
+  .ih__row:first-child { border-top: 0; padding-top: 4px; }
+  .ih__row svg { width: 16px; height: 16px; stroke-width: 2; }
+  .ih__row .lbl { font-size: 13px; color: rgba(0,0,0,0.72); }
+  .ih__row .v { font-family: var(--font-mono); font-size: 14px; font-weight: 600; color: #0a0a0a; font-variant-numeric: tabular-nums; }
+  .ih__row.s svg { color: #0f9b6c; }
+  .ih__row.w svg { color: #c97a06; }
+  .ih__row.i svg { color: rgba(0,0,0,0.45); }
+  .wid__foot { margin-top: 14px; font-size: 12.5px; }
+  .wid__foot a { color: rgba(0,0,0,0.65); text-decoration: none; font-weight: 500; }
+  .wid__foot a:hover { color: var(--brand-gold-text); }
+
+  /* Cabinet footer */
+  .cab-foot {
+    display: flex; align-items: center; padding: 14px 32px;
+    border-top: 1px solid var(--border-subtle);
+    background: #fafafa;
+    font-family: var(--font-body); font-size: 12px; color: rgba(0,0,0,0.50);
+  }
+  .cab-foot .right { margin-left: auto; display: flex; gap: 16px; }
+  .cab-foot a { color: rgba(0,0,0,0.60); text-decoration: none; }
+  .cab-foot a:hover { color: var(--brand-gold-text); }
+
+  /* ============================================================================
+     SECONDARY ROW — Mobile + 3 insets
+     ============================================================================ */
+  .row2 { display: grid; grid-template-columns: 420px 1fr; gap: 56px; align-items: start; }
+  .insets { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: auto auto; gap: 32px 32px; align-items: start; }
+  .inset-block { display: flex; flex-direction: column; gap: 12px; }
+  .inset-cap { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-tertiary); display: flex; align-items: center; gap: 8px; }
+  .inset-cap b { color: var(--text-secondary); font-weight: 600; }
+  .inset-cap .dot { width: 5px; height: 5px; border-radius: 50%; background: var(--brand-gold); }
+  .inset-note { font-family: var(--font-body); font-size: 13px; color: var(--text-tertiary); line-height: 20px; max-width: 36ch; }
+
+  /* Mobile phone shell */
+  .phone {
+    width: 375px; height: 812px;
+    background: #fafafa;
+    border-radius: 44px;
+    box-shadow:
+      0 0 0 12px #1a1a1a,
+      0 0 0 14px #2a2a2a,
+      0 40px 80px -20px rgba(35,27,8,0.30),
+      0 12px 28px -8px rgba(35,27,8,0.20);
+    overflow: hidden; position: relative;
+  }
+  .phone__notch {
+    position: absolute; top: 0; left: 50%; transform: translateX(-50%);
+    width: 120px; height: 30px; background: #1a1a1a;
+    border-radius: 0 0 16px 16px; z-index: 10;
+  }
+  .phone__status {
+    height: 44px; padding: 14px 24px 0; display: flex; align-items: center;
+    font-family: var(--font-mono); font-size: 13px; font-weight: 600; color: #0a0a0a;
+    font-variant-numeric: tabular-nums;
+  }
+  .phone__status .right { margin-left: auto; display: flex; align-items: center; gap: 6px; }
+  .phone__status svg { width: 14px; height: 14px; }
+  .phone__top {
+    height: 56px; padding: 0 16px; display: flex; align-items: center; gap: 12px;
+    border-bottom: 1px solid var(--border-subtle);
+    background: rgba(255,255,255,0.85); backdrop-filter: blur(20px);
+  }
+  .phone__top .brandmark { width: 28px; height: 28px; font-size: 12px; }
+  .phone__top .ws-pill {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: #fafafa; border: 1px solid var(--border-subtle); border-radius: 9999px;
+    padding: 5px 10px 5px 5px; margin-left: 4px;
+  }
+  .phone__top .ws-pill .av {
+    width: 22px; height: 22px; border-radius: 9999px;
+    background: linear-gradient(160deg, #f1e7d2, #e8d8b8);
+    color: #6b2433; font-family: var(--font-display); font-weight: 700; font-size: 10px;
+    display: grid; place-items: center;
+  }
+  .phone__top .ws-pill b { font-size: 12px; color: #0a0a0a; font-weight: 600; }
+  .phone__top .ws-pill svg { width: 12px; height: 12px; color: var(--text-tertiary); }
+  .phone__top .top-spacer { flex: 1; }
+  .phone__body {
+    height: calc(812px - 44px - 56px - 76px);
+    overflow: hidden;
+    padding: 18px 16px 80px; display: flex; flex-direction: column; gap: 18px;
+  }
+  .m-greet h1 { font-family: var(--font-display); font-size: 26px; font-weight: 700; letter-spacing: -0.022em; color: #0a0a0a; line-height: 32px; margin: 0; }
+  .m-greet p { font-size: 13px; color: rgba(0,0,0,0.55); margin-top: 6px; }
+  .m-greet .sub-chip { margin-top: 12px; font-size: 11px; }
+
+  .m-qa { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+  .m-qa .btn { height: 40px; font-size: 13px; padding: 0 12px; justify-content: center; }
+
+  .m-kpis { display: flex; flex-direction: column; gap: 12px; }
+  .m-kpi {
+    background: #ffffff; border-radius: 12px; padding: 16px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+    display: grid; grid-template-columns: 36px 1fr auto; gap: 12px; align-items: center;
+  }
+  .m-kpi .kpi__icon { width: 36px; height: 36px; }
+  .m-kpi .kpi__icon svg { width: 18px; height: 18px; }
+  .m-kpi .lbl { font-size: 10.5px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(0,0,0,0.50); }
+  .m-kpi .val { font-family: var(--font-display); font-weight: 700; font-size: 18px; color: #0a0a0a; font-variant-numeric: tabular-nums; letter-spacing: -0.012em; margin-top: 1px; }
+  .m-kpi .big { font-family: var(--font-display); font-weight: 700; font-size: 22px; color: #0a0a0a; font-variant-numeric: tabular-nums; letter-spacing: -0.018em; }
+  .m-kpi .big small { font-family: var(--font-mono); font-size: 11px; color: rgba(0,0,0,0.45); font-weight: 500; }
+
+  .m-accord { background: #ffffff; border-radius: 12px; padding: 14px 16px; box-shadow: 0 1px 2px rgba(0,0,0,0.04); display: flex; align-items: center; gap: 10px; }
+  .m-accord b { flex: 1; font-size: 13px; color: #0a0a0a; font-weight: 600; }
+  .m-accord small { font-family: var(--font-mono); font-size: 11px; color: var(--text-tertiary); }
+  .m-accord svg { width: 14px; height: 14px; color: var(--text-tertiary); }
+
+  /* mobile bottom nav */
+  .phone__nav {
+    position: absolute; left: 0; right: 0; bottom: 0; height: 76px;
+    background: rgba(255,255,255,0.92); backdrop-filter: blur(20px);
+    border-top: 1px solid var(--border-subtle);
+    display: grid; grid-template-columns: repeat(5, 1fr);
+    padding: 8px 0 16px;
+  }
+  .phone__nav a {
+    display: flex; flex-direction: column; align-items: center; gap: 4px;
+    color: rgba(0,0,0,0.45); text-decoration: none; font-size: 10.5px; font-weight: 500;
+    position: relative;
+  }
+  .phone__nav a svg { width: 22px; height: 22px; stroke-width: 1.85; }
+  .phone__nav a.active { color: var(--brand-gold-text); }
+  .phone__nav a.active svg { color: var(--brand-gold); }
+  .phone__nav a .badge {
+    position: absolute; top: -2px; right: 24px;
+    min-width: 16px; height: 16px; padding: 0 4px;
+    background: var(--state-error); color: #fff;
+    font-family: var(--font-mono); font-size: 9.5px; font-weight: 700;
+    display: grid; place-items: center; border-radius: 9999px;
+    border: 1.5px solid #fff;
+  }
+
+  /* ============================================================================
+     Cmd+K inset
+     ============================================================================ */
+  .cmdk-wrap {
+    width: 100%; height: 320px; position: relative; overflow: hidden;
+    border-radius: 14px;
+    background:
+      radial-gradient(ellipse at top, rgba(176,137,48,0.10), transparent 60%),
+      linear-gradient(180deg, #f4f1ea, #e8e3d6);
+    border: 1px solid rgba(0,0,0,0.06);
+  }
+  .cmdk-wrap::before {
+    content: ""; position: absolute; inset: 0;
+    background-image:
+      radial-gradient(circle at 25% 30%, rgba(0,0,0,0.04), transparent 40%),
+      radial-gradient(circle at 75% 70%, rgba(0,0,0,0.05), transparent 50%);
+    backdrop-filter: blur(8px);
+  }
+  .cmdk {
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+    width: 380px;
+    background: #ffffff; border-radius: 14px;
+    box-shadow: 0 20px 50px -10px rgba(0,0,0,0.25), 0 6px 16px rgba(0,0,0,0.08);
+    border: 1px solid rgba(0,0,0,0.06);
+    overflow: hidden;
+  }
+  .cmdk__inp { display: flex; align-items: center; gap: 10px; padding: 14px 14px; border-bottom: 1px solid var(--border-subtle); }
+  .cmdk__inp svg { width: 16px; height: 16px; color: var(--text-tertiary); }
+  .cmdk__inp input { flex: 1; border: 0; outline: 0; font-family: var(--font-body); font-size: 14px; color: var(--text-primary); }
+  .cmdk__inp input::placeholder { color: rgba(0,0,0,0.40); }
+  .cmdk__list { padding: 6px; }
+  .cmdk__item { display: grid; grid-template-columns: 22px 1fr auto; gap: 10px; align-items: center; padding: 8px 8px; border-radius: 8px; font-size: 13px; color: rgba(0,0,0,0.78); }
+  .cmdk__item.is-sel { background: #fff8e7; color: #6d5310; }
+  .cmdk__item.is-sel svg { color: var(--brand-gold); }
+  .cmdk__item svg { width: 14px; height: 14px; color: rgba(0,0,0,0.55); stroke-width: 1.85; }
+  .cmdk__item .meta { font-family: var(--font-mono); font-size: 10.5px; color: var(--text-tertiary); }
+  .cmdk__group { font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-tertiary); padding: 8px 10px 4px; }
+
+  /* ============================================================================
+     Empty + Skeleton insets
+     ============================================================================ */
+  .mini-card {
+    width: 100%; height: 220px;
+    background: #ffffff; border-radius: 12px;
+    border: 1px solid rgba(0,0,0,0.05);
+    padding: 22px;
+    display: flex; flex-direction: column;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.04), 0 8px 24px -10px rgba(0,0,0,0.06);
+  }
+  .empty-glyph {
+    width: 56px; height: 56px; border-radius: 14px;
+    background: #fff7e0; color: var(--brand-gold);
+    display: grid; place-items: center; margin-bottom: 12px;
+  }
+  .empty-glyph svg { width: 28px; height: 28px; stroke-width: 1.5; }
+  .empty-card h4 { font-family: var(--font-display); font-size: 16px; font-weight: 600; color: #0a0a0a; letter-spacing: -0.008em; }
+  .empty-card p { font-size: 12.5px; line-height: 18px; color: rgba(0,0,0,0.55); margin-top: 4px; }
+  .empty-card a { font-size: 12.5px; color: var(--brand-gold-text); text-decoration: none; font-weight: 500; margin-top: auto; }
+
+  /* Skeleton */
+  .skel-grid { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; gap: 10px; height: 100%; }
+  .skel-tile { background: #ffffff; border: 1px solid rgba(0,0,0,0.04); border-radius: 10px; padding: 12px; display: flex; flex-direction: column; gap: 8px; }
+  .skel { background: linear-gradient(90deg, #f1f0eb 0%, #e8e6e0 50%, #f1f0eb 100%); background-size: 200% 100%; border-radius: 6px; animation: shimmer 1.6s linear infinite; }
+  @keyframes shimmer { from { background-position: 100% 0; } to { background-position: -100% 0; } }
+  @media (prefers-reduced-motion: reduce) { .skel { animation: none; } }
+  .skel--icon { width: 24px; height: 24px; border-radius: 7px; }
+  .skel--lbl { width: 50%; height: 7px; }
+  .skel--big { width: 60%; height: 18px; }
+  .skel--sub { width: 80%; height: 8px; margin-top: auto; }
+
+  /* ============================================================================
+     Annotations
+     ============================================================================ */
+  .notes {
+    background: #ffffff;
+    border: 1px solid rgba(0,0,0,0.05);
+    border-radius: 16px;
+    padding: 32px 36px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.04), 0 8px 24px -10px rgba(0,0,0,0.06);
+  }
+  .notes h2 { font-family: var(--font-display); font-size: 20px; font-weight: 600; letter-spacing: -0.012em; color: #0a0a0a; margin-bottom: 16px; }
+  .notes ul { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 14px 32px; }
+  .notes li { display: grid; grid-template-columns: 84px 1fr; gap: 16px; align-items: baseline; padding: 8px 0; border-top: 1px solid var(--border-subtle); }
+  .notes li:nth-child(1), .notes li:nth-child(2) { border-top: 0; }
+  .notes li b { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--brand-gold-text); font-weight: 600; }
+  .notes li span { font-family: var(--font-body); font-size: 13.5px; line-height: 20px; color: rgba(0,0,0,0.72); }
+
+  /* Helpful scrollbar styling for the iframe */
+  ::-webkit-scrollbar { width: 10px; height: 10px; }
+  ::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.18); border-radius: 9999px; border: 2px solid #efece6; }
+  ::-webkit-scrollbar-track { background: transparent; }
+</style>
+</head>
+<body>
+
+<!-- ==========================================================================
+     Icon library (24x24 grid, currentColor, 1.75px stroke unless filled)
+     ========================================================================== -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <!-- nav -->
+    <symbol id="i-home" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11.5 12 4l9 7.5"/><path d="M5 10v9a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1v-9"/></symbol>
+    <symbol id="i-content" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/><path d="M8 14h7"/><path d="M8 17h4"/></symbol>
+    <symbol id="i-inbox" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M3 13l3-8h12l3 8"/><path d="M3 13v6a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1v-6"/><path d="M3 13h5l1 2h6l1-2h5"/></symbol>
+    <symbol id="i-catalog" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="7" height="7" rx="1.5"/><rect x="14" y="4" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></symbol>
+    <symbol id="i-platforms" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 0 1 0 18"/><path d="M12 3a14 14 0 0 0 0 18"/></symbol>
+    <symbol id="i-analytics" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10"/><path d="M10 20V4"/><path d="M16 20v-7"/><path d="M22 20H2"/></symbol>
+    <symbol id="i-billing" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="6" width="19" height="13" rx="2"/><path d="M2.5 10h19"/><path d="M6 15h4"/></symbol>
+    <symbol id="i-settings" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3h.1a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8v.1a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></symbol>
+
+    <!-- action / status -->
+    <symbol id="i-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></symbol>
+    <symbol id="i-bell" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10 21a2 2 0 0 0 4 0"/></symbol>
+    <symbol id="i-help" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 1 1 3.5 2.3c-.7.3-1 .9-1 1.7v.5"/><circle cx="12" cy="17" r="0.5" fill="currentColor"/></symbol>
+    <symbol id="i-chev-d" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></symbol>
+    <symbol id="i-chev-r" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></symbol>
+    <symbol id="i-arrow-r" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></symbol>
+    <symbol id="i-arrow-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5"/><path d="m6 11 6-6 6 6"/></symbol>
+    <symbol id="i-sign-out" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M10 4H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h4"/><path d="m16 17 5-5-5-5"/><path d="M21 12H9"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-post" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M3 20.5V19a4 4 0 0 1 4-4h7"/><circle cx="9" cy="8" r="4"/><path d="M19 14v6"/><path d="M16 17h6"/></symbol>
+    <symbol id="i-order-add" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h2l2 11a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2"/><path d="M9 21a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/><path d="M18 21a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/><path d="M17 11V5"/><path d="M14 8h6"/></symbol>
+    <symbol id="i-catalog-add" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="4" width="7" height="7" rx="1.5"/><path d="M14 17.5h7"/><path d="M17.5 14v7"/></symbol>
+    <symbol id="i-cal-add" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18"/><path d="M8 3v4"/><path d="M16 3v4"/><path d="M12 14v4"/><path d="M10 16h4"/></symbol>
+    <symbol id="i-success" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></symbol>
+    <symbol id="i-warning" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.86 2.5 17a2 2 0 0 0 1.7 3h15.6a2 2 0 0 0 1.7-3L13.7 3.86a2 2 0 0 0-3.4 0Z"/><path d="M12 9v4"/><circle cx="12" cy="17" r="0.5" fill="currentColor"/></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="8" r="0.5" fill="currentColor"/></symbol>
+    <symbol id="i-booking" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7 9 18l-5-5"/></symbol>
+    <symbol id="i-order-new" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h2l2 11a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2l1.5-9H6"/><circle cx="9" cy="21" r="1"/><circle cx="18" cy="21" r="1"/></symbol>
+    <symbol id="i-receipt" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M4 3v18l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V3l-2 1-2-1-2 1-2-1-2 1-2-1-2 1Z"/><path d="M8 9h8"/><path d="M8 13h5"/></symbol>
+    <symbol id="i-empty-feed" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><path d="M3 13l3-8h12l3 8"/><path d="M3 13v6a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1v-6"/><path d="M3 13h5l1 2h6l1-2h5"/><path d="m10 9 2 2 2-2"/></symbol>
+
+    <!-- brand -->
+    <symbol id="i-sparkle" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 13.6 8.4 20 10l-6.4 1.6L12 18l-1.6-6.4L4 10l6.4-1.6L12 2Z"/><path d="M19 3l.7 2.3L22 6l-2.3.7L19 9l-.7-2.3L16 6l2.3-.7L19 3Z" opacity="0.7"/><path d="M5 16l.6 1.8L7.4 18l-1.8.6L5 20l-.6-1.8L2.6 18l1.8-.6L5 16Z" opacity="0.5"/></symbol>
+    <symbol id="i-bolt" viewBox="0 0 24 24" fill="currentColor"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8Z"/></symbol>
+
+    <!-- mobile bottom nav -->
+    <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16"/><path d="M4 12h16"/><path d="M4 17h16"/></symbol>
+
+    <!-- status bar icons (mobile) -->
+    <symbol id="i-signal" viewBox="0 0 24 24" fill="currentColor"><rect x="2" y="14" width="3" height="6" rx="0.5"/><rect x="7" y="11" width="3" height="9" rx="0.5"/><rect x="12" y="7" width="3" height="13" rx="0.5"/><rect x="17" y="3" width="3" height="17" rx="0.5"/></symbol>
+    <symbol id="i-wifi" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M2 9a16 16 0 0 1 20 0"/><path d="M5 13a11 11 0 0 1 14 0"/><path d="M8.5 16.5a6 6 0 0 1 7 0"/><circle cx="12" cy="20" r="1" fill="currentColor"/></symbol>
+    <symbol id="i-battery" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="7" width="18" height="10" rx="2"/><rect x="3.5" y="8.5" width="13" height="7" rx="1" fill="currentColor" stroke="none"/><path d="M22 10v4" stroke-linecap="round"/></symbol>
+  </defs>
+</svg>
+
+<main class="stage">
+
+  <!-- =========================== Stage header =========================== -->
+  <header class="stage__hd">
+    <div>
+      <div class="stage__eyebrow">SmashOne · Client Cabinet · Dashboard concept</div>
+      <h1 class="stage__title">Good morning, Mary — your shop, at a glance.</h1>
+      <p class="stage__sub">A calm cabinet for High Cotton Antiques. One scroll tells Mary what's urgent, what's good, and what's next — across her 6 platforms, her AI assistant, and her catalog of 134 active items.</p>
+    </div>
+    <div class="stage__meta">
+      <strong>Surface:</strong> <code>app.smashone.us/cabinet</code><br>
+      <strong>Theme:</strong> Light only · WCAG 2.2 AA (AAA on KPI numbers)<br>
+      <strong>Persona:</strong> Mary Brown, Owner · York, SC · PRO $79/mo<br>
+      <strong>Wave 1:</strong> Facebook · Instagram · Telegram · AI Assistant<br>
+      <strong>Wave 2 (Jul 2026):</strong> WhatsApp · TikTok · Google Business Profile
+    </div>
+  </header>
+
+  <!-- ============================================================
+       PRIMARY: 1440-wide desktop cabinet artboard
+       ============================================================ -->
+  <section class="artboard" aria-label="Desktop cabinet — 1440px primary view">
+    <div class="artboard__caption"><span class="dot"></span><b>Primary view</b> · 1440 × auto · Desktop cabinet</div>
+
+    <div class="cabinet">
+
+      <!-- ============================ Sidebar =========================== -->
+      <aside class="side">
+        <a class="side__brand" href="#" aria-label="SmashOne dashboard">
+          <span class="brandmark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-bolt"/></svg>
+          </span>
+          <span class="brandtype">SmashOne</span>
+        </a>
+
+        <button class="ws" aria-label="Switch workspace">
+          <span class="ws__av" aria-hidden="true">HC</span>
+          <span class="ws__body">
+            <div class="ws__name">High Cotton Antiques</div>
+            <div class="ws__handle">@highcottonantiques</div>
+          </span>
+          <svg class="ws__chev" width="16" height="16" aria-hidden="true"><use href="#i-chev-r"/></svg>
+        </button>
+
+        <nav class="nav" aria-label="Primary">
+          <div class="nav__group">
+            <a class="nav__item is-active" href="#" aria-current="page">
+              <svg aria-hidden="true"><use href="#i-home"/></svg>
+              Home
+            </a>
+            <a class="nav__item" href="#">
+              <svg aria-hidden="true"><use href="#i-content"/></svg>
+              Posts
+              <span class="nav__pill">3 scheduled</span>
+            </a>
+            <a class="nav__item" href="#">
+              <svg aria-hidden="true"><use href="#i-inbox"/></svg>
+              Inbox
+              <span class="nav__pill">8</span>
+            </a>
+            <a class="nav__item" href="#">
+              <svg aria-hidden="true"><use href="#i-catalog"/></svg>
+              Catalog
+              <span class="nav__pill">134</span>
+            </a>
+          </div>
+
+          <div class="nav__divider" role="separator"></div>
+
+          <div class="nav__group">
+            <a class="nav__item" href="#">
+              <svg aria-hidden="true"><use href="#i-platforms"/></svg>
+              Platforms
+              <span class="nav__dot" aria-label="3 connected"></span>
+            </a>
+            <a class="nav__item" href="#">
+              <svg aria-hidden="true"><use href="#i-analytics"/></svg>
+              Analytics
+            </a>
+            <a class="nav__item" href="#">
+              <svg aria-hidden="true"><use href="#i-billing"/></svg>
+              Billing
+            </a>
+            <a class="nav__item" href="#">
+              <svg aria-hidden="true"><use href="#i-settings"/></svg>
+              Settings
+            </a>
+          </div>
+        </nav>
+
+        <div class="side__foot">
+          <span class="av-mb" aria-hidden="true">MB</span>
+          <div style="min-width:0; flex:1;">
+            <div class="nm">Mary Brown</div>
+            <div class="rl">Owner</div>
+          </div>
+          <button class="icon-btn" aria-label="Sign out">
+            <svg aria-hidden="true"><use href="#i-sign-out"/></svg>
+          </button>
+        </div>
+      </aside>
+
+      <!-- ============================ Workspace ========================= -->
+      <section class="work">
+
+        <!-- Topbar -->
+        <header class="topbar">
+          <div class="crumb">
+            Cabinet
+            <svg aria-hidden="true"><use href="#i-chev-r"/></svg>
+            <b>Home</b>
+          </div>
+
+          <label class="search" aria-label="Search">
+            <svg aria-hidden="true"><use href="#i-search"/></svg>
+            <input type="search" placeholder="Search posts, customers, items…" value="">
+            <span class="kbd">⌘K</span>
+          </label>
+
+          <div class="top__right">
+            <button class="icon-btn icon-btn--lg bell" aria-label="Notifications, 3 unread">
+              <svg aria-hidden="true"><use href="#i-bell"/></svg>
+              <span class="dot" aria-hidden="true">3</span>
+            </button>
+            <a class="icon-btn icon-btn--lg" href="/help" target="_blank" rel="noopener" aria-label="Help">
+              <svg aria-hidden="true"><use href="#i-help"/></svg>
+            </a>
+            <button class="me" aria-label="Account menu">
+              <span class="av" aria-hidden="true">MB</span>
+              <svg aria-hidden="true"><use href="#i-chev-d"/></svg>
+            </button>
+          </div>
+        </header>
+
+        <!-- ======================= Canvas ======================= -->
+        <div class="canvas">
+
+          <!-- Greeting -->
+          <div class="greet">
+            <div>
+              <h1>Good morning, Mary</h1>
+              <div class="greet__sub">
+                <b>High Cotton Antiques</b>
+                <span class="sep">·</span>
+                <span>Tuesday, May 19</span>
+                <span class="sep">·</span>
+                <span>York, SC</span>
+              </div>
+            </div>
+            <div class="greet__right">
+              <div class="lastlogin">
+                <svg aria-hidden="true"><use href="#i-clock"/></svg>
+                <span>Last login <span class="ts">yesterday, 9:42 PM</span></span>
+              </div>
+              <span class="sub-chip">
+                <span class="pulse" aria-hidden="true"></span>
+                PRO · Active · Renews Jun 19
+              </span>
+            </div>
+          </div>
+
+          <!-- ===================== KPI grid ===================== -->
+          <div class="kpi-grid" role="list">
+
+            <!-- 1. AI Assistant -->
+            <article class="kpi" role="listitem">
+              <header class="kpi__head">
+                <span class="kpi__icon kpi__icon--gold" aria-hidden="true">
+                  <svg aria-hidden="true"><use href="#i-sparkle"/></svg>
+                </span>
+                <span class="kpi__label">AI assistant</span>
+              </header>
+              <div class="kpi__big tabular">847 <span class="unit">/ 1,000</span></div>
+              <div class="bar" aria-label="85% of monthly replies used"><i style="width:84.7%"></i></div>
+              <div class="kpi__foot tabular">153 replies left this month · 21 used today</div>
+            </article>
+
+            <!-- 2. Connected platforms -->
+            <article class="kpi" role="listitem">
+              <header class="kpi__head">
+                <span class="kpi__icon kpi__icon--info" aria-hidden="true">
+                  <svg aria-hidden="true"><use href="#i-platforms"/></svg>
+                </span>
+                <span class="kpi__label">Connected platforms</span>
+              </header>
+              <div class="kpi__big">2 <span class="unit">of 3</span></div>
+              <div class="stile-row" aria-label="Facebook and Instagram connected, Telegram not connected">
+                <span class="stile"><img src="assets/social/facebook.svg" alt="Facebook" loading="lazy"></span>
+                <span class="stile"><img src="assets/social/instagram.svg" alt="Instagram" loading="lazy"></span>
+                <span class="stile is-off"><img src="assets/social/telegram.svg" alt="Telegram (not connected)" loading="lazy"></span>
+              </div>
+              <div class="kpi__foot"><a href="#" class="gold">+ Connect Telegram →</a></div>
+            </article>
+
+            <!-- 3. Subscription -->
+            <article class="kpi" role="listitem">
+              <header class="kpi__head">
+                <span class="kpi__icon kpi__icon--gold" aria-hidden="true">
+                  <svg aria-hidden="true"><use href="#i-billing"/></svg>
+                </span>
+                <span class="kpi__label">Subscription</span>
+                <span class="chip" style="margin-left:auto" aria-label="PRO Active">
+                  <svg aria-hidden="true" style="color:#0f9b6c"><use href="#i-success"/></svg>
+                  PRO · Active
+                </span>
+              </header>
+              <div class="kpi__big tabular">$79 <span class="unit">/ mo</span></div>
+              <div class="kpi__sub">Next charge <b style="color:#0a0a0a; font-weight:500;">Jun 19, 2026</b></div>
+              <div class="kpi__foot"><a href="#">Manage billing →</a></div>
+            </article>
+
+            <!-- 4. Today's limits -->
+            <article class="kpi" role="listitem">
+              <header class="kpi__head">
+                <span class="kpi__icon kpi__icon--amber" aria-hidden="true">
+                  <svg aria-hidden="true"><use href="#i-clock"/></svg>
+                </span>
+                <span class="kpi__label">Today's limits</span>
+              </header>
+              <div class="kpi__big">3 <span class="unit">/ 5 auto-posts left</span></div>
+              <div style="display:flex; flex-direction:column; gap:8px;">
+                <div>
+                  <div style="display:flex; justify-content:space-between; font-family:var(--font-mono); font-size:11.5px; color:rgba(0,0,0,0.55); font-variant-numeric:tabular-nums; margin-bottom:4px;">
+                    <span>Auto-posts</span><span>2 of 5 used</span>
+                  </div>
+                  <div class="bar bar--amber"><i style="width:40%"></i></div>
+                </div>
+                <div>
+                  <div style="display:flex; justify-content:space-between; font-family:var(--font-mono); font-size:11.5px; color:rgba(0,0,0,0.55); font-variant-numeric:tabular-nums; margin-bottom:4px;">
+                    <span>Quick-posts</span><span>0 of 5 used</span>
+                  </div>
+                  <div class="bar bar--neutral"><i style="width:2%"></i></div>
+                </div>
+              </div>
+              <div class="kpi__foot">Resets midnight EST</div>
+            </article>
+
+            <!-- 5. New orders -->
+            <article class="kpi" role="listitem">
+              <header class="kpi__head">
+                <span class="kpi__icon kpi__icon--success" aria-hidden="true">
+                  <svg aria-hidden="true"><use href="#i-order-add"/></svg>
+                </span>
+                <span class="kpi__label">New orders · today</span>
+              </header>
+              <div class="kpi__big tabular">4 <span class="trend trend--up" style="font-size:13px; margin-left:0;">
+                <svg aria-hidden="true"><use href="#i-arrow-up"/></svg> +33% vs yesterday
+              </span></div>
+              <div class="kpi__sub" style="color:rgba(0,0,0,0.55);">Latest: <b style="color:#0a0a0a; font-weight:550; font-family:var(--font-body);">Karen Mills</b> · <span style="font-variant-numeric:tabular-nums;">$2,850</span> mahogany dining table</div>
+              <div class="kpi__foot"><a href="#">View orders →</a></div>
+            </article>
+
+            <!-- 6. Engagement -->
+            <article class="kpi" role="listitem">
+              <header class="kpi__head">
+                <span class="kpi__icon kpi__icon--violet" aria-hidden="true">
+                  <svg aria-hidden="true"><use href="#i-analytics"/></svg>
+                </span>
+                <span class="kpi__label">Engagement · today</span>
+              </header>
+              <div class="kpi__big tabular">428</div>
+              <svg class="spark" viewBox="0 0 200 32" preserveAspectRatio="none" aria-hidden="true">
+                <defs>
+                  <linearGradient id="sparkFill" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0" stop-color="#7c3aed" stop-opacity="0.18"/>
+                    <stop offset="1" stop-color="#7c3aed" stop-opacity="0"/>
+                  </linearGradient>
+                </defs>
+                <path d="M0,24 L25,20 L50,22 L75,14 L100,18 L125,10 L150,12 L175,6 L200,4 L200,32 L0,32 Z" fill="url(#sparkFill)"/>
+                <path d="M0,24 L25,20 L50,22 L75,14 L100,18 L125,10 L150,12 L175,6 L200,4" fill="none" stroke="#7c3aed" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="200" cy="4" r="2.5" fill="#7c3aed"/>
+              </svg>
+              <div class="kpi__foot tabular"><span class="trend trend--up" style="font-size:12px;"><svg aria-hidden="true"><use href="#i-arrow-up"/></svg> 12% vs 7-day avg</span> · 142 catalog views</div>
+            </article>
+          </div>
+
+          <!-- ===================== Quick actions ===================== -->
+          <div class="qa" role="group" aria-label="Quick actions">
+            <button class="btn btn--primary">
+              <svg aria-hidden="true"><use href="#i-post"/></svg>
+              Quick post
+            </button>
+            <button class="btn btn--ghost">
+              <svg aria-hidden="true"><use href="#i-order-add"/></svg>
+              New order
+            </button>
+            <button class="btn btn--ghost">
+              <svg aria-hidden="true"><use href="#i-catalog-add"/></svg>
+              Add catalog item
+            </button>
+            <button class="btn btn--ghost">
+              <svg aria-hidden="true"><use href="#i-cal-add"/></svg>
+              Schedule content
+            </button>
+          </div>
+
+          <!-- ===================== Main two-col ===================== -->
+          <div class="two-col">
+
+            <!-- LEFT — Activity feed -->
+            <section class="panel" aria-labelledby="feed-t">
+              <header class="panel__hd">
+                <h2 class="panel__t" id="feed-t">Recent activity</h2>
+                <div class="right">
+                  <button class="filter">
+                    All channels
+                    <svg aria-hidden="true"><use href="#i-chev-d"/></svg>
+                  </button>
+                  <a class="viewall" href="#">View all →</a>
+                </div>
+              </header>
+
+              <div class="feed">
+                <div class="feed__row">
+                  <div class="feed__time">14:30</div>
+                  <span class="feed__ico feed__ico--g" aria-hidden="true"><svg><use href="#i-order-new"/></svg></span>
+                  <div class="feed__body">New order <b>#4287</b> — <b>Karen Mills</b> bought <b>Eastlake mahogany dining table</b> for <b class="tabular">$2,850</b></div>
+                  <div class="feed__meta"><span class="meta-chip tabular">delivery Charlotte · $185</span></div>
+                </div>
+
+                <div class="feed__row">
+                  <div class="feed__time">13:58</div>
+                  <span class="feed__ico feed__ico--gold" aria-hidden="true"><svg><use href="#i-sparkle"/></svg></span>
+                  <div class="feed__body">AI replied to <b>Instagram DM</b> from <b>@charlotte_decorator</b> — asked about mahogany sideboard availability</div>
+                  <div class="feed__meta"><a class="meta-link" href="#">View thread →</a></div>
+                </div>
+
+                <div class="feed__row">
+                  <div class="feed__time">13:22</div>
+                  <span class="feed__ico feed__ico--b" aria-hidden="true"><svg><use href="#i-cal-add"/></svg></span>
+                  <div class="feed__body">Auto-post scheduled for <b>4:00 PM today</b> — “New arrival: 1885 Eastlake walnut sideboard”</div>
+                  <div class="feed__meta">
+                    <span class="stile" style="width:18px; height:18px;"><img src="assets/social/facebook.svg" alt=""></span>
+                    <span class="stile" style="width:18px; height:18px;"><img src="assets/social/instagram.svg" alt=""></span>
+                    <span class="meta-chip">2 platforms</span>
+                  </div>
+                </div>
+
+                <div class="feed__row">
+                  <div class="feed__time">12:45</div>
+                  <span class="feed__ico feed__ico--g" aria-hidden="true"><svg><use href="#i-booking"/></svg></span>
+                  <div class="feed__body">Booking confirmed — <b>Sarah Patel</b> viewing <b>Sat May 23, 11:00 AM</b> · interested in dining sets</div>
+                  <div class="feed__meta"><a class="meta-link" href="#">Calendar →</a></div>
+                </div>
+
+                <div class="feed__row">
+                  <div class="feed__time">11:30</div>
+                  <span class="feed__ico feed__ico--gold" aria-hidden="true"><svg><use href="#i-sparkle"/></svg></span>
+                  <div class="feed__body">AI replied to <b>Facebook Messenger</b> from <b>Robert Hayes</b> — provided shop hours + directions</div>
+                  <div class="feed__meta"><a class="meta-link" href="#">View thread →</a></div>
+                </div>
+
+                <div class="feed__row">
+                  <div class="feed__time">10:15</div>
+                  <span class="feed__ico feed__ico--g" aria-hidden="true"><svg><use href="#i-catalog-add"/></svg></span>
+                  <div class="feed__body">Catalog item added — <b>“Victorian rosewood parlor table circa 1875”</b> at <b class="tabular">$1,425</b></div>
+                  <div class="feed__meta"><span class="meta-chip meta-chip--g">Live now</span></div>
+                </div>
+
+                <div class="feed__row">
+                  <div class="feed__time">09:42</div>
+                  <span class="feed__ico feed__ico--a" aria-hidden="true"><svg><use href="#i-warning"/></svg></span>
+                  <div class="feed__body">Low stock alert — <b>“Antique brass candlesticks pair”</b> · 1 remaining. Reorder or remove from auto-posts.</div>
+                  <div class="feed__meta"><a class="meta-link" href="#">Manage →</a></div>
+                </div>
+
+                <div class="feed__row">
+                  <div class="feed__time">18:30 <small>yesterday</small></div>
+                  <span class="feed__ico feed__ico--g" aria-hidden="true"><svg><use href="#i-success"/></svg></span>
+                  <div class="feed__body">Order completed — <b>#4283</b> · <b>Diane Rutherford</b> picked up <b>walnut sideboard <span class="tabular">$1,250</span></b></div>
+                  <div class="feed__meta"><a class="meta-link" href="#">Receipt →</a></div>
+                </div>
+              </div>
+            </section>
+
+            <!-- RIGHT — widget stack -->
+            <aside class="stack">
+
+              <section class="wid" aria-labelledby="w1-t">
+                <header class="panel__hd" style="margin-bottom:14px;">
+                  <div>
+                    <div class="wid__t" id="w1-t">This week</div>
+                    <div class="wid__sub tabular">May 13 — May 19</div>
+                  </div>
+                </header>
+                <div class="metric-row">
+                  <span class="lbl">Reach</span>
+                  <span class="val">1,247</span>
+                  <span class="dlt">+8% vs last week</span>
+                </div>
+                <div class="metric-row">
+                  <span class="lbl">Engagement rate</span>
+                  <span class="val">8.4%</span>
+                  <span class="dlt">+0.6 pts</span>
+                </div>
+                <div class="metric-row">
+                  <span class="lbl">Conversion to inquiry</span>
+                  <span class="val">3.1%</span>
+                  <span class="dlt is-down">− 0.2 pts</span>
+                </div>
+                <div class="wid__foot"><a href="#">Open full analytics →</a></div>
+              </section>
+
+              <section class="wid" aria-labelledby="w2-t">
+                <header class="panel__hd" style="margin-bottom:12px;">
+                  <div class="wid__t" id="w2-t">Upcoming this week</div>
+                </header>
+                <div class="bk">
+                  <div class="bk__big">5</div>
+                  <div class="bk__next">Next: <b style="color:#0a0a0a; font-weight:550;">Sarah Patel</b> · <span class="tabular">Sat May 23, 11:00 AM</span></div>
+                  <div class="bk__list">
+                    <div class="bk__row"><span class="when">Sat 11:00</span><div><b>Sarah Patel</b> · dining sets viewing</div></div>
+                    <div class="bk__row"><span class="when">Sat 14:30</span><div><b>Robert Hayes</b> · sideboard pickup</div></div>
+                    <div class="bk__row"><span class="when">Sun 12:00</span><div><b>Diana Pope</b> · estate appraisal</div></div>
+                  </div>
+                </div>
+                <div class="wid__foot" style="margin-top:14px;"><a href="#">Open calendar →</a></div>
+              </section>
+
+              <section class="wid" aria-labelledby="w3-t">
+                <header class="panel__hd" style="margin-bottom:4px;">
+                  <div class="wid__t" id="w3-t">Catalog health</div>
+                </header>
+                <div class="ih">
+                  <div class="ih__row s">
+                    <svg aria-hidden="true"><use href="#i-success"/></svg>
+                    <span class="lbl">Items active</span>
+                    <span class="v">134</span>
+                  </div>
+                  <div class="ih__row w">
+                    <svg aria-hidden="true"><use href="#i-warning"/></svg>
+                    <span class="lbl">Low stock alerts</span>
+                    <span class="v">3</span>
+                  </div>
+                  <div class="ih__row i">
+                    <svg aria-hidden="true"><use href="#i-info"/></svg>
+                    <span class="lbl">Drafts pending review</span>
+                    <span class="v">2</span>
+                  </div>
+                </div>
+                <div class="wid__foot"><a href="#">Manage catalog →</a></div>
+              </section>
+
+            </aside>
+          </div>
+
+        </div>
+
+        <footer class="cab-foot">
+          <span>SmashOne · v1.4.0</span>
+          <span class="right">
+            <a href="#">Help</a>
+            <a href="#">Status</a>
+            <a href="#">Keyboard shortcuts (⌘K)</a>
+          </span>
+        </footer>
+
+      </section>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECONDARY ROW — Mobile + 3 insets
+       ============================================================ -->
+  <section class="row2">
+
+    <!-- Mobile artboard -->
+    <div class="inset-block">
+      <div class="inset-cap"><span class="dot"></span><b>Mobile reflow</b> · 375 × 812</div>
+      <p class="inset-note">Sidebar collapses to a 5-item bottom nav (Inbox carries the 8 badge). KPIs stack 1-col; widgets become accordions below the activity feed.</p>
+
+      <div class="phone">
+        <div class="phone__notch" aria-hidden="true"></div>
+
+        <div class="phone__status">
+          <span>9:14</span>
+          <div class="right">
+            <svg aria-hidden="true"><use href="#i-signal"/></svg>
+            <svg aria-hidden="true"><use href="#i-wifi"/></svg>
+            <svg aria-hidden="true"><use href="#i-battery"/></svg>
+          </div>
+        </div>
+
+        <header class="phone__top">
+          <span class="brandmark" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><use href="#i-bolt"/></svg>
+          </span>
+          <span class="ws-pill">
+            <span class="av">HC</span>
+            <b>High Cotton</b>
+            <svg aria-hidden="true"><use href="#i-chev-d"/></svg>
+          </span>
+          <span class="top-spacer"></span>
+          <button class="icon-btn bell" aria-label="Notifications, 3 unread">
+            <svg aria-hidden="true"><use href="#i-bell"/></svg>
+            <span class="dot" aria-hidden="true">3</span>
+          </button>
+          <button class="icon-btn" aria-label="Menu">
+            <svg aria-hidden="true"><use href="#i-menu"/></svg>
+          </button>
+        </header>
+
+        <div class="phone__body">
+          <div class="m-greet">
+            <h1>Good morning, Mary</h1>
+            <p><b style="color:#0a0a0a; font-weight:600;">High Cotton Antiques</b> · Tue, May 19</p>
+            <span class="sub-chip" style="margin-top:10px;">
+              <span class="pulse" aria-hidden="true"></span>
+              PRO · Renews Jun 19
+            </span>
+          </div>
+
+          <div class="m-qa">
+            <button class="btn btn--primary"><svg aria-hidden="true"><use href="#i-post"/></svg> Quick post</button>
+            <button class="btn btn--ghost"><svg aria-hidden="true"><use href="#i-order-add"/></svg> New order</button>
+          </div>
+
+          <div class="m-kpis">
+            <div class="m-kpi">
+              <span class="kpi__icon kpi__icon--gold" aria-hidden="true"><svg><use href="#i-sparkle"/></svg></span>
+              <div>
+                <div class="lbl">AI assistant</div>
+                <div class="big tabular">847 <small>/ 1,000</small></div>
+              </div>
+              <span class="meta-chip tabular">85%</span>
+            </div>
+            <div class="m-kpi">
+              <span class="kpi__icon kpi__icon--success" aria-hidden="true"><svg><use href="#i-order-add"/></svg></span>
+              <div>
+                <div class="lbl">New orders · today</div>
+                <div class="big tabular">4 <small style="color:#0f9b6c;">↑ 33%</small></div>
+              </div>
+              <span class="meta-chip meta-chip--g">$3,840</span>
+            </div>
+            <div class="m-kpi">
+              <span class="kpi__icon kpi__icon--amber" aria-hidden="true"><svg><use href="#i-clock"/></svg></span>
+              <div>
+                <div class="lbl">Today's limits</div>
+                <div class="big tabular">3 <small>/ 5 posts left</small></div>
+              </div>
+              <span class="meta-chip">2 used</span>
+            </div>
+          </div>
+
+          <div style="display:flex; flex-direction:column; gap:8px;">
+            <div class="m-accord"><b>This week</b><small>1,247 reach</small><svg><use href="#i-chev-d"/></svg></div>
+            <div class="m-accord"><b>Upcoming bookings</b><small>5 this wk</small><svg><use href="#i-chev-d"/></svg></div>
+            <div class="m-accord"><b>Catalog health</b><small>134 · 3 low</small><svg><use href="#i-chev-d"/></svg></div>
+          </div>
+        </div>
+
+        <nav class="phone__nav" aria-label="Mobile primary">
+          <a href="#" class="active"><svg aria-hidden="true"><use href="#i-home"/></svg> Home</a>
+          <a href="#"><svg aria-hidden="true"><use href="#i-content"/></svg> Posts</a>
+          <a href="#"><svg aria-hidden="true"><use href="#i-inbox"/></svg> Inbox <span class="badge">8</span></a>
+          <a href="#"><svg aria-hidden="true"><use href="#i-catalog"/></svg> Catalog</a>
+          <a href="#"><svg aria-hidden="true"><use href="#i-menu"/></svg> Menu</a>
+        </nav>
+      </div>
+    </div>
+
+    <!-- 3 insets -->
+    <div class="insets">
+
+      <!-- Cmd+K (spans 2 cols) -->
+      <div class="inset-block" style="grid-column: 1 / -1;">
+        <div class="inset-cap"><span class="dot"></span><b>Command palette</b> · ⌘K overlay · 480 × 320</div>
+        <div class="cmdk-wrap" aria-hidden="true">
+          <div class="cmdk">
+            <div class="cmdk__inp">
+              <svg aria-hidden="true"><use href="#i-search"/></svg>
+              <input value="quic" placeholder="Type a command or search…">
+              <span class="kbd">esc</span>
+            </div>
+            <div class="cmdk__list">
+              <div class="cmdk__group">Actions</div>
+              <div class="cmdk__item is-sel">
+                <svg aria-hidden="true"><use href="#i-post"/></svg>
+                Create a quick post
+                <span class="meta">Q P</span>
+              </div>
+              <div class="cmdk__item">
+                <svg aria-hidden="true"><use href="#i-cal-add"/></svg>
+                Schedule a broadcast
+                <span class="meta">Q B</span>
+              </div>
+              <div class="cmdk__group">Navigate</div>
+              <div class="cmdk__item">
+                <svg aria-hidden="true"><use href="#i-catalog"/></svg>
+                Open Catalog
+                <span class="meta">G C</span>
+              </div>
+              <div class="cmdk__item">
+                <svg aria-hidden="true"><use href="#i-platforms"/></svg>
+                Connect a platform
+                <span class="meta">G P</span>
+              </div>
+              <div class="cmdk__item">
+                <svg aria-hidden="true"><use href="#i-billing"/></svg>
+                View billing
+                <span class="meta">G $</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Empty -->
+      <div class="inset-block">
+        <div class="inset-cap"><span class="dot"></span><b>Empty state</b> · activity feed</div>
+        <div class="mini-card empty-card">
+          <span class="empty-glyph" aria-hidden="true">
+            <svg aria-hidden="true"><use href="#i-empty-feed"/></svg>
+          </span>
+          <h4>Quiet day so far.</h4>
+          <p>New orders, AI replies, and scheduled posts will show up here as they happen.</p>
+          <a href="#">Create a quick post →</a>
+        </div>
+      </div>
+
+      <!-- Skeleton -->
+      <div class="inset-block">
+        <div class="inset-cap"><span class="dot"></span><b>Loading skeleton</b> · KPI grid</div>
+        <div class="mini-card" style="padding:14px;">
+          <div class="skel-grid">
+            <div class="skel-tile">
+              <div class="skel skel--icon"></div>
+              <div class="skel skel--lbl"></div>
+              <div class="skel skel--big"></div>
+              <div class="skel skel--sub"></div>
+            </div>
+            <div class="skel-tile">
+              <div class="skel skel--icon"></div>
+              <div class="skel skel--lbl"></div>
+              <div class="skel skel--big"></div>
+              <div class="skel skel--sub"></div>
+            </div>
+            <div class="skel-tile">
+              <div class="skel skel--icon"></div>
+              <div class="skel skel--lbl"></div>
+              <div class="skel skel--big"></div>
+              <div class="skel skel--sub"></div>
+            </div>
+            <div class="skel-tile">
+              <div class="skel skel--icon"></div>
+              <div class="skel skel--lbl"></div>
+              <div class="skel skel--big"></div>
+              <div class="skel skel--sub"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       Annotations
+       ============================================================ -->
+  <section class="notes" aria-labelledby="notes-t">
+    <h2 id="notes-t">Design decisions</h2>
+    <ul>
+      <li><b>Aibro mirror</b><span>Sidebar 240 + workspace card + glass topbar + 6-tile KPI grid + activity feed left / widgets right. Same skeleton, SmashOne body — Vivid Sovereign gold (not emerald), Onest display (not mixed pair), and Mary's verbatim shop data.</span></li>
+      <li><b>60-30-10 gold</b><span>Gold appears only where it sells: AI Assistant tile mark + progress fill, sidebar Home indicator, “Quick post” CTA, PRO chip border, time-of-day glow. Everywhere else is neutral grayscale + semantic states.</span></li>
+      <li><b>Authentic data</b><span>Karen Mills $2,850 Eastlake mahogany dining table, Sarah Patel viewing Sat May 23, @charlotte_decorator IG DM, low-stock “Antique brass candlesticks pair” — sourced from Mary's High Cotton Antiques DEMOBIZ.</span></li>
+      <li><b>Typography discipline</b><span>Onest 700 / -0.022em for the H1 greeting and KPI big numbers; IBM Plex Mono with tabular-nums on every numeric field (quotas, prices, timestamps, the kbd chip); Inter 450 body; sentence case throughout.</span></li>
+      <li><b>Accessibility AAA on metrics</b><span>KPI numbers and activity lead lines clear 7:1 against white. Status pills triple-encode icon + color + label. Visible 2px gold focus ring with 4px offset, ⌘K palette discoverable, 44px primary CTA hit target.</span></li>
+      <li><b>6 platforms — canonical</b><span>Wave 1 (FB · IG · TG · AI) live in the platforms tile and feed. Wave 2 (WA · TT · GBP) are deliberately absent from this concept — they ship as Coming July 2026 placeholders on the Platforms surface, not Home.</span></li>
+      <li><b>Microscopic polish</b><span>Hairline borders rgba(0,0,0,0.04–0.06), `0 1px 2px + 0 8px 24px` two-step card shadow, 14 px radius cards / 10 px buttons / 20 px artboard, 200 ms cubic-bezier(0.2,0,0.38,0.9) hover, no bounce, no overshoot.</span></li>
+      <li><b>Reduced-motion gate</b><span>Skeleton shimmer + card-reveal stagger respect `prefers-reduced-motion: reduce` (1 ms duration override). No theme toggle UI rendered anywhere — light theme only per the iron rule.</span></li>
+    </ul>
+  </section>
+
+</main>
+
+</body>
+</html>
