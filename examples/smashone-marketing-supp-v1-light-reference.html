@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>SmashOne — Supplementary pages</title>
+<link rel="stylesheet" href="shared.css" />
+<style>
+  .overview-hero { padding: 80px 0 56px; }
+  .overview-hero .eyebrow { margin-bottom: 14px; }
+  .overview-hero h1 { max-width: 820px; margin: 0 0 18px; }
+  .overview-hero p { font-size: 17px; line-height: 28px; color: var(--text-secondary); max-width: 640px; margin: 0; }
+
+  .page-cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+  @media (max-width: 760px) { .page-cards { grid-template-columns: 1fr; } }
+
+  .page-card {
+    display: flex; flex-direction: column; gap: 16px;
+    background: var(--surface-elevated);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-xl);
+    padding: 28px;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: var(--shadow-sm);
+    transition: transform var(--dur-card) var(--ease-ui), box-shadow var(--dur-card) var(--ease-ui), border-color var(--dur-card) var(--ease-ui);
+    min-height: 240px;
+    justify-content: space-between;
+  }
+  .page-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); border-color: var(--border-strong); }
+  .page-card__head { display: flex; align-items: center; gap: 14px; }
+  .page-card__icon { width: 44px; height: 44px; border-radius: var(--radius-md); background: var(--brand-gold-tint); color: var(--brand-gold); display: inline-flex; align-items: center; justify-content: center; }
+  .page-card__icon svg { width: 22px; height: 22px; }
+  .page-card__path { font-family: var(--font-mono); font-size: 12px; color: var(--text-tertiary); }
+  .page-card__title { font-family: var(--font-display); font-size: 24px; font-weight: 620; letter-spacing: -0.014em; color: var(--text-strong); margin: 0 0 8px; }
+  .page-card__sub { font-size: 14px; line-height: 22px; color: var(--text-secondary); margin: 0; }
+  .page-card__foot { display: flex; align-items: center; gap: 8px; color: var(--brand-gold-text); font-size: 13px; font-weight: 600; }
+
+  .atoms { padding: 80px 0 96px; background: var(--surface-raised); border-top: 1px solid var(--border-subtle); }
+  .atoms h2 { margin-bottom: 8px; }
+  .atoms__sub { color: var(--text-secondary); margin: 0 0 40px; }
+  .atom-block { background: var(--surface-elevated); border: 1px solid var(--border-subtle); border-radius: var(--radius-xl); padding: 28px; }
+  .atom-block + .atom-block { margin-top: 16px; }
+  .atom-block h3 { font-family: var(--font-display); font-size: 16px; font-weight: 600; color: var(--text-strong); margin: 0 0 18px; letter-spacing: -0.005em; }
+
+  .swatches { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+  @media (max-width: 720px) { .swatches { grid-template-columns: repeat(2, 1fr); } }
+  .sw { border: 1px solid var(--border-subtle); border-radius: var(--radius-md); overflow: hidden; }
+  .sw__chip { height: 64px; }
+  .sw__meta { padding: 10px 12px; display: flex; flex-direction: column; gap: 2px; }
+  .sw__name { font-size: 12px; font-weight: 600; color: var(--text-strong); }
+  .sw__val { font-family: var(--font-mono); font-size: 11px; color: var(--text-tertiary); }
+
+  .type-row { display: flex; align-items: baseline; gap: 16px; padding: 12px 0; border-top: 1px solid var(--border-subtle); }
+  .type-row:first-of-type { border-top: 0; }
+  .type-row__lab { width: 100px; font-family: var(--font-mono); font-size: 11px; color: var(--text-tertiary); flex: none; }
+  .type-row__spec { font-family: var(--font-mono); font-size: 11px; color: var(--text-tertiary); width: 160px; flex: none; }
+
+  .pills-row { display: flex; gap: 10px; flex-wrap: wrap; }
+</style>
+</head>
+<body>
+<div data-slot="header"></div>
+
+<main>
+  <section class="overview-hero">
+    <div class="container">
+      <span class="eyebrow eyebrow--gold">SUPPLEMENTARY PAGES · CYCLE 172 · 2026-05-20</span>
+      <h1 class="display-1">Trust pages for smashone.us</h1>
+      <p>Four pre-launch supplementary surfaces — About, Security, Compliance, Status. Light theme only. Honest framing throughout. Built on the SmashOne Design System Light v1.4.</p>
+    </div>
+  </section>
+
+  <section class="section section--sm" style="padding-top: 0;">
+    <div class="container">
+      <div class="page-cards">
+        <a class="page-card" href="about.html">
+          <div>
+            <div class="page-card__head">
+              <span class="page-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6"/><path d="M9 13h6"/><path d="M9 17h3"/></svg></span>
+              <span class="page-card__path mono">/about</span>
+            </div>
+            <h2 class="page-card__title">Company story</h2>
+            <p class="page-card__sub">Founding story, three pillars, pre-launch timeline, team framing without real names.</p>
+          </div>
+          <div class="page-card__foot"><span>View page</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
+        </a>
+
+        <a class="page-card" href="security.html">
+          <div>
+            <div class="page-card__head">
+              <span class="page-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 6v6c0 5 3.5 8.5 8 10 4.5-1.5 8-5 8-10V6l-8-4z"/><polyline points="9 12 11 14 15 10"/></svg></span>
+              <span class="page-card__path mono">/security</span>
+            </div>
+            <h2 class="page-card__title">Security &amp; privacy</h2>
+            <p class="page-card__sub">Infrastructure, privacy controls, operational discipline. Trust strip and security FAQ.</p>
+          </div>
+          <div class="page-card__foot"><span>View page</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
+        </a>
+
+        <a class="page-card" href="compliance.html">
+          <div>
+            <div class="page-card__head">
+              <span class="page-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 7l8 4 8-4-8-4z"/><path d="M4 17l8 4 8-4"/><path d="M4 12l8 4 8-4"/></svg></span>
+              <span class="page-card__path mono">/compliance</span>
+            </div>
+            <h2 class="page-card__title">Compliance</h2>
+            <p class="page-card__sub">US, platform, tax + payroll, and pre-launch readiness checklist. Every claim cited.</p>
+          </div>
+          <div class="page-card__foot"><span>View page</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
+        </a>
+
+        <a class="page-card" href="status.html">
+          <div>
+            <div class="page-card__head">
+              <span class="page-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l3-9 4 18 3-9h4"/></svg></span>
+              <span class="page-card__path mono">/status</span>
+            </div>
+            <h2 class="page-card__title">System status</h2>
+            <p class="page-card__sub">Platform integration health, infrastructure, planned 99.9% SLA, incident log.</p>
+          </div>
+          <div class="page-card__foot"><span>View page</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="atoms">
+    <div class="container">
+      <span class="eyebrow eyebrow--gold">SHARED ATOMS</span>
+      <h2 class="h2" style="margin: 8px 0 6px;">Design system reference</h2>
+      <p class="atoms__sub body-md">Tokens and atomic components reused across all four supplementary pages.</p>
+
+      <div class="atom-block">
+        <h3>Surface &amp; brand</h3>
+        <div class="swatches">
+          <div class="sw"><div class="sw__chip" style="background: var(--surface-base); border-bottom: 1px solid var(--border-subtle);"></div><div class="sw__meta"><span class="sw__name">Surface base</span><span class="sw__val">#ffffff</span></div></div>
+          <div class="sw"><div class="sw__chip" style="background: var(--surface-raised);"></div><div class="sw__meta"><span class="sw__name">Surface raised</span><span class="sw__val">#fafafa</span></div></div>
+          <div class="sw"><div class="sw__chip" style="background: var(--surface-overlay);"></div><div class="sw__meta"><span class="sw__name">Surface overlay</span><span class="sw__val">#f5f5f5</span></div></div>
+          <div class="sw"><div class="sw__chip" style="background: var(--brand-gold);"></div><div class="sw__meta"><span class="sw__name">Brand gold</span><span class="sw__val">#b08930</span></div></div>
+          <div class="sw"><div class="sw__chip" style="background: var(--brand-gold-text);"></div><div class="sw__meta"><span class="sw__name">Gold AAA text</span><span class="sw__val">#6d5310 · 7.25:1</span></div></div>
+          <div class="sw"><div class="sw__chip" style="background: var(--state-success);"></div><div class="sw__meta"><span class="sw__name">Success</span><span class="sw__val">#10b981</span></div></div>
+          <div class="sw"><div class="sw__chip" style="background: var(--state-warning);"></div><div class="sw__meta"><span class="sw__name">Warning</span><span class="sw__val">#f59e0b</span></div></div>
+          <div class="sw"><div class="sw__chip" style="background: var(--state-info);"></div><div class="sw__meta"><span class="sw__name">Info</span><span class="sw__val">#3b82f6</span></div></div>
+        </div>
+      </div>
+
+      <div class="atom-block">
+        <h3>Type — Onest display · Inter body · IBM Plex Mono</h3>
+        <div class="type-row"><span class="type-row__lab">display-1</span><span class="type-row__spec">72 / 76 / -0.040</span><span class="display-1" style="font-size: 36px; line-height: 1.1;">Trust through transparency.</span></div>
+        <div class="type-row"><span class="type-row__lab">h2</span><span class="type-row__spec">32 / 40 / -0.020</span><span class="h2" style="font-size: 24px;">How we keep your data safe.</span></div>
+        <div class="type-row"><span class="type-row__lab">body-lg</span><span class="type-row__spec">18 / 30 / 450</span><span class="body-lg fg-secondary">We watched small business owners burn out.</span></div>
+        <div class="type-row"><span class="type-row__lab">mono</span><span class="type-row__spec">IBM Plex / tabular</span><span class="mono">P26000023598 · 2026-06-05 · 99.9%</span></div>
+        <div class="type-row"><span class="type-row__lab">eyebrow</span><span class="type-row__spec">11 / 0.10em / gold</span><span class="eyebrow eyebrow--gold">SECURITY &amp; PRIVACY</span></div>
+      </div>
+
+      <div class="atom-block">
+        <h3>Status pills</h3>
+        <div class="pills-row">
+          <span class="pill pill--success"><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"/><polyline points="9 12 11 14 15 10" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Operational</span>
+          <span class="pill pill--success">Done</span>
+          <span class="pill pill--warning"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 7 12 12 15 14"/></svg>In progress</span>
+          <span class="pill pill--info"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/></svg>Planned</span>
+          <span class="pill pill--info">Pre-launch</span>
+          <span class="pill pill--neutral"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/></svg>Wave 2 — July 2026</span>
+          <span class="pill pill--gold">Active</span>
+        </div>
+      </div>
+
+      <div class="atom-block">
+        <h3>Buttons</h3>
+        <div class="pills-row">
+          <a class="btn btn--primary" href="#">Start free trial</a>
+          <a class="btn btn--primary btn--lg" href="#">Start free trial</a>
+          <a class="btn btn--secondary" href="#">Read the docs</a>
+          <a class="btn btn--ghost" href="#">Sign in</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div data-slot="footer"></div>
+
+<script src="partials.js"></script>
+<script>SmashOne.mount(null, '', '', '');</script>
+</body>
+</html>
