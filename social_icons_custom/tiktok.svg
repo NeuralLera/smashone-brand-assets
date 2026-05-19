@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-label="TikTok">
+  <defs>
+    <!-- Фирменный неоновый градиент TikTok с фиксом невидимости вертикальных линий (userSpaceOnUse) -->
+    <linearGradient id="tiktokGradient" x1="20" y1="45" x2="45" y2="15" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#00F2FE" />
+      <stop offset="100%" stop-color="#FE0979" />
+    </linearGradient>
+  </defs>
+
+  <!-- 1. Нота TikTok в фирменном неоновом градиенте (линия теперь отображается корректно) -->
+  <g fill="none" stroke="url(#tiktokGradient)" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 30 38.8 L 30 17"></path>
+    <path d="M 30 17 C 36.4 18, 42 22.4, 43 28.8 C 43.4 31.2, 42.6 33.4, 41.2 35"></path>
+    <ellipse cx="24.6" cy="41.8" rx="6.2" ry="4.4" transform="rotate(-20 24.6 41.8)" fill="url(#tiktokGradient)" stroke="none"></ellipse>
+  </g>
+
+  <!-- 2. Наша фирменная золотая точка в цвете #b08930 на конце флажка ноты -->
+  <circle cx="41.2" cy="35" r="1.7" fill="#b08930"></circle>
+</svg>

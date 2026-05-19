@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-label="Google Business Profile">
+  <!-- 1. Синий корпус магазина -->
+  <path d="M19.5 29.8 V46.6 C19.5 48.8 21.3 50.6 23.5 50.6 H41.8 C44.0 50.6 45.8 48.8 45.8 46.6 V29.8" fill="none" stroke="#4285F4" stroke-width="2.9" stroke-linecap="round" stroke-linejoin="round"></path>
+  
+  <!-- 2. Синяя правая часть крыши -->
+  <path d="M21.8 16.7 H43.4 C44.8 16.7 46.0 17.7 46.4 19.0 L48.3 25.8" fill="none" stroke="#4285F4" stroke-width="2.9" stroke-linecap="round" stroke-linejoin="round"></path>
+  
+  <!-- 3. Красная левая часть крыши -->
+  <path d="M15.7 25.8 L17.6 19.0 C18.0 17.7 19.2 16.7 20.6 16.7" fill="none" stroke="#EA4335" stroke-width="2.9" stroke-linecap="round" stroke-linejoin="round"></path>
+  
+  <!-- 4. Красный левый лепесток навеса -->
+  <path d="M15.7 25.8 C15.4 28.6 17.1 31.2 19.9 32.0 C22.7 32.7 25.6 31.7 27.3 29.4" fill="none" stroke="#EA4335" stroke-width="2.9" stroke-linecap="round" stroke-linejoin="round"></path>
+  
+  <!-- 5. Желтый средний лепесток навеса -->
+  <path d="M27.3 29.4 C28.3 30.8 30.0 31.8 31.8 31.8 C33.7 31.8 35.3 30.8 36.3 29.4" fill="none" stroke="#FBBC05" stroke-width="2.9" stroke-linecap="round" stroke-linejoin="round"></path>
+  
+  <!-- 6. Зеленый правый лепесток навеса -->
+  <path d="M36.3 29.4 C38.0 31.7 40.9 32.7 43.7 32.0 C46.5 31.2 48.2 28.6 47.9 25.8" fill="none" stroke="#34A853" stroke-width="2.9" stroke-linecap="round" stroke-linejoin="round"></path>
+  
+  <!-- 7. Зеленая буква G внутри -->
+  <g fill="none" stroke="#34A853" stroke-width="2.9" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M39.2 37.4 C37.6 35.9 35.2 35.4 33.0 36.0 C29.9 37.0 28.0 40.0 28.4 43.2 C28.8 46.5 31.6 49.0 34.9 49.0 C37.8 49.0 40.4 47.0 41.0 44.2"></path>
+    <path d="M36.0 42.8 H41.1 V45.1"></path>
+  </g>
+
+  <!-- 8. Наша золотая точка (смещена в правый верхний угол для исключения наложения) -->
+  <circle cx="51.5" cy="21.0" r="1.8" fill="#b08930"></circle>
+</svg>
