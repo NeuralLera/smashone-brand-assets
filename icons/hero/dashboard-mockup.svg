@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Dashboard mockup">
+  
+  <rect x="8" y="8" width="48" height="32" rx="3"></rect>
+  
+  <path d="M4 46 L60 46"></path>
+  <path d="M8 42 L56 42" stroke-width="1.5"></path>
+
+  
+  <rect x="12" y="12" width="22" height="14" rx="2" stroke-width="1.5"></rect>
+  <path d="M15 16 L22 16" stroke-width="1.5"></path>
+  <path d="M15 20 L28 20"></path>
+  <path d="M15 24 L18 22 L21 23 L24 21 L27 22 L30 20" stroke-width="1.5"></path>
+
+  
+  <rect x="36" y="12" width="16" height="14" rx="2" stroke-width="1.5"></rect>
+  <path d="M40 17 L48 17" stroke-width="1.5"></path>
+  <path d="M40 21 L46 21" stroke-width="1.5"></path>
+
+  
+  <rect x="12" y="28" width="22" height="8" rx="2" stroke-width="1.5"></rect>
+  <path d="M16 34 L16 31" stroke-width="1.5"></path>
+  <path d="M20 34 L20 30" stroke-width="1.5"></path>
+  <path d="M24 34 L24 32" stroke-width="1.5"></path>
+  <path d="M28 34 L28 30" stroke-width="1.5"></path>
+
+  
+  <rect x="36" y="28" width="16" height="8" rx="2" stroke-width="1.5"></rect>
+  <path d="M40 32 L48 32" stroke-width="1.5"></path>
+
+  
+  <path d="M52 11 L53 13 L55 14 L53 15 L52 17 L51 15 L49 14 L51 13 Z" fill="var(--icon-accent, currentColor)" stroke="none"></path>
+</svg>

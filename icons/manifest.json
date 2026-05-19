@@ -1,8 +1,8 @@
 {
   "$schema": "https://smashone.dev/icons/manifest.schema.json",
   "version": "0.2.0",
-  "generated": "2026-05-18T09:26:23Z",
-  "icon_count": 212,
+  "generated": "2026-05-19T01:21:16Z",
+  "icon_count": 218,
   "categories": [
     "action",
     "ai",
@@ -1665,6 +1665,108 @@
       "file": "src/icons/finance/wallet.svg",
       "sprite_id": "icon-finance-wallet",
       "pascal_name": "Wallet",
+      "ai_hint": ""
+    },
+    {
+      "name": "connect-flow",
+      "category": "hero",
+      "description": "Connect Flow icon (hero)",
+      "tags": [
+        "connect-flow"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/hero/connect-flow.svg",
+      "sprite_id": "icon-hero-connect-flow",
+      "pascal_name": "ConnectFlow",
+      "ai_hint": ""
+    },
+    {
+      "name": "dashboard-mockup",
+      "category": "hero",
+      "description": "Dashboard Mockup icon (hero)",
+      "tags": [
+        "dashboard-mockup"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/hero/dashboard-mockup.svg",
+      "sprite_id": "icon-hero-dashboard-mockup",
+      "pascal_name": "DashboardMockup",
+      "ai_hint": ""
+    },
+    {
+      "name": "earnings-tree",
+      "category": "hero",
+      "description": "Earnings Tree icon (hero)",
+      "tags": [
+        "earnings-tree"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/hero/earnings-tree.svg",
+      "sprite_id": "icon-hero-earnings-tree",
+      "pascal_name": "EarningsTree",
+      "ai_hint": ""
+    },
+    {
+      "name": "partner-handshake",
+      "category": "hero",
+      "description": "Partner Handshake icon (hero)",
+      "tags": [
+        "partner-handshake"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/hero/partner-handshake.svg",
+      "sprite_id": "icon-hero-partner-handshake",
+      "pascal_name": "PartnerHandshake",
+      "ai_hint": ""
+    },
+    {
+      "name": "setup-wizard",
+      "category": "hero",
+      "description": "Setup Wizard icon (hero)",
+      "tags": [
+        "setup-wizard"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/hero/setup-wizard.svg",
+      "sprite_id": "icon-hero-setup-wizard",
+      "pascal_name": "SetupWizard",
+      "ai_hint": ""
+    },
+    {
+      "name": "trust-shield",
+      "category": "hero",
+      "description": "Trust Shield icon (hero)",
+      "tags": [
+        "trust-shield"
+      ],
+      "since": "1.0.0",
+      "deprecated": false,
+      "size": "24x24",
+      "stroke_width": 2,
+      "brand_accent": false,
+      "file": "src/icons/hero/trust-shield.svg",
+      "sprite_id": "icon-hero-trust-shield",
+      "pascal_name": "TrustShield",
       "ai_hint": ""
     },
     {
