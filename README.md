@@ -65,7 +65,7 @@ When creating a new Design System or Prototype project in Claude Design:
 
 **6 platforms total** (canonical v6.0 LOCKED 2026-05-11 — supersedes prior 22-platform list):
 
-### Base trio (Wave 1 — included в $79/€69 subscription)
+### Base trio (Wave 1 — included в $99/€99 subscription)
 
 - **Facebook** — `facebook-tile-{dark,light}.svg` + PNG sizes
 - **Instagram** — `instagram-tile-{dark,light}.svg` + PNG sizes
