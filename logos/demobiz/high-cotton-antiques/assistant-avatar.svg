@@ -1,6 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img">
   <circle cx="100" cy="100" r="100" fill="#7A1F1F"></circle>
-  <circle cx="100" cy="100" r="91" fill="none" stroke="#b08930" stroke-width="2"></circle>
   <g fill="#F6F4EE">
       <ellipse cx="84" cy="122" rx="30" ry="34"></ellipse>
       <path d="M70 92 L98 92 L92 70 L76 70 Z"></path>
