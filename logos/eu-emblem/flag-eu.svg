@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 14" width="20" height="14" role="img" aria-label="European Union">
+  <defs><clipPath id="eur"><rect width="20" height="14" rx="2.6"/></clipPath></defs>
+  <g clip-path="url(#eur)">
+    <rect width="20" height="14" fill="#003399"/>
+    <g fill="#FFCC00">
+      <circle cx="10" cy="3" r="0.75"/>
+      <circle cx="12" cy="3.54" r="0.75"/>
+      <circle cx="13.46" cy="5" r="0.75"/>
+      <circle cx="14" cy="7" r="0.75"/>
+      <circle cx="13.46" cy="9" r="0.75"/>
+      <circle cx="12" cy="10.46" r="0.75"/>
+      <circle cx="10" cy="11" r="0.75"/>
+      <circle cx="8" cy="10.46" r="0.75"/>
+      <circle cx="6.54" cy="9" r="0.75"/>
+      <circle cx="6" cy="7" r="0.75"/>
+      <circle cx="6.54" cy="5" r="0.75"/>
+      <circle cx="8" cy="3.54" r="0.75"/>
+    </g>
+  </g>
+</svg>
