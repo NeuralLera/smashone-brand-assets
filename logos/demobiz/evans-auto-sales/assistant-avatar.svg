@@ -1,0 +1,18 @@
+<svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Evans assistant — chat bubble with car key">
+  <title>Evans Auto Sales assistant avatar — chat bubble with key</title>
+  
+  <path d="M104 48 H408 A64 64 0 0 1 472 112 V304 A64 64 0 0 1 408 368 H210 L154 438 Q146 448 142 436 L150 368 H104 A64 64 0 0 1 40 304 V112 A64 64 0 0 1 104 48 Z" fill="#1E73BE"></path>
+  
+  <defs>
+    <mask id="keyHole">
+      <rect width="512" height="512" fill="#fff"></rect>
+      <circle cx="190" cy="200" r="24" fill="#000"></circle>
+    </mask>
+  </defs>
+  <g fill="#F5C518">
+    <circle cx="190" cy="200" r="60" mask="url(#keyHole)"></circle>
+    <rect x="236" y="181" width="128" height="38" rx="19"></rect>
+    <rect x="300" y="214" width="28" height="40" rx="10"></rect>
+    <rect x="340" y="214" width="28" height="32" rx="10"></rect>
+  </g>
+</svg>

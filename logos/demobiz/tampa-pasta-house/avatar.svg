@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="512" height="512" role="img" aria-label="Tampa Pasta House">
+  <circle cx="50" cy="50" r="50" fill="#C1502E"></circle>
+  <g fill="none" stroke="#F3E7D3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M41 38 C36 33 46 27 41 22" stroke-width="2.8"></path>
+    <path d="M50 34 C45 29 55 23 50 18" stroke-width="2.8"></path>
+    <path d="M59 38 C54 33 64 27 59 22" stroke-width="2.8"></path>
+    <path d="M24 57 Q50 49 76 57" stroke-width="3.6"></path>
+    <path d="M28 57 Q34 45 41 54 Q47 44 53 54 Q60 44 66 54 Q70 49 72 57" stroke-width="3.2"></path>
+    <path d="M44 52 q-2 -7 3 -10" stroke-width="2.8"></path>
+    <path d="M57 52 q3 -7 -2 -11" stroke-width="2.8"></path>
+    <path d="M24 57 C24 75 35 84 50 84 C65 84 76 75 76 57" stroke-width="4.2"></path>
+    <path d="M44 84 L42 89 L58 89 L56 84" stroke-width="3.4"></path>
+  </g>
+</svg>
