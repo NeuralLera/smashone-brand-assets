@@ -24,7 +24,7 @@
     <path id="ea-arc" d="M 32 100 A 68 68 0 0 0 168 100" fill="none"></path>
   </defs>
   <text class="ea-cond" font-weight="700" font-size="10" fill="#1A3A5C">
-    <textPath href="#ea-arc" startOffset="50%" text-anchor="middle">EST · 1978 · YORK SC</textPath>
+    <textPath href="#ea-arc" startOffset="50%" text-anchor="middle">EST · 1978 · ORLANDO FL</textPath>
   </text>
 
   
