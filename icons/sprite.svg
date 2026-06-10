@@ -761,19 +761,19 @@
 <path d="M12 10v4.5"></path>
 <circle cx="12" cy="17" r="0.9" fill="currentColor" stroke="none"></circle></symbol>
 <symbol id="icon-ui-core-bar-chart" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="21" x2="21" y2="21"></line>
-  line x1=&#34;7&#34; y1=&#34;21&#34; x2=&#34;7&#34; y2=&#34;13&#34;/&gt;
-  line x1=&#34;12&#34; y1=&#34;21&#34; x2=&#34;12&#34; y2=&#34;8&#34;/&gt;
-  line x1=&#34;17&#34; y1=&#34;21&#34; x2=&#34;17&#34; y2=&#34;16&#34;/&gt;</symbol>
+  <line x1="7" y1="21" x2="7" y2="13"></line>
+  <line x1="12" y1="21" x2="12" y2="8"></line>
+  <line x1="17" y1="21" x2="17" y2="16"></line></symbol>
 <symbol id="icon-ui-core-bolt" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8z"></path></symbol>
 <symbol id="icon-ui-core-briefcase" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="7" width="19" height="14" rx="2"></rect>
-  path d=&#34;M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16&#34;/&gt;
-  path d=&#34;M2.5 13h19&#34;/&gt;</symbol>
+  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+  <path d="M2.5 13h19"></path></symbol>
 <symbol id="icon-ui-core-calendar-clock" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h6"></path>
-  path d=&#34;M16 2v4&#34;/&gt;
-  path d=&#34;M8 2v4&#34;/&gt;
-  path d=&#34;M3 10h18&#34;/&gt;
-  circle cx=&#34;17&#34; cy=&#34;17&#34; r=&#34;5&#34;/&gt;
-  path d=&#34;M17 15v2l1.2 1.2&#34;/&gt;</symbol>
+  <path d="M16 2v4"></path>
+  <path d="M8 2v4"></path>
+  <path d="M3 10h18"></path>
+  <circle cx="17" cy="17" r="5"></circle>
+  <path d="M17 15v2l1.2 1.2"></path></symbol>
 <symbol id="icon-ui-core-calendar" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"></rect>
   <line x1="3" y1="10" x2="21" y2="10"></line>
   <line x1="8" y1="3" x2="8" y2="7"></line>
@@ -781,83 +781,83 @@
   <line x1="7" y1="14" x2="17" y2="14"></line>
   <line x1="7" y1="17.5" x2="17" y2="17.5"></line></symbol>
 <symbol id="icon-ui-core-clock" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle>
-  polyline points=&#34;12 7 12 12 16 14&#34;/&gt;</symbol>
+  <polyline points="12 7 12 12 16 14"></polyline></symbol>
 <symbol id="icon-ui-core-credit-card" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="5" width="19" height="14" rx="2"></rect>
-  line x1=&#34;2.5&#34; y1=&#34;10&#34; x2=&#34;21.5&#34; y2=&#34;10&#34;/&gt;
-  line x1=&#34;6&#34; y1=&#34;15&#34; x2=&#34;9&#34; y2=&#34;15&#34;/&gt;</symbol>
+  <line x1="2.5" y1="10" x2="21.5" y2="10"></line>
+  <line x1="6" y1="15" x2="9" y2="15"></line></symbol>
 <symbol id="icon-ui-core-download" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-  polyline points=&#34;7 10 12 15 17 10&#34;/&gt;
-  line x1=&#34;12&#34; y1=&#34;15&#34; x2=&#34;12&#34; y2=&#34;3&#34;/&gt;</symbol>
+  <polyline points="7 10 12 15 17 10"></polyline>
+  <line x1="12" y1="15" x2="12" y2="3"></line></symbol>
 <symbol id="icon-ui-core-external-link" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-  polyline points=&#34;15 3 21 3 21 9&#34;/&gt;
-  line x1=&#34;10&#34; y1=&#34;14&#34; x2=&#34;21&#34; y2=&#34;3&#34;/&gt;</symbol>
+  <polyline points="15 3 21 3 21 9"></polyline>
+  <line x1="10" y1="14" x2="21" y2="3"></line></symbol>
 <symbol id="icon-ui-core-file-text" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path>
-  path d=&#34;M14 3v6h6&#34;/&gt;
-  line x1=&#34;8&#34; y1=&#34;13&#34; x2=&#34;16&#34; y2=&#34;13&#34;/&gt;
-  line x1=&#34;8&#34; y1=&#34;17&#34; x2=&#34;14&#34; y2=&#34;17&#34;/&gt;</symbol>
+  <path d="M14 3v6h6"></path>
+  <line x1="8" y1="13" x2="16" y2="13"></line>
+  <line x1="8" y1="17" x2="14" y2="17"></line></symbol>
 <symbol id="icon-ui-core-file" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path>
-  path d=&#34;M14 3v6h6&#34;/&gt;</symbol>
+  <path d="M14 3v6h6"></path></symbol>
 <symbol id="icon-ui-core-flask" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 3v6L4.5 18a2 2 0 0 0 1.74 3h11.52a2 2 0 0 0 1.74-3L14 9V3"></path>
-  path d=&#34;M8.5 3h7&#34;/&gt;
-  path d=&#34;M7 14h10&#34;/&gt;</symbol>
+  <path d="M8.5 3h7"></path>
+  <path d="M7 14h10"></path></symbol>
 <symbol id="icon-ui-core-help-circle" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle>
-  path d=&#34;M9.5 9a2.5 2.5 0 0 1 5 .4c0 1.6-2.5 2.4-2.5 3.6&#34;/&gt;
-  line x1=&#34;12&#34; y1=&#34;17&#34; x2=&#34;12.01&#34; y2=&#34;17&#34;/&gt;</symbol>
+  <path d="M9.5 9a2.5 2.5 0 0 1 5 .4c0 1.6-2.5 2.4-2.5 3.6"></path>
+  <line x1="12" y1="17" x2="12.01" y2="17"></line></symbol>
 <symbol id="icon-ui-core-home" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12 12 3l9 9"></path><path d="M5 10v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V10"></path><path d="M9 21v-7h6v7"></path></symbol>
 <symbol id="icon-ui-core-id-card" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="5" width="19" height="14" rx="2"></rect>
-  circle cx=&#34;9&#34; cy=&#34;11.5&#34; r=&#34;2.5&#34;/&gt;
-  path d=&#34;M5 17c.5-2 2-3 4-3s3.5 1 4 3&#34;/&gt;
-  line x1=&#34;15&#34; y1=&#34;10&#34; x2=&#34;19&#34; y2=&#34;10&#34;/&gt;
-  line x1=&#34;15&#34; y1=&#34;14&#34; x2=&#34;18&#34; y2=&#34;14&#34;/&gt;</symbol>
+  <circle cx="9" cy="11.5" r="2.5"></circle>
+  <path d="M5 17c.5-2 2-3 4-3s3.5 1 4 3"></path>
+  <line x1="15" y1="10" x2="19" y2="10"></line>
+  <line x1="15" y1="14" x2="18" y2="14"></line></symbol>
 <symbol id="icon-ui-core-info" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle>
-  line x1=&#34;12&#34; y1=&#34;11&#34; x2=&#34;12&#34; y2=&#34;16&#34;/&gt;
-  line x1=&#34;12&#34; y1=&#34;8&#34; x2=&#34;12.01&#34; y2=&#34;8&#34;/&gt;</symbol>
+  <line x1="12" y1="11" x2="12" y2="16"></line>
+  <line x1="12" y1="8" x2="12.01" y2="8"></line></symbol>
 <symbol id="icon-ui-core-keyboard" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="6" width="19" height="12" rx="2"></rect>
-  line x1=&#34;6&#34; y1=&#34;10&#34; x2=&#34;6.01&#34; y2=&#34;10&#34;/&gt;
-  line x1=&#34;10&#34; y1=&#34;10&#34; x2=&#34;10.01&#34; y2=&#34;10&#34;/&gt;
-  line x1=&#34;14&#34; y1=&#34;10&#34; x2=&#34;14.01&#34; y2=&#34;10&#34;/&gt;
-  line x1=&#34;18&#34; y1=&#34;10&#34; x2=&#34;18.01&#34; y2=&#34;10&#34;/&gt;
-  line x1=&#34;6&#34; y1=&#34;14&#34; x2=&#34;6.01&#34; y2=&#34;14&#34;/&gt;
-  line x1=&#34;18&#34; y1=&#34;14&#34; x2=&#34;18.01&#34; y2=&#34;14&#34;/&gt;
-  line x1=&#34;8.5&#34; y1=&#34;14&#34; x2=&#34;15.5&#34; y2=&#34;14&#34;/&gt;</symbol>
+  <line x1="6" y1="10" x2="6.01" y2="10"></line>
+  <line x1="10" y1="10" x2="10.01" y2="10"></line>
+  <line x1="14" y1="10" x2="14.01" y2="10"></line>
+  <line x1="18" y1="10" x2="18.01" y2="10"></line>
+  <line x1="6" y1="14" x2="6.01" y2="14"></line>
+  <line x1="18" y1="14" x2="18.01" y2="14"></line>
+  <line x1="8.5" y1="14" x2="15.5" y2="14"></line></symbol>
 <symbol id="icon-ui-core-layers" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 9 5-9 5-9-5 9-5z"></path>
-  path d=&#34;m3 13 9 5 9-5&#34;/&gt;
-  path d=&#34;m3 18 9 5 9-5&#34;/&gt;</symbol>
+  <path d="m3 13 9 5 9-5"></path>
+  <path d="m3 18 9 5 9-5"></path></symbol>
 <symbol id="icon-ui-core-life-buoy" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle>
-  circle cx=&#34;12&#34; cy=&#34;12&#34; r=&#34;4&#34;/&gt;
-  line x1=&#34;4.93&#34; y1=&#34;4.93&#34; x2=&#34;9.17&#34; y2=&#34;9.17&#34;/&gt;
-  line x1=&#34;14.83&#34; y1=&#34;14.83&#34; x2=&#34;19.07&#34; y2=&#34;19.07&#34;/&gt;
-  line x1=&#34;14.83&#34; y1=&#34;9.17&#34; x2=&#34;19.07&#34; y2=&#34;4.93&#34;/&gt;
-  line x1=&#34;4.93&#34; y1=&#34;19.07&#34; x2=&#34;9.17&#34; y2=&#34;14.83&#34;/&gt;</symbol>
+  <circle cx="12" cy="12" r="4"></circle>
+  <line x1="4.93" y1="4.93" x2="9.17" y2="9.17"></line>
+  <line x1="14.83" y1="14.83" x2="19.07" y2="19.07"></line>
+  <line x1="14.83" y1="9.17" x2="19.07" y2="4.93"></line>
+  <line x1="4.93" y1="19.07" x2="9.17" y2="14.83"></line></symbol>
 <symbol id="icon-ui-core-lock" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="10" rx="2"></rect>
-  path d=&#34;M7.5 11V7.5a4.5 4.5 0 0 1 9 0V11&#34;/&gt;
-  line x1=&#34;12&#34; y1=&#34;15&#34; x2=&#34;12&#34; y2=&#34;17&#34;/&gt;</symbol>
+  <path d="M7.5 11V7.5a4.5 4.5 0 0 1 9 0V11"></path>
+  <line x1="12" y1="15" x2="12" y2="17"></line></symbol>
 <symbol id="icon-ui-core-megaphone" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 11 14-5v12L3 13v-2z"></path>
-  path d=&#34;M17 7.5v9&#34;/&gt;
-  path d=&#34;M17 8a3 3 0 0 1 0 6&#34;/&gt;
-  path d=&#34;M11.5 17.2a3 3 0 1 1-5.6-1.7&#34;/&gt;</symbol>
+  <path d="M17 7.5v9"></path>
+  <path d="M17 8a3 3 0 0 1 0 6"></path>
+  <path d="M11.5 17.2a3 3 0 1 1-5.6-1.7"></path></symbol>
 <symbol id="icon-ui-core-message-circle" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.6 7.1L3 21l1.9-6.4A8 8 0 1 1 21 12z"></path></symbol>
 <symbol id="icon-ui-core-mouse-pointer" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3 10 21l2.5-8.5L21 10z"></path>
-  path d=&#34;m13 13 6 6&#34;/&gt;</symbol>
+  <path d="m13 13 6 6"></path></symbol>
 <symbol id="icon-ui-core-percent" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="5" x2="5" y2="19"></line>
-  circle cx=&#34;7.5&#34; cy=&#34;7.5&#34; r=&#34;2.5&#34;/&gt;
-  circle cx=&#34;16.5&#34; cy=&#34;16.5&#34; r=&#34;2.5&#34;/&gt;</symbol>
+  <circle cx="7.5" cy="7.5" r="2.5"></circle>
+  <circle cx="16.5" cy="16.5" r="2.5"></circle></symbol>
 <symbol id="icon-ui-core-plug" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 8V3"></path>
-  path d=&#34;M15 8V3&#34;/&gt;
-  path d=&#34;M6 8h12v4a5 5 0 0 1-5 5h-2a5 5 0 0 1-5-5V8z&#34;/&gt;
-  path d=&#34;M12 17v4&#34;/&gt;</symbol>
+  <path d="M15 8V3"></path>
+  <path d="M6 8h12v4a5 5 0 0 1-5 5h-2a5 5 0 0 1-5-5V8z"></path>
+  <path d="M12 17v4"></path></symbol>
 <symbol id="icon-ui-core-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M12 5v14"></path></symbol>
 <symbol id="icon-ui-core-rocket" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.78-.78.78-2.05 0-2.83a2 2 0 0 0-3-.17z"></path>
-  path d=&#34;M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z&#34;/&gt;
-  path d=&#34;M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0&#34;/&gt;
-  path d=&#34;M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5&#34;/&gt;</symbol>
+  <path d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path>
+  <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path>
+  <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path></symbol>
 <symbol id="icon-ui-core-scroll" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 17V6a3 3 0 0 0-3-3H5"></path>
-  path d=&#34;M5 3a3 3 0 0 0-3 3v2a1 1 0 0 0 1 1h3&#34;/&gt;
-  path d=&#34;M22 17H9a1 1 0 0 0-1 1v1a2 2 0 1 1-4 0V8&#34;/&gt;
-  path d=&#34;M22 17v2a2 2 0 0 1-2 2H8&#34;/&gt;</symbol>
+  <path d="M5 3a3 3 0 0 0-3 3v2a1 1 0 0 0 1 1h3"></path>
+  <path d="M22 17H9a1 1 0 0 0-1 1v1a2 2 0 1 1-4 0V8"></path>
+  <path d="M22 17v2a2 2 0 0 1-2 2H8"></path></symbol>
 <symbol id="icon-ui-core-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></symbol>
 <symbol id="icon-ui-core-settings" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.5a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"></path>
-  circle cx=&#34;12&#34; cy=&#34;12&#34; r=&#34;3&#34;/&gt;</symbol>
+  <circle cx="12" cy="12" r="3"></circle></symbol>
 <symbol id="icon-ui-core-speed" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18 a8 8 0 0 1 16 0"></path>
   <line x1="4" y1="18" x2="5.5" y2="18"></line>
   <line x1="12" y1="10" x2="12" y2="11.5"></line>
@@ -865,13 +865,13 @@
   <line x1="12" y1="18" x2="16.5" y2="13.5"></line>
   <circle cx="12" cy="18" r="1.2" fill="currentColor" stroke="none"></circle></symbol>
 <symbol id="icon-ui-core-user" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"></circle>
-  path d=&#34;M4 21v-1a6 6 0 0 1 6-6h4a6 6 0 0 1 6 6v1&#34;/&gt;</symbol>
+  <path d="M4 21v-1a6 6 0 0 1 6-6h4a6 6 0 0 1 6 6v1"></path></symbol>
 <symbol id="icon-ui-core-users" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
-  circle cx=&#34;9&#34; cy=&#34;7&#34; r=&#34;4&#34;/&gt;
-  path d=&#34;M22 21v-2a4 4 0 0 0-3-3.87&#34;/&gt;
-  path d=&#34;M16 3.13a4 4 0 0 1 0 7.75&#34;/&gt;</symbol>
+  <circle cx="9" cy="7" r="4"></circle>
+  <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path></symbol>
 <symbol id="icon-ui-core-warning" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
-  line x1=&#34;12&#34; y1=&#34;9&#34; x2=&#34;12&#34; y2=&#34;13&#34;/&gt;
-  line x1=&#34;12&#34; y1=&#34;17&#34; x2=&#34;12.01&#34; y2=&#34;17&#34;/&gt;</symbol>
+  <line x1="12" y1="9" x2="12" y2="13"></line>
+  <line x1="12" y1="17" x2="12.01" y2="17"></line></symbol>
 <symbol id="icon-ui-core-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></symbol>
 </svg>
