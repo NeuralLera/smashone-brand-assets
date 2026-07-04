@@ -12,7 +12,7 @@ This folder contains **reference design artifacts** generated through Claude Des
 
 **What to inherit from this reference:**
 - Hero composition (50/50 split — text left + inline dashboard mockup right)
-- Typography hierarchy (Geist Display oversized hero, Inter body lead 18-22px)
+- Typography hierarchy (Onest Display oversized hero, Inter body lead 18-22px)
 - Brand gold restraint (~10% surface coverage — primary CTAs + key data viz + accent moments only)
 - Tile background subtle texture pattern
 - Compact metric row pattern below hero
