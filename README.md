@@ -16,7 +16,7 @@ This repo contains **visual brand identity** only — logos, social platform ico
 - `logos/`
   - `smashone-tile-dark/` — dark theme tile (canonical bg pattern + favicon variants — SVG + 64/128/256/512/1254 PNG sizes)
   - `smashone-tile-light/` — light theme tile (canonical bg pattern + favicon variants — SVG + 64/128/256/512/1254 PNG sizes)
-  - `smashone-wordmark-dark/` — dark theme wordmark «SmashOne» (PNG sizes 64/128/256/512/1254 — fallback rasters; primary use is TEXT rendering via Geist Variable)
+  - `smashone-wordmark-dark/` — dark theme wordmark «SmashOne» (PNG sizes 64/128/256/512/1254 — fallback rasters; primary use is TEXT rendering via Onest Variable)
   - `smashone-wordmark-light/` — light theme wordmark (PNG sizes — fallback rasters)
   - `eu-emblem/` — EU jurisdiction marker (smashone.ai)
   - `usa-emblem/` — US jurisdiction marker (smashone.us)
@@ -42,7 +42,7 @@ This repo contains **visual brand identity** only — logos, social platform ico
 - **Surface base (light):** `#fafafa` (near-white — never pure `#ffffff`)
 - **Brand accent:** gold `#c9a646` (UI) + `#8c6f1e` (AAA text on light) — used as conversion anchor at ~10% surface coverage
 - **Typography stack:**
-  - Display / hero: **Geist Variable** (Vercel, OFL)
+  - Display / hero: **Onest Variable** (OFL; canon confirmed 2026-05-25 — NOT Geist)
   - Body / UI: **Inter Variable** (Rasmus Andersson, OFL)
   - Code / metrics: **IBM Plex Mono** (IBM, OFL)
 - **Voice:** clear, quantified, sentence-case, 5th–7th grade reading level, Tone B honest framing (no fabricated stats / no fake awards / no fake testimonials)
