@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="design_doc_mode" content="canvas">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap">
+<style>
+  body { margin: 0; background: #DED8CF; font-family: Manrope, sans-serif; -webkit-font-smoothing: antialiased; }
+  a { color: #C7654B; text-decoration: none; }
+  a:hover { color: #3B2A24; }
+</style>
+</helmet>
+
+<svg width="0" height="0" style="position: absolute" aria-hidden="true"><defs><symbol id="ortiz-o-terracotta" viewBox="0 0 100 100"><path fill="#C7654B" d="M44,10.5 C22,14 8,30 8,50 C8,71 25,86.5 47,89.5 L44,79.5 C26,76 20,64 20,50 C20,35 29,22.5 43.5,19.5 Z"></path><path fill="#C7654B" d="M44,10.5 C22,14 8,30 8,50 C8,71 25,86.5 47,89.5 L44,79.5 C26,76 20,64 20,50 C20,35 29,22.5 43.5,19.5 Z" transform="rotate(180 50 50)"></path></symbol><symbol id="ortiz-o-cocoa" viewBox="0 0 100 100"><path fill="#3B2A24" d="M44,10.5 C22,14 8,30 8,50 C8,71 25,86.5 47,89.5 L44,79.5 C26,76 20,64 20,50 C20,35 29,22.5 43.5,19.5 Z"></path><path fill="#3B2A24" d="M44,10.5 C22,14 8,30 8,50 C8,71 25,86.5 47,89.5 L44,79.5 C26,76 20,64 20,50 C20,35 29,22.5 43.5,19.5 Z" transform="rotate(180 50 50)"></path></symbol><symbol id="ortiz-o-cream" viewBox="0 0 100 100"><path fill="#F6EFE6" d="M44,10.5 C22,14 8,30 8,50 C8,71 25,86.5 47,89.5 L44,79.5 C26,76 20,64 20,50 C20,35 29,22.5 43.5,19.5 Z"></path><path fill="#F6EFE6" d="M44,10.5 C22,14 8,30 8,50 C8,71 25,86.5 47,89.5 L44,79.5 C26,76 20,64 20,50 C20,35 29,22.5 43.5,19.5 Z" transform="rotate(180 50 50)"></path></symbol></defs></svg>
+
+<div style="padding: 72px; display: flex; flex-direction: column; gap: 72px; align-items: flex-start; color: #3B2A24">
+
+  <sc-if value="{{ showHeader }}" hint-placeholder-val="{{ true }}">
+  <div style="display: flex; flex-direction: column; gap: 10px; max-width: 780px">
+    <div style="font-size: 12px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(59,42,36,0.55)">Brand mark kit · 24 Aug 2026</div>
+    <div style="font-size: 44px; font-weight: 500; letter-spacing: -0.02em; line-height: 1.05">Ortiz Nails &amp; Brows</div>
+    <div style="font-size: 16px; line-height: 1.55; color: rgba(59,42,36,0.72); text-wrap: pretty">Seven artboards, flat vector, one monogram: an “O” closed by two brush strokes of gel polish. No gradients, no shadows, no outlines. Every artboard is drawn at its true pixel size.</div>
+  </div>
+  </sc-if>
+
+  <div style="display: flex; flex-wrap: wrap; gap: 56px; align-items: flex-start">
+
+    <div style="display: flex; flex-direction: column; gap: 12px">
+      <div style="font-size: 12px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(59,42,36,0.6)">1 · mark-primary · 1024×1024</div>
+      <div style="width: 1024px; height: 1024px; background: #F6EFE6; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(59,42,36,0.14)">
+        <svg width="720" height="720" viewBox="0 0 100 100" role="img" aria-label="Ortiz monogram"><use href="#ortiz-o-terracotta"></use></svg>
+      </div>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 12px">
+      <div style="font-size: 12px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(59,42,36,0.6)">2 · mark-mono-dark · 1024×1024</div>
+      <div style="width: 1024px; height: 1024px; background: #FFFFFF; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(59,42,36,0.14)">
+        <svg width="720" height="720" viewBox="0 0 100 100" role="img" aria-label="Ortiz monogram, cocoa ink"><use href="#ortiz-o-cocoa"></use></svg>
+      </div>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 12px">
+      <div style="font-size: 12px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(59,42,36,0.6)">3 · mark-mono-light · 1024×1024</div>
+      <div style="width: 1024px; height: 1024px; background: #3B2A24; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(59,42,36,0.14)">
+        <svg width="720" height="720" viewBox="0 0 100 100" role="img" aria-label="Ortiz monogram, cream"><use href="#ortiz-o-cream"></use></svg>
+      </div>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 12px">
+      <div style="font-size: 12px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(59,42,36,0.6)">4 · avatar-social · 1024×1024</div>
+      <div style="width: 1024px; height: 1024px; background: #FFFFFF; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(59,42,36,0.14)">
+        <sc-if value="{{ avatarInverted }}" hint-placeholder-val="{{ false }}">
+          <div style="width: 1024px; height: 1024px; border-radius: 9999px; background: #C7654B; display: flex; align-items: center; justify-content: center">
+            <svg width="756" height="756" viewBox="0 0 100 100" role="img" aria-label="Ortiz avatar"><use href="#ortiz-o-cream"></use></svg>
+          </div>
+        </sc-if>
+        <sc-if value="{{ avatarStandard }}" hint-placeholder-val="{{ true }}">
+          <div style="width: 1024px; height: 1024px; border-radius: 9999px; background: #F6EFE6; display: flex; align-items: center; justify-content: center">
+            <svg width="756" height="756" viewBox="0 0 100 100" role="img" aria-label="Ortiz avatar"><use href="#ortiz-o-terracotta"></use></svg>
+          </div>
+        </sc-if>
+      </div>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 12px">
+      <div style="font-size: 12px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(59,42,36,0.6)">5 · lockup-horizontal · 1600×600</div>
+      <div style="width: 1600px; height: 600px; background: #F6EFE6; display: flex; align-items: center; justify-content: center; gap: 88px; border: 1px solid rgba(59,42,36,0.14)">
+        <svg width="360" height="360" viewBox="0 0 100 100" role="img" aria-label="Ortiz monogram"><use href="#ortiz-o-terracotta"></use></svg>
+        <div style="display: flex; flex-direction: column; gap: 26px">
+          <div style="font-size: 176px; font-weight: 500; letter-spacing: -0.025em; line-height: 0.9; color: #3B2A24">Ortiz</div>
+          <div style="font-size: 42px; font-weight: 400; letter-spacing: 0.18em; color: rgba(59,42,36,0.78); font-variant-caps: all-small-caps">Nails &amp; Brows</div>
+        </div>
+      </div>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 12px">
+      <div style="font-size: 12px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(59,42,36,0.6)">6 · lockup-stacked · 1000×1000</div>
+      <div style="width: 1000px; height: 1000px; background: #F6EFE6; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 72px; border: 1px solid rgba(59,42,36,0.14)">
+        <svg width="440" height="440" viewBox="0 0 100 100" role="img" aria-label="Ortiz monogram"><use href="#ortiz-o-terracotta"></use></svg>
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 18px">
+          <div style="font-size: 150px; font-weight: 500; letter-spacing: -0.025em; line-height: 0.9; color: #3B2A24">Ortiz</div>
+          <div style="font-size: 34px; font-weight: 400; letter-spacing: 0.18em; color: rgba(59,42,36,0.78); font-variant-caps: all-small-caps">Nails &amp; Brows</div>
+        </div>
+      </div>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 12px">
+      <div style="font-size: 12px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(59,42,36,0.6)">7 · palette-and-type · 1600×900</div>
+      <div style="width: 1600px; height: 900px; background: #F6EFE6; border: 1px solid rgba(59,42,36,0.14); padding: 72px; box-sizing: border-box; display: flex; flex-direction: column; gap: 44px; color: #3B2A24">
+
+        <div style="display: flex; align-items: flex-end; justify-content: space-between; border-bottom: 1px solid rgba(59,42,36,0.14); padding-bottom: 22px">
+          <div style="display: flex; align-items: center; gap: 22px">
+            <svg width="76" height="76" viewBox="0 0 100 100" aria-hidden="true"><use href="#ortiz-o-terracotta"></use></svg>
+            <div style="font-size: 34px; font-weight: 500; letter-spacing: -0.02em">Ortiz Nails &amp; Brows</div>
+          </div>
+          <div style="font-size: 13px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(59,42,36,0.55)">Palette · type · clear space · minimum sizes</div>
+        </div>
+
+        <div style="display: flex; gap: 20px">
+          <div style="flex: 1.4; display: flex; flex-direction: column; gap: 0">
+            <div style="height: 132px; background: #C7654B"></div>
+            <div style="padding-top: 14px; display: flex; flex-direction: column; gap: 3px">
+              <div style="font-size: 17px; font-weight: 600">Terracotta</div>
+              <div style="font-size: 15px; font-weight: 500; color: rgba(59,42,36,0.7); font-variant-numeric: tabular-nums">#C7654B</div>
+              <div style="font-size: 13px; color: rgba(59,42,36,0.55)">Brand primary · mark, key accents</div>
+            </div>
+          </div>
+          <div style="flex: 1.4; display: flex; flex-direction: column; gap: 0">
+            <div style="height: 132px; background: #F6EFE6; border: 1px solid rgba(59,42,36,0.16); box-sizing: border-box"></div>
+            <div style="padding-top: 14px; display: flex; flex-direction: column; gap: 3px">
+              <div style="font-size: 17px; font-weight: 600">Cream</div>
+              <div style="font-size: 15px; font-weight: 500; color: rgba(59,42,36,0.7); font-variant-numeric: tabular-nums">#F6EFE6</div>
+              <div style="font-size: 13px; color: rgba(59,42,36,0.55)">Background · 60% of any surface</div>
+            </div>
+          </div>
+          <div style="flex: 1.4; display: flex; flex-direction: column; gap: 0">
+            <div style="height: 132px; background: #3B2A24"></div>
+            <div style="padding-top: 14px; display: flex; flex-direction: column; gap: 3px">
+              <div style="font-size: 17px; font-weight: 600">Cocoa ink</div>
+              <div style="font-size: 15px; font-weight: 500; color: rgba(59,42,36,0.7); font-variant-numeric: tabular-nums">#3B2A24</div>
+              <div style="font-size: 13px; color: rgba(59,42,36,0.55)">Text · mono mark</div>
+            </div>
+          </div>
+          <div style="flex: 1; display: flex; flex-direction: column; gap: 0">
+            <div style="height: 132px; background: #E9B7A8"></div>
+            <div style="padding-top: 14px; display: flex; flex-direction: column; gap: 3px">
+              <div style="font-size: 17px; font-weight: 600">Soft rose</div>
+              <div style="font-size: 15px; font-weight: 500; color: rgba(59,42,36,0.7); font-variant-numeric: tabular-nums">#E9B7A8</div>
+              <div style="font-size: 13px; color: rgba(59,42,36,0.55)">Accent · max 10%</div>
+            </div>
+          </div>
+          <div style="flex: 1; display: flex; flex-direction: column; gap: 0">
+            <div style="height: 132px; background: #8FA394"></div>
+            <div style="padding-top: 14px; display: flex; flex-direction: column; gap: 3px">
+              <div style="font-size: 17px; font-weight: 600">Sage</div>
+              <div style="font-size: 15px; font-weight: 500; color: rgba(59,42,36,0.7); font-variant-numeric: tabular-nums">#8FA394</div>
+              <div style="font-size: 13px; color: rgba(59,42,36,0.55)">Secondary · max 5%</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="display: flex; gap: 56px; align-items: flex-start; border-top: 1px solid rgba(59,42,36,0.14); padding-top: 36px">
+
+          <div style="flex: 1.5; display: flex; flex-direction: column; gap: 18px">
+            <div style="font-size: 11px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(59,42,36,0.5)">Typography — Manrope</div>
+            <div style="font-size: 72px; font-weight: 500; letter-spacing: -0.025em; line-height: 1">Ortiz</div>
+            <div style="font-size: 13px; color: rgba(59,42,36,0.55)">Wordmark · Manrope Medium 500 · tracking −0.025em · sentence case</div>
+            <div style="font-size: 24px; font-weight: 400; letter-spacing: 0.18em; font-variant-caps: all-small-caps; color: rgba(59,42,36,0.8)">Nails &amp; Brows</div>
+            <div style="font-size: 13px; color: rgba(59,42,36,0.55)">Descriptor · Manrope Regular 400 · small caps · tracking +0.18em</div>
+            <div style="font-size: 16px; line-height: 1.55; max-width: 46ch; color: rgba(59,42,36,0.78)">Body copy sets in Manrope Regular. Two chairs, West Tampa, by appointment. Warm, plain, unhurried — the way the studio actually sounds.</div>
+          </div>
+
+          <div style="flex: 1; display: flex; flex-direction: column; gap: 18px">
+            <div style="font-size: 11px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(59,42,36,0.5)">Clear space — ¼ of the mark’s width</div>
+            <div style="display: flex; align-items: center; gap: 24px">
+              <div style="padding: 32px; border: 1.5px dashed rgba(199,101,75,0.55)">
+                <svg width="128" height="128" viewBox="0 0 100 100" aria-hidden="true"><use href="#ortiz-o-terracotta"></use></svg>
+              </div>
+              <div style="font-size: 14px; line-height: 1.5; color: rgba(59,42,36,0.7); max-width: 22ch">Margin = ¼ of the mark’s width. Nothing enters it — no type, no rule, no image edge.</div>
+            </div>
+          </div>
+
+          <div style="flex: 1; display: flex; flex-direction: column; gap: 18px">
+            <div style="font-size: 11px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(59,42,36,0.5)">Minimum sizes</div>
+            <div style="display: flex; align-items: flex-end; gap: 30px">
+              <div style="display: flex; flex-direction: column; align-items: center; gap: 10px">
+                <svg width="24" height="24" viewBox="0 0 100 100" aria-hidden="true"><use href="#ortiz-o-cocoa"></use></svg>
+                <div style="font-size: 12px; color: rgba(59,42,36,0.5); font-variant-numeric: tabular-nums">24 px</div>
+              </div>
+              <div style="display: flex; flex-direction: column; align-items: center; gap: 10px">
+                <svg width="32" height="32" viewBox="0 0 100 100" aria-hidden="true"><use href="#ortiz-o-cocoa"></use></svg>
+                <div style="font-size: 12px; font-weight: 600; color: #C7654B; font-variant-numeric: tabular-nums">32 px — floor</div>
+              </div>
+              <div style="display: flex; flex-direction: column; align-items: center; gap: 10px">
+                <svg width="48" height="48" viewBox="0 0 100 100" aria-hidden="true"><use href="#ortiz-o-cocoa"></use></svg>
+                <div style="font-size: 12px; color: rgba(59,42,36,0.5); font-variant-numeric: tabular-nums">48 px</div>
+              </div>
+            </div>
+            <div style="font-size: 14px; line-height: 1.5; color: rgba(59,42,36,0.7); max-width: 26ch">Mark alone: never below 32 px. Full lockup: never below 120 px wide — below that, use the mark.</div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <sc-if value="{{ showSmallSizeTest }}" hint-placeholder-val="{{ true }}">
+  <div style="display: flex; flex-direction: column; gap: 16px">
+    <div style="font-size: 12px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(59,42,36,0.6)">Small-size test · avatar crop at 24 / 32 / 48 / 64 px</div>
+    <div style="display: flex; gap: 28px; align-items: flex-end; background: #FFFFFF; border: 1px solid rgba(59,42,36,0.14); padding: 28px 34px">
+      <div style="width: 24px; height: 24px; border-radius: 9999px; background: #F6EFE6; display: flex; align-items: center; justify-content: center"><svg width="18" height="18" viewBox="0 0 100 100" aria-hidden="true"><use href="#ortiz-o-terracotta"></use></svg></div>
+      <div style="width: 32px; height: 32px; border-radius: 9999px; background: #F6EFE6; display: flex; align-items: center; justify-content: center"><svg width="24" height="24" viewBox="0 0 100 100" aria-hidden="true"><use href="#ortiz-o-terracotta"></use></svg></div>
+      <div style="width: 48px; height: 48px; border-radius: 9999px; background: #F6EFE6; display: flex; align-items: center; justify-content: center"><svg width="35" height="35" viewBox="0 0 100 100" aria-hidden="true"><use href="#ortiz-o-terracotta"></use></svg></div>
+      <div style="width: 64px; height: 64px; border-radius: 9999px; background: #F6EFE6; display: flex; align-items: center; justify-content: center"><svg width="47" height="47" viewBox="0 0 100 100" aria-hidden="true"><use href="#ortiz-o-terracotta"></use></svg></div>
+      <div style="width: 32px; height: 32px; border-radius: 9999px; background: #C7654B; display: flex; align-items: center; justify-content: center"><svg width="24" height="24" viewBox="0 0 100 100" aria-hidden="true"><use href="#ortiz-o-cream"></use></svg></div>
+      <div style="width: 32px; height: 32px; border-radius: 9999px; background: #3B2A24; display: flex; align-items: center; justify-content: center"><svg width="24" height="24" viewBox="0 0 100 100" aria-hidden="true"><use href="#ortiz-o-cream"></use></svg></div>
+    </div>
+  </div>
+  </sc-if>
+
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;avatarInverted&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:false,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Avatar&quot;},&quot;showHeader&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Sheet chrome&quot;},&quot;showSmallSizeTest&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Sheet chrome&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    const inverted = this.props.avatarInverted ?? false;
+    return {
+      avatarInverted: inverted,
+      avatarStandard: !inverted,
+      showHeader: this.props.showHeader ?? true,
+      showSmallSizeTest: this.props.showSmallSizeTest ?? true
+    };
+  }
+}
+</script>
+</body>
+</html>
