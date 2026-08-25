@@ -1,0 +1,4 @@
+# Social icons v2 — brand-accurate (2026-08-26, Mira; по слову Валерия «нормальные иконки всех известных соцсетей для узнаваемости»)
+Три варианта на каждую сеть: `-color.svg` (официальный цвет), `-tile.svg` (белый глиф на фирменной плитке, скруглённый квадрат 24×24 r6), `-mono.svg` (currentColor).
+Пути глифов: simple-icons (MIT) для facebook/instagram/telegram/whatsapp/tiktok/youtube/x/reddit/messenger; linkedin и googlebusiness — авторские по официальной геометрии. Цвета: FB #0866FF · IG #FF0069 · TG #26A5E4 · WA #25D366 · TikTok #000 · YouTube #FF0000 · X #000 · Reddit #FF4500 · Messenger #0866FF · LinkedIn #0A66C2 · GBP Google 4-color.
+Использование: продаваемые каналы (FB, IG, TG, WA, GBP) — в конструкторе цен, платформах, карточках; корпканалы (X, LinkedIn, YouTube, TikTok, Reddit) — в подвале/соцблоках. Не перекрашивать фирменные цвета; mono — только на золотых/тёмных полосах.
