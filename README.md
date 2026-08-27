@@ -1,121 +1,139 @@
-# SmashOne Brand Assets
+# SmashOne Brand Assets — единый банк изображений
 
-Visual identity assets for **SmashOne** — premium SaaS for SMB social media automation. Dark theme and light theme both supported.
+Публичный репозиторий визуальных материалов **SmashOne**. С 28.08.2026 это **единый банк
+изображений компании** (решение Валерия): сюда кладут и отсюда берут — Мира (дизайн и маркетинг),
+Дон (видео), Джей (публикации в соцсетях).
 
-> **Brand owner:** NeuralLera (Valery Maltsev)
-> **Domain (US):** smashone.us — operated by SMASHONE CORPORATION (Florida C-Corp)
-> **Domain (EU):** smashone.ai — operated by SmashOne Polska Sp. z o.o.
-> **Visual identity is shared** across both jurisdictions; business entities are independent.
+> **Владелец бренда:** SMASHONE CORPORATION (Florida C-Corp, P26000023598) · домен `smashone.us`
+> **Публичность репозитория** нужна ради raw-URL: Claude Design подтягивает картинки по ссылке,
+> и без публичного доступа промпты приходят с пустыми слотами.
 
-## Repository scope
+**Raw-база:**
 
-This repo contains **visual brand identity** only — logos, social platform icons, design tokens, and component specifications. It is referenced by Claude Design (https://claude.ai/design) projects and downstream implementation in product code.
+```
+https://raw.githubusercontent.com/smashone-corp/smashone-brand-assets/main/<путь>
+```
 
-### What's here
+Пример: `https://raw.githubusercontent.com/smashone-corp/smashone-brand-assets/main/logos/smashone-logo/smashone-logo.svg`
 
-- `logos/`
-  - `smashone-tile-dark/` — dark theme tile (canonical bg pattern + favicon variants — SVG + 64/128/256/512/1254 PNG sizes)
-  - `smashone-tile-light/` — light theme tile (canonical bg pattern + favicon variants — SVG + 64/128/256/512/1254 PNG sizes)
-  - `smashone-wordmark-dark/` — dark theme wordmark «SmashOne» (PNG sizes 64/128/256/512/1254 — fallback rasters; primary use is TEXT rendering via Onest Variable)
-  - `smashone-wordmark-light/` — light theme wordmark (PNG sizes — fallback rasters)
-  - `eu-emblem/` — EU jurisdiction marker (smashone.ai)
-  - `usa-emblem/` — US jurisdiction marker (smashone.us)
-- `social_icons/` — **6 social platform icons** (SVG + PNG sizes 64/128/256/512 in dark and light variants)
-- `tokens/`
-  - `design-tokens.md` — color, typography, spacing, motion, radius, shadow tokens (dark + light themes)
-  - `components.md` — atomic / molecular / organism component specs
-- `examples/`
-  - `homepage-v5-dark-reference.html` — reference design (stylistic ДНК for downstream Prototype generations — layout / typography / brand gold restraint pattern). NOT for copy/messaging (outdated 18-platform refs).
-  - `README.md` — usage guide for reference designs
+---
 
-### What's NOT here
+## 🔴 Пять правил банка
 
-- ❌ Marketing copy / pricing values / launch dates / financial details
-- ❌ Page layouts or specific product screens (those live in private product repos)
-- ❌ Cross-entity business context (US Corp ↔ EU Polska legal/financial relationships)
-- ❌ Cut platform icons (18 deprecated platforms removed from scope per canonical v6.0 LOCKED 2026-05-11)
+1. **Одна вещь — одно место.** Нужен факт (лицо героя, логотип, иконка) — у него ровно один
+   канонический путь. Копия в двух местах — это будущее противоречие, а не подстраховка.
+2. **Ссылка живёт дольше файла.** На пути этого репозитория бьют сотни raw-ссылок из промптов,
+   нарядов и экспортов. **Файл не переименовывают и не двигают** — если нужно другое место,
+   делают КОПИЮ, а оригинал остаётся. Удалённый файл не ломает сайт (витрина работает с локальными
+   копиями), но молча ломает промпты: auto-fetch получает 404 и рисует пустой слот.
+3. **Сначала снимают ссылки, потом двигают файлы.** Обратный порядок уже стоил 207 битых ссылок
+   на один логотип.
+4. **Чужих и стоковых лиц не бывает.** Лица владельцев бизнеса — только из `heroes/`.
+5. **Архив — не удаление.** Материал закрытых направлений уезжает в `_archive/<дата>/` с сохранением
+   исходной структуры путей, а не стирается.
 
-## Brand identity summary
+---
 
-- **Themes:** Dark + Light — both first-class, user-toggleable via theme switcher
-- **Surface base (dark):** `#0a0a0a` (near-black — never pure `#000000`)
-- **Surface base (light):** `#fafafa` (near-white — never pure `#ffffff`)
-- **Brand accent:** gold `#c9a646` (UI) + `#8c6f1e` (AAA text on light) — used as conversion anchor at ~10% surface coverage
-- **Typography stack:**
-  - Display / hero: **Onest Variable** (OFL; canon confirmed 2026-05-25 — NOT Geist)
-  - Body / UI: **Inter Variable** (Rasmus Andersson, OFL)
-  - Code / metrics: **IBM Plex Mono** (IBM, OFL)
-- **Voice:** clear, quantified, sentence-case, 5th–7th grade reading level, Tone B honest framing (no fabricated stats / no fake awards / no fake testimonials)
-- **Inspirations:** Linear (calm density), Mercury (trust depth), Stripe (mesh hero), Anthropic (academic restraint)
+## Что где лежит
 
-See `tokens/design-tokens.md` for the full design system specification.
+| Папка | Что внутри | Кто пишет |
+|---|---|---|
+| **`heroes/`** | **Герои: одна папка на персону** — README, анкер лица, перечень сцен, места под аватары и видео-мастера. Указатель — [`heroes/INDEX.md`](heroes/INDEX.md) | Мира (канон) · Дон (`avatars/`, `video-masters/`) |
+| **`logos/`** | Логотип-канон, фавикон-набор, корп-аватары, логотипы демо-бизнесов. Карта — [`logos/README.md`](logos/README.md) | Мира |
+| `icons/` | **Канон-пак иконок продукта** — 219 исходников по 17 категориям + `sprite.svg` + `manifest.json`. Primary icon source всех поверхностей (правило O9) | Мира |
+| `social-icons/v2` | Иконки соцсетей v2 — `<сеть>-{color,mono,tile}.svg` для 12 сетей + `_sheet.png`. Действующий канон DS v2, минимальный размер 24px | Мира |
+| `social_icons_custom/` | Ранний набор соцсетей v1 — держится живыми ссылками старых промптов, новым не пользоваться | — (заморожен) |
+| `photography/` | Фотобиблиотека: `library/us/scenes` (произв. сцены), `library/owners-us` (владельцы), `library/us/demobiz` (каталоги демо-бизнесов), `avatar-masters` (мастера аватаров), `staff` (Grace, Nathan), `portraits`, `ui/connect` | Мира |
+| `channels/` | Оформление каналов: `demobiz/` (Tampa, Casa Lista), `corp/` (корпканалы), `bots/`, `training/ortiz-nails-brows/` (учебный бизнес) | Мира |
+| `mascots/` | Маскоты. Живой — `cole/` (бренд-персона US) | Мира |
+| `ai-employees/` | `roster/` — 47 портретов ролей витрины `/team/` и «Мой штат» · `medallions/` — 8 медальонов фабрики | Мира |
+| `social/posts/<YYYY-MM>/` | **Карточки выпусков корпканалов** по месяцам. Два формата на выпуск: `<name>-45.png` (1080×1350 — FB/TG/LinkedIn/X) и `<name>-sq.png` (1080×1080 — Instagram) | Мира (производство) · Джей (публикация) |
+| `social/posts/_held/` | Выпуски, снятые с публикации до выяснения (например, неподтверждённые цифры) | Мира |
+| `social/video/<YYYY-MM>/` | Видеовыпуски корпканалов: `<name>-169.mp4` (16:9) и `<name>-916.mp4` (9:16) | Дон |
+| `design-refs/live-<дата>/` | Снимки живой витрины — эталон «как сейчас выглядит сайт» | Мира |
+| `illustrations/` | Векторы: академия, пустые состояния, trust | Мира |
+| `product-screens/` | Скриншоты продукта | Мира |
+| `examples/` | HTML-референсы экспортов Claude Design | Мира |
+| `_archive/<дата>/` | Материал закрытых направлений и снятых форматов. Структура путей сохранена — вернуть файл можно ровно туда, откуда он уехал | GA (по решению владельца) |
 
-## Usage in Claude Design
+---
 
-When creating a new Design System or Prototype project in Claude Design:
+## Кто что кладёт
 
-1. **Field «Link code on GitHub»:** paste this repo URL → `https://github.com/NeuralLera/smashone-brand-assets`
-2. Claude Design will pull all assets (icons, tile backgrounds, token specs)
-3. Reference assets by path inside generated code, e.g.:
-   - `social_icons/facebook-tile-dark.svg` / `facebook-tile-light.svg`
-   - `logos/smashone-tile-dark/empty-tile-dark.svg` / `logos/smashone-tile-light/empty-tile-light.svg`
-   - `logos/smashone-wordmark-light/smashone-wordmark-light-256.png`
+### 🎨 Мира — канон
 
-## Social platform coverage
+Логотипы, фавикон, иконки, фотобиблиотека, оформление каналов, портреты ролей,
+карточки выпусков, **канон героев** (`heroes/<slug>/README.md`, `anchor/`, `scenes/SCENES.md`).
 
-**6 platforms total** (canonical v6.0 LOCKED 2026-05-11 — supersedes prior 22-platform list):
+Правит `heroes/` только вместе с реестром `design/knowledge/characters-registry.md` — иначе
+банк и реестр разъедутся.
 
-### Base trio (Wave 1 — included в $99/€99 subscription)
+### 🎬 Дон — видео
 
-- **Facebook** — `facebook-tile-{dark,light}.svg` + PNG sizes
-- **Instagram** — `instagram-tile-{dark,light}.svg` + PNG sizes
-- **Telegram** — `telegram-tile-{dark,light}.svg` + PNG sizes
+Кладёт **только** в:
 
-### Premium addons (Wave 2 — separate subscription per addon)
+```
+heroes/<slug>/avatars/        — аватары героя (photo/video), по файлу на версию
+heroes/<slug>/video-masters/  — видео-мастера и боевые рендеры
+social/video/<YYYY-MM>/       — готовые видеовыпуски корпканалов
+```
 
-- **WhatsApp Business** — `whatsapp-tile-{dark,light}.svg` + PNG sizes
-- **TikTok** — `tiktok-tile-{dark,light}.svg` + PNG sizes
-- **Google Business Profile** — `googlebusiness-tile-dark.svg` + PNG sizes (light variant pending — generate via Claude Design)
+Имя файла: `<slug>-<что>-<версия>.<ext>` (например `marcus-bell-green-waist-v2.png`).
+🔴 **avatarId живёт в реестре персонажей, не здесь.** Пересоздал аватар — новый id идёт
+в `characters-registry.md` и в Notion «Видеостудия SmashOne», старый помечается мёртвым.
 
-### Filename conventions
+### 🗽 Джей — поле
 
-- All platforms: `<platform>-tile-{dark,light}.svg` + PNG raster sizes (64 / 128 / 256 / 512 px) — uniform across all 6 platforms.
+Берёт готовые карточки из `social/posts/<YYYY-MM>/` и публикует руками в Facebook / Instagram /
+X / LinkedIn. Кладёт обратно — в ту же папку месяца, если снял скрин или собрал материал с площадки.
+Ничего не переименовывает и не двигает.
 
-## Cut platforms (removed from scope)
+---
 
-Per canonical v6.0 (LOCKED 2026-05-11), the following 18 platforms are NOT supported and have been removed from this repo:
+## Правила именования
 
-**Russian:** VK / OK / MAX / Дзен
-**Asian:** Aitu / LINE / KakaoTalk / Zalo
-**Community:** Reddit / Discord
-**Eastern EU:** Viber / Viber Business
-**Niche:** Snapchat / LinkedIn / YouTube / Pinterest / X (Twitter) / Threads
+| Что | Форма | Пример |
+|---|---|---|
+| Папки и файлы | `kebab-case`, латиница, без пробелов | `owner-restaurant-m-hero.webp` |
+| Герой | slug героя = имя папки в `heroes/` | `marcus-bell`, `yamila-ortiz` |
+| Карточка выпуска | `<код>-<YYYY-MM-DD>-{45,sq}.png` | `b6-2026-08-30-45.png` |
+| Видеовыпуск | `<код>-<YYYY-MM-DD>-{169,916}.mp4` | `f3-2026-08-28-169.mp4` |
+| Произв. сцена | `scene_<сюжет>_{45,sq,169,916}.webp` | `scene_f3_marcus_stove_phone_45.webp` |
+| Иконка соцсети | `<сеть>-{color,mono,tile}.svg` | `telegram-tile.svg` |
+| Версия | суффикс `-v2`, `-v3`; **старую версию не перезаписывать** | `avatar-1024-v2.png` |
+| Размер растра | суффикс пикселями | `icon-512.png`, `favicon-32x32.png` |
 
-Do not add icons for any of these platforms. Do not reference them in marketing copy, customer-facing UI, or product roadmaps.
+Фото — `.webp` (компактно), знаки и иконки — `.svg`, мастера аватаров и растровые аватары — `.png`.
 
-## License
+---
 
-Copyright © 2026 Valery Maltsev (NeuralLera). All rights reserved.
+## Бренд-константы
 
-These assets are made publicly visible for the operational purpose of integrating with Claude Design and similar AI design tools that require public asset URLs. Public visibility does not constitute an open-source license.
+- **Логотип-канон:** `logos/smashone-logo/smashone-logo.svg` — золотой знак, theme-agnostic.
+  ⚰️ `smashone-logo-potrace.svg` **мёртв** — ссылки на него дают 404.
+- **Фавикон (LOCKED 25.08.2026):** золотой знак **без чёрной плашки** — `logos/favicon/`.
+  Чёрный квадрат под знаком = дефект.
+- **Золото:** `#b08930` — hex не меняется; текст на золоте всегда тёмный (`#1a1406`), не белый.
+- **Шрифты:** Onest (display) · Inter (body) · IBM Plex Mono (табличные числа).
+- **Тема:** light-first. Тёмный режим — только пульт сервис-контура (админ-консоль).
 
-You may NOT:
-- Reproduce, modify, or redistribute these assets without written permission
-- Use them in commercial products other than SmashOne
-- Claim derivative rights
+Полный канон токенов — `design/knowledge/canonical-css-tokens.md` и библиотека DS v2
+(`design/ds-v2/`), не этот репозиторий.
 
-You MAY:
-- Reference them through Claude Design / similar AI tooling for SmashOne projects
-- Inspect their structure for educational reference
+---
 
-For commercial licensing inquiries, contact: neurallera@gmail.com
+## Чего здесь НЕТ
 
-## Versioning
+- ❌ Маркетинговых текстов, цен, дат запуска и финансовых данных — они живут в
+  `documentation/business-context/product-facts.yml`.
+- ❌ Продуктового кода и вёрстки страниц.
+- ❌ Персональных данных и реальных клиентов. Все бизнесы в `heroes/` — примеры-образцы;
+  на клиентских витринах они идут с рамкой «Illustrative example — sample business, not a real customer».
 
-Assets are not strictly semver-versioned — git history is the source of truth for change tracking. Major iterations of the design system will be tagged (e.g., `system-v2`, `system-v3`).
+## Лицензия
 
-Current canonical system version: **v3** (Dark + Light Theme 2026, dual-theme established 2026-05-11, 6-platform canonical v6.0 LOCKED 2026-05-11).
+Условия — в файле [`LICENSE`](LICENSE).
 
-Previous versions:
-- v2.1 (Dual-Theme partial, established 2026-05-11 morning — superseded by v3 cycle 164 cleanup)
-- v2 (Dark Theme 2026, established 2026-05-09 — deprecated by v3)
+Репозиторий публичен ради интеграции с Claude Design и подобными инструментами, которым нужны
+публичные URL. Публичность **не** делает материалы open-source: воспроизведение, изменение
+и распространение вне SmashOne запрещены.
