@@ -950,6 +950,17 @@
     <ellipse cx="24.6" cy="41.8" rx="6.2" ry="4.4" transform="rotate(-20 24.6 41.8)" fill="#111" stroke="none"></ellipse>
   </g>
   <circle cx="41.2" cy="35" r="1.7" fill="#b08930"></circle></symbol>
+<symbol id="icon-platform-x" viewBox="0 0 64 64"><g fill="none" stroke="#111" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 21.2 18.4 L 42.8 45.6"></path>
+    <path d="M 42.4 18.4 L 33.4 29.8"></path>
+    <path d="M 30.4 33.6 L 21.6 45.6"></path>
+  </g>
+  <circle cx="42.8" cy="45.6" r="1.7" fill="#b08930"></circle></symbol>
+<symbol id="icon-platform-youtube" viewBox="0 0 64 64"><g fill="none" stroke="#FF0000" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="16.4" y="21.4" width="31.2" height="21.2" rx="6.4" ry="6.4"></rect>
+    <path d="M 28.8 27.2 L 37.2 32 L 28.8 36.8 Z" fill="#FF0000" stroke="none"></path>
+  </g>
+  <circle cx="37.2" cy="32" r="1.7" fill="#b08930"></circle></symbol>
 <symbol id="icon-platform-googlebusiness" viewBox="0 0 64 64"><path d="M19.5 29.8 V46.6 C19.5 48.8 21.3 50.6 23.5 50.6 H41.8 C44.0 50.6 45.8 48.8 45.8 46.6 V29.8" fill="none" stroke="#4285F4" stroke-width="2.9" stroke-linecap="round" stroke-linejoin="round"></path>
   <path d="M21.8 16.7 H43.4 C44.8 16.7 46.0 17.7 46.4 19.0 L48.3 25.8" fill="none" stroke="#4285F4" stroke-width="2.9" stroke-linecap="round" stroke-linejoin="round"></path>
   <path d="M15.7 25.8 L17.6 19.0 C18.0 17.7 19.2 16.7 20.6 16.7" fill="none" stroke="#EA4335" stroke-width="2.9" stroke-linecap="round" stroke-linejoin="round"></path>
