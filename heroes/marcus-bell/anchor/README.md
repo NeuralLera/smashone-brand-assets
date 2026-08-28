@@ -5,7 +5,7 @@
 
 | Файл | Оригинал в банке | Роль |
 |---|---|---|
-| `owner-restaurant-m-hero.webp` | `photography/library/owners-us/owner-restaurant-m-hero.webp` | 🔴 **анкер лица** — identity-референс генерации |
+| `marcus-bell-master.png` | `photography/avatar-masters/marcus-bell-master.png` | 🔴 **анкер лица** — identity-референс генерации |
 | `marcus-bell-master.png` | `photography/avatar-masters/marcus-bell-master.png` | доп. мастер / вариант |
 | `marcus-bell-green-waist.png` | `photography/avatar-masters/marcus-bell-green-waist.png` | доп. мастер / вариант |
 

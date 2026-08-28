@@ -14,10 +14,10 @@
 
 ## Анкер
 
-🔴 **Анкер лица:** `photography/library/owners-us/owner-restaurant-m-hero.webp`
+🔴 **Анкер лица:** `photography/avatar-masters/marcus-bell-master.png`
 
-Копия — `heroes/marcus-bell/anchor/owner-restaurant-m-hero.webp`  
-Raw: `https://raw.githubusercontent.com/smashone-corp/smashone-brand-assets/main/photography/library/owners-us/owner-restaurant-m-hero.webp`
+Копия — `heroes/marcus-bell/anchor/marcus-bell-master.png`  
+Raw: `https://raw.githubusercontent.com/smashone-corp/smashone-brand-assets/main/photography/avatar-masters/marcus-bell-master.png`
 
 **Дополнительно:**
 - `photography/avatar-masters/marcus-bell-master.png`
