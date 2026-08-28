@@ -48,6 +48,13 @@ Raw: `https://raw.githubusercontent.com/smashone-corp/smashone-brand-assets/main
 
 Перечень путей — `heroes/marcus-bell/scenes/SCENES.md` (ссылки, не копии).
 
+## Банк видео (`D:\SmashOne-Video\`)
+
+| Дата | Файл | Формат | Сюжет | Речь | Статус |
+|---|---|---|---|---|---|
+| 2026-08-28 | `bank/heroes/marcus-bell/916/marcus-bell_pass_work_evening_916.mp4` | 9:16 · 720×1280 · 10.0 s | пасс вечером: тикет → зелень в пасту → тарелка вперёд → полотенце → следующий тикет | нет; только среда | ✅ принят глазами; container `[ ok ]`; повторная дифф-проверка руки `NO ISSUES` |
+| 2026-08-28 | `bank/heroes/marcus-bell/916/marcus-bell_dining_open_morning_916.mp4` | 9:16 · 720×1280 · 10.0 s | зал утром: стул на место → салфетка → стакан → проверка сервировки | нет; только среда | ✅ принят глазами по contact + high-res bodycheck; container `[ ok ]`; прибор дал false-positive по elbows/forearms — три high-res кадра подтверждают, что они внутри кадра |
+
 ## Куда что кладут
 
 | Папка | Кто пишет | Что |
