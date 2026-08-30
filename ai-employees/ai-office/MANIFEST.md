@@ -16,7 +16,7 @@
 | `<slug>-avatar-128.webp` ×6 | контроль | badge «AI» различим на 128px — проверено глазами |
 | `<slug>-round-512.webp` ×6 | превью/баннеры | круглый кроп + золотое кольцо |
 | `ai-office-icon-512.webp` | Discord | иконка сервера |
-| `ai-office-tg-avatar-512.webp` | Telegram | аватар группы обсуждений (тот же образ) |
+| `ai-office-icon-512.webp` | Telegram | аватар группы обсуждений — тот же файл, что иконка Discord (дубль `ai-office-tg-avatar-512.webp` снесён 30.08) |
 | `ai-office-discord-banner-960x540.webp` | Discord | баннер сервера: знак + заголовок + ряд шести лиц с именами |
 | `_contact-sheet.png` | приёмка | контакт-лист (не публикуется) |
 
