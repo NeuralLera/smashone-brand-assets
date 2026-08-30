@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 100 100" role="img" aria-label="High Cotton Antiques">
-  <circle cx="50" cy="50" r="49" fill="#7A1F1F"></circle>
-  <g transform="translate(11.00,11.00) scale(0.78)">
-  <path fill="#F6F4EE" d="M35,16 L65,16 C63,22 58,23 58,25 L57,31 C57,37 77,42 77,57 C77,71 66,80 59,84 L60,86 C64,87 63,91 63,91 L37,91 C37,91 36,87 40,86 L41,84 C34,80 23,71 23,57 C23,42 43,37 43,31 L42,25 C42,23 37,22 35,16 Z"></path>
-  <path fill="none" stroke="#F6F4EE" stroke-width="6" stroke-linecap="round" d="M43,25 C29,25 25,37 40,44"></path>
-  <path fill="none" stroke="#F6F4EE" stroke-width="6" stroke-linecap="round" d="M57,25 C71,25 75,37 60,44"></path></g>
-</svg>
