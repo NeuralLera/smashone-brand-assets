@@ -8,18 +8,23 @@
 
 Raw-база: `https://raw.githubusercontent.com/smashone-corp/smashone-brand-assets/main/`
 
+⚰️ **Волна BANK-PURGE 30.08.2026 (ГО владельца через Миру):** снесены шесть линий —
+`carlos-rivera` · `devon-price` · `grace` · `kayla` · `nathan` · `yamila-ortiz`.
+В банке осталось **пять** папок героев: `cole` · `gerry` · `marcus-bell` · `margaret-ellison` · `mateo-salgado`.
+Строки снесённых оставлены помеченными, а не удалены, — чтобы ссылка на них читалась как «мёртвая», а не как «потерянная».
+
 | Герой | Тип | Анкер (raw-URL) | Статус | Кто рендерит |
 |---|---|---|---|---|
 | [`marcus-bell`](marcus-bell/README.md) — Marcus Bell | Демо-герой | [`marcus-bell-master.png`](https://raw.githubusercontent.com/smashone-corp/smashone-brand-assets/main/photography/avatar-masters/marcus-bell-master.png) | ✅ прод-герой: фото-мастер + видео-аватар + голос приняты | Дон (видео) · Мира (статика) — фиделити-гейт лица за Мирой |
 | [`mateo-salgado`](mateo-salgado/README.md) — Mateo Salgado | Демо-герой | [`17-van-start-of-day-mateo.webp`](https://raw.githubusercontent.com/smashone-corp/smashone-brand-assets/main/channels/demobiz/casa-lista/17-van-start-of-day-mateo.webp) | ✅ прод-герой: фото-мастер + видео-аватар + голос приняты | Дон (видео) · Мира (статика) — фиделити-гейт лица за Мирой |
 | [`gerry`](gerry/README.md) — Gerry (Джерри) | Рассказчик сервиса | ⛔ нет в банке | ✅ видео-аватар + голос приняты · ⛔ photo-анкера в банке нет | Дон (видео). Статика — только после снятия photo-мастера и гейта Миры |
-| [`yamila-ortiz`](yamila-ortiz/README.md) — Yamila Ortiz (Ямила Ортис) | Учебный герой | [`yamila-ortiz-master.png`](https://raw.githubusercontent.com/smashone-corp/smashone-brand-assets/main/photography/avatar-masters/yamila-ortiz-master.png) | ✅ мастер принят Валерием 24.08 (фронтал, оба уха, нейтральный тёплый фон) | Мира (статика) · Дон (видео) — фиделити-гейт лица за Мирой |
-| [`kayla`](kayla/README.md) — Kayla (Кайла, без фамилии) | Учебный герой | [`kayla-master.png`](https://raw.githubusercontent.com/smashone-corp/smashone-brand-assets/main/photography/avatar-masters/kayla-master.png) | ⏳ мастер есть, аватар и голос не заведены | Мира (статика). Видео — после заведения аватара |
-| [`devon-price`](devon-price/README.md) — Devon Price (Девон Прайс) | Герой ниши (фитнес) | [`owner-fitness-m.webp`](https://raw.githubusercontent.com/smashone-corp/smashone-brand-assets/main/photography/library/owners-us/owner-fitness-m.webp) | ⏳ только анкер лица; своих сцен нет | Мира (статика) |
-| [`carlos-rivera`](carlos-rivera/README.md) — Carlos Rivera | Герой ниши (авто) | [`owner-auto-m.webp`](https://raw.githubusercontent.com/smashone-corp/smashone-brand-assets/main/photography/library/owners-us/owner-auto-m.webp) | ⏳ только анкер лица; своей сцены нет | Мира (статика) |
+| ⚰️ ~~`yamila-ortiz`~~ — Yamila Ortiz (Ямила Ортис) | Учебный герой | ⚰️ снесён | ⚰️ **СНЯТ 30.08.2026 волной BANK-PURGE** — линия закрыта 29.08, папки и мастера в банке больше нет | — |
+| ⚰️ ~~`kayla`~~ — Kayla (Кайла, без фамилии) | Учебный герой | ⚰️ снесён | ⚰️ **СНЯТ 30.08.2026 волной BANK-PURGE** — линия заморожена 29.08, папки и мастера в банке больше нет | — |
+| ⚰️ ~~`devon-price`~~ — Devon Price (Девон Прайс) | Герой ниши (фитнес) | ⚰️ снесён | ⚰️ **СНЯТ 30.08.2026 волной BANK-PURGE** — не в разрешённой тройке лиц, папки и анкера в банке больше нет | — |
+| ⚰️ ~~`carlos-rivera`~~ — Carlos Rivera | Герой ниши (авто) | ⚰️ снесён | ⚰️ **СНЯТ 30.08.2026 волной BANK-PURGE** — снят с поверхностей 29.08, папки и анкера в банке больше нет | — |
 | [`margaret-ellison`](margaret-ellison/README.md) — Margaret Ellison | Героиня ниши (антиквариат) | [`owner-antiques-w.webp`](https://raw.githubusercontent.com/smashone-corp/smashone-brand-assets/main/photography/library/owners-us/owner-antiques-w.webp) | ⏳ только анкер лица; своей сцены нет | Мира (статика) |
-| [`grace`](grace/README.md) — Grace (без фамилии) | Сотрудник SmashOne (резерв) | [`grace-master.png`](https://raw.githubusercontent.com/smashone-corp/smashone-brand-assets/main/photography/staff/grace-master.png) | ✅ мастер + зелёный waist + avatarId (гейт Миры PASS); держим в резерве | Дон (видео, академия) · Мира (статика внутренних материалов) |
-| [`nathan`](nathan/README.md) — Nathan (без фамилии) | Сотрудник SmashOne | [`nathan-master.png`](https://raw.githubusercontent.com/smashone-corp/smashone-brand-assets/main/photography/staff/nathan-master.png) | ✅ мастер снят · ⏳ avatarId и голос не заведены (кастинг за Доном) | Мира (статика витрины фабрики) · Дон (видео после кастинга) |
+| ⚰️ ~~`grace`~~ — Grace (без фамилии) | Сотрудник SmashOne | ⚰️ снесён | ⚰️ **СНЯТА 30.08.2026 волной BANK-PURGE** — решение владельца 30.08 (через вопрос-очередь Миры): линия закрыта, «академии» больше нет. Папка и мастера в банке удалены | — |
+| ⚰️ ~~`nathan`~~ — Nathan (без фамилии) | Сотрудник SmashOne | ⚰️ снесён | ⚰️ **СНЯТ 30.08.2026 волной BANK-PURGE** — снят с витрины 29.08, папки и мастеров в банке больше нет | — |
 | [`cole`](cole/README.md) — Коль (Cole) | Маскот (иллюстрация, не фотоперсона) | [`cole-portrait.png`](https://raw.githubusercontent.com/smashone-corp/smashone-brand-assets/main/mascots/cole/cole-portrait.png) | ➖ иллюстрированный маскот — фото-аватар не применим | Мира (иллюстрация и карточки) |
 
 ## Что значит статус
