@@ -8,6 +8,7 @@
 | Герой | Роль | Референс | Источник |
 |---|---|---|---|
 | Sloane (Слоан) | SMM-менеджер | `sloane/sloane-reference-v1.jpeg` (896×1200) | Flow-персонаж Дона, Sloane v2 (02.09.2026, принят владельцем) |
+| Sage (Сейдж) | видеомейкер | `sage/sage-reference-v2.jpg` (768×1376, анфас) + `sage-profile-reference-v2.jpg` (профиль) | Flow Characters Дона, v2 (02.09.2026). ⚰️ v1 была конвертированной миниатюрой, не рендером Flow — снята GA |
 | Margaret Ellison | владелица демо Tampa Pasta House | ⏳ Flow-референса ещё нет — действуют АНКЕРЫ `margaret-ellison/anchor/` (6 webp) + `margaret-ellison/IDENTITY.md` | Наша генерация эпохи демо-каналов; перенесены в банк 02.09.2026 из `demo_channels/high-cotton-antiques/owner/` байт-в-байт |
 
 🔴 **Герой без Flow-референса всё равно живёт здесь.** Заведено 02.09.2026 случаем Маргарет:
