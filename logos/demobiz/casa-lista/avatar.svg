@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="512" height="512" role="img" aria-label="Casa Lista Home Repair">
+  <circle cx="50" cy="50" r="50" fill="#29586B"></circle>
+  <g stroke="#F3E7D3" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M24 50 L50 28 L76 50" stroke-width="4.2"></path>
+    <path d="M31 46 V76 H69 V46" stroke-width="4.2"></path>
+    <path d="M62 26 V34" stroke-width="4.2"></path>
+    <path d="M41 69 L54 56" stroke-width="4.2"></path>
+  </g>
+  <rect x="49" y="46" width="20" height="9" rx="3" fill="#F3E7D3" transform="rotate(45 59 50.5)"></rect>
+</svg>
