@@ -1,0 +1,117 @@
+{
+ "canvas": [
+  1080,
+  1920
+ ],
+ "fonts": {
+  "display": "fonts/Onest-Variable.ttf"
+ },
+ "colors": {
+  "gold": "#B08930",
+  "ink": "#1A1917",
+  "cream": "#F7F6F2",
+  "white": "#FFFFFF"
+ },
+ "assets": {
+  "lower_third": {
+   "file": "lower-third-sloane-9x16.png",
+   "plate": {
+    "x": 72,
+    "y": 1476,
+    "w": 560,
+    "h": 180,
+    "radius": 28,
+    "fill": "#B08930"
+   },
+   "name": {
+    "x": 116,
+    "y": 1524,
+    "size": 60,
+    "weight": 700,
+    "color": "#1A1917"
+   },
+   "role": {
+    "x": 116,
+    "y": 1576,
+    "size": 34,
+    "weight": 500,
+    "color": "#1A1917"
+   }
+  },
+  "lower_third_blank": {
+   "file": "lower-third-blank-9x16.png",
+   "plate": {
+    "x": 72,
+    "y": 1476,
+    "w": 560,
+    "h": 180,
+    "radius": 28,
+    "fill": "#B08930"
+   },
+   "name": {
+    "x": 116,
+    "y": 1561,
+    "size": 60,
+    "weight": 700,
+    "color": "#1A1917"
+   },
+   "role": {
+    "x": 116,
+    "y": 1571,
+    "size": 34,
+    "weight": 500,
+    "color": "#1A1917"
+   }
+  },
+  "chip": {
+   "file": "chip-ai-presenter.png",
+   "small": "chip-ai-presenter-small.png",
+   "size": [
+    396,
+    68
+   ],
+   "placed_frame": "chip-ai-presenter-9x16-topright.png",
+   "placement": {
+    "x": 612,
+    "y": 96,
+    "rule": "72 px от правого края, 96 px сверху"
+   },
+   "text": {
+    "font": "Onest 700",
+    "size": 30,
+    "color": "#B08930"
+   },
+   "fill": "#FFFFFF"
+  },
+  "endcard": {
+   "light": "endcard-9x16-light.png",
+   "dark": "endcard-9x16-dark.png",
+   "mark": {
+    "size": 300,
+    "y": 700
+   },
+   "url": {
+    "text": "smashone.us",
+    "font": "Onest 700",
+    "size": 76,
+    "y": 1064
+   },
+   "slogan": {
+    "text": "Hire an AI. Enjoy life.",
+    "font": "Onest 500",
+    "size": 44,
+    "y": 1168
+   },
+   "duration_hint_s": "2–3"
+  },
+  "watermark": {
+   "files": {
+    "gold-96": "watermark-mark-gold-96.png",
+    "white-96": "watermark-mark-white-96.png",
+    "gold-160": "watermark-mark-gold-160.png",
+    "white-160": "watermark-mark-white-160.png"
+   },
+   "placement": "угол, 72 px от краёв; прозрачность задаёт монтаж (рекомендация 0.7)"
+  }
+ }
+}
