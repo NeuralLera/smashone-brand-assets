@@ -39,7 +39,8 @@ drawtext=fontfile=fonts/Onest-Variable.ttf:text='SmashOne AI Video Maker':fontsi
 ## 2. Чип «AI-generated presenter»
 - `chip-ai-presenter.png` (1×), `chip-ai-presenter-small.png` (0.75×) — белая плашка, золотые буквы Onest 700 30 px:
   тот же стиль, что бейдж «AI» аватаров v2 (29.08).
-- `chip-ai-presenter-9x16-topright.png` — уже поставлен в кадр: 72 px от правого края, 96 px сверху. Класть `overlay=0:0`.
+- `chip-ai-presenter-9x16-topright.png` — уже поставлен в кадр: 72 px от правого края, **170 px сверху** (≈9% кадра). Класть `overlay=0:0`.
+  ⚰️ Прежние 96 px (v1, 03.09 утро) попадали в верхний интерфейсный пояс Instagram/TikTok — чип закрывали иконки (нашёл прибор Дона). sha256 текущего файла: `9712697c8f8c02cace78d7ed60e57e730739d9b9d558e433fce74c2361f591f4`.
 - Показывать весь ролик или первые 3 с — решение монтажа; убирать нельзя (маркировка ИИ-ведущего).
 
 ## 3. Финальная карточка (2–3 с)

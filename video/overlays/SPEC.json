@@ -73,8 +73,8 @@
    "placed_frame": "chip-ai-presenter-9x16-topright.png",
    "placement": {
     "x": 612,
-    "y": 96,
-    "rule": "72 px от правого края, 96 px сверху"
+    "y": 170,
+    "rule": "72 px от правого края, 170 px сверху (≈9%: ниже интерфейсного пояса IG/TikTok)"
    },
    "text": {
     "font": "Onest 700",
