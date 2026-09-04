@@ -18,7 +18,7 @@ Raw-база: `https://raw.githubusercontent.com/smashone-corp/smashone-brand-as
 | Герой | Роль | Референс |
 |---|---|---|
 | Sloane (Слоан) | SMM-менеджер | `sloane/reference/sloane-reference-v1.jpeg` (896×1200) |
-| Sage (Сейдж) | видеомейкер | `sage/reference/sage-reference-v2.jpg` (768×1376, анфас) + `sage-profile-reference-v2.jpg`. ⚰️ v1 была конвертированной миниатюрой, не рендером Flow |
+| Sage (Сейдж) | видеомейкер | **Два назначения одного лица (04.09.2026):** `sage/reference/sage-reference-v2.jpg` (+ `sage-profile-reference-v2.jpg`) — рисунок, **канон витрины** (ростер, og, страница роли); `sage/reference/sage-flow-reference-v1.jpeg` — фото, **съёмочный эталон лица** (гейт `film_audit`). Косинус между ними 0.476 — норма для пары рисунок↔фото, не дефект. ⚰️ Прежняя «v1-конвертированная миниатюра» — другой, уже снятый файл. SSoT назначения — `design/knowledge/characters-registry.md` |
 
 **Герой без референса Дона всё равно живёт здесь** — в `<slug>/anchor/`, пока референс не снят.
 
