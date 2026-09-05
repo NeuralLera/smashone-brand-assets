@@ -23,6 +23,8 @@ Raw-база: `https://raw.githubusercontent.com/smashone-corp/smashone-brand-as
 
 | Jordan (Джордан) | ресепшионист | `jordan/reference/jordan-photo-reference-v1.jpeg` — **фотоэталон, снят Доном 05.09.2026** из рисунка `jordan-art-reference-v1.jpeg` (Nano Banana Pro ×4, 0 кредитов; кадр D выбран GA, косинус к рисунку 0.661). Рисунок остаётся каноном витрины, фото — съёмочный эталон лица и ингредиент сцен. |
 
+| Ruby (Руби) | поддержка клиентов | `ruby/reference/ruby-photo-reference-v1.jpeg` — **фотоэталон, снят Доном 05.09.2026** из рисунка `ai-employees/ai-office/ruby-master-1024.png` (Nano Banana Pro ×4, 0 кредитов; кадр D выбран GA, косинус к рисунку 0.690). Чип «AI» с рисунка не перенесён — маркировка ИИ всегда накладка, не пиксели. |
+
 ## 🔴 КАНОН ИМЁН (05.09.2026, решение GA после трёх ролей подряд)
 
 **Фотография и рисунок различаются ИМЕНЕМ файла, а не догадкой:**
